@@ -1,19 +1,15 @@
 #!/bin/bash  
 echo
 echo "Please wait. I am downloading the latest stable version of Firefox"  
-echo
 wget -O ~/FirefoxStable.tar.bz2 "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64"
 echo -n
 echo "Installing Firefox"
-echo
 sudo tar xjf ~/FirefoxStable.tar.bz2 -C /opt/
 echo -n
 echo "Applying update permissions"
-echo
 sudo chmod -R 777 /opt/firefox/
-echo -n
 echo "Creating icon"
-echo
+echo -n
 echo "[Desktop Entry]
 Name=Firefox
 GenericName=Web Browser
@@ -324,14 +320,10 @@ Name[xh]=Ifestile yangasese entsha
 Name[zh_CN]=新建隐私浏览窗口
 Name[zh_TW]=新增隱私視窗
 Exec=/opt/firefox/firefox --private-window %u" > Firefox.desktop
-echo
 echo -n
 echo "Installing icons"
-echo
 cp ~/Firefox.desktop /home/$USER/Desktop
-echo -n
 sudo cp ~/Firefox.desktop /usr/share/applications
-echo -n
 echo "Cleaning up after myself"
 rm ~/FirefoxStable.tar.bz2
 rm ~/Firefox.desktop
