@@ -3,14 +3,12 @@ echo
 echo "Please wait. I am downloading the latest stable version of Firefox"  
 echo
 wget -O ~/FirefoxStable.tar.bz2 "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64"
-echo -n
+echo
 echo "Installing Firefox"
 sudo tar xjf ~/FirefoxStable.tar.bz2 -C /opt/
-echo -n
 echo "Applying update permissions"
 sudo chmod -R 777 /opt/firefox/
 echo "Creating icon"
-echo -n
 echo "[Desktop Entry]
 Name=Firefox
 GenericName=Web Browser
