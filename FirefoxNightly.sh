@@ -3,18 +3,13 @@ echo
 echo "Please wait. I am downloading the latest version of Firefox Nightly"  
 echo
 wget -O ~/FirefoxNightly.tar.bz2 "https://download.mozilla.org/?product=firefox-nightly-latest-ssl&os=linux64"
-echo -n
-echo "Installing Firefox Nightly"
-echo 
+echo
+echo "Installing Firefox Nightly" 
 sudo mkdir /opt/firefox-nightly
 sudo tar xjf ~/FirefoxNightly.tar.bz2 -C /opt/firefox-nightly/
-echo -n
 echo "Applying update permissions"
-echo
 sudo chmod -R 777 /opt/firefox-nightly/firefox/
-echo -n
 echo "Creating icon"
-echo
 echo "[Desktop Entry]
 Name=Firefox Nightly
 GenericName=Web Browser
@@ -325,14 +320,10 @@ Name[xh]=Ifestile yangasese entsha
 Name[zh_CN]=新建隐私浏览窗口
 Name[zh_TW]=新增隱私視窗
 Exec=/opt/firefox-nightly/firefox/firefox --private-window %u --class FirefoxNightly" > Firefox-Nightly.desktop
-echo
 echo -n
 echo "Installing icons"
-echo
 cp ~/Firefox-Nightly.desktop /home/$USER/Desktop
-echo -n
 sudo cp ~/Firefox-Nightly.desktop /usr/share/applications
-echo -n
 echo "Cleaning up after myself"
 rm ~/FirefoxNightly.tar.bz2
 rm ~/Firefox-Nightly.desktop
