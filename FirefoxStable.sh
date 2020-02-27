@@ -1,6 +1,7 @@
 #!/bin/bash  
 echo
 echo "Please wait. I am downloading the latest stable version of Firefox"  
+echo
 wget -O ~/FirefoxStable.tar.bz2 "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64"
 echo -n
 echo "Installing Firefox"
