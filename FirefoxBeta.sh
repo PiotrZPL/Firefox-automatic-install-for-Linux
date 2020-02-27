@@ -3,18 +3,13 @@ echo
 echo "Please wait. I am downloading the latest version of Firefox Beta"  
 echo
 wget -O ~/FirefoxBeta.tar.bz2 "https://download.mozilla.org/?product=firefox-beta-latest-ssl&os=linux64"
-echo -n
-echo "Installing Firefox Beta"
-echo 
+echo
+echo "Installing Firefox Beta" 
 sudo mkdir /opt/firefox-beta
 sudo tar xjf ~/FirefoxBeta.tar.bz2 -C /opt/firefox-beta/
-echo -n
 echo "Applying update permissions"
-echo
 sudo chmod -R 777 /opt/firefox-beta/firefox/
-echo -n
 echo "Creating icon"
-echo
 echo "[Desktop Entry]
 Name=Firefox Beta
 GenericName=Web Browser
@@ -325,14 +320,10 @@ Name[xh]=Ifestile yangasese entsha
 Name[zh_CN]=新建隐私浏览窗口
 Name[zh_TW]=新增隱私視窗
 Exec=/opt/firefox-beta/firefox/firefox --private-window %u --class FirefoxBeta" > Firefox-Beta.desktop
-echo
 echo -n
 echo "Installing icons"
-echo
 cp ~/Firefox-Beta.desktop /home/$USER/Desktop
-echo -n
 sudo cp ~/Firefox-Beta.desktop /usr/share/applications
-echo -n
 echo "Cleaning up after myself"
 rm ~/FirefoxBeta.tar.bz2
 rm ~/Firefox-Beta.desktop
