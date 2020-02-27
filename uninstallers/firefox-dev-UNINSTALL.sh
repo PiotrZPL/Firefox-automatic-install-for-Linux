@@ -3,13 +3,10 @@
 # With great power there must also come great responsibility.
 # That which is done. Cannot be undone. Reinstalled, of course! But not undone.
 #
-echo -n
+echo
 sudo rm -r -f  /opt/firefox-developer-edition/
-echo -n
 sudo rm -r -f /usr/share/applications/Firefox-Developer-Edition.desktop
-echo -n
 rm -r -f /home/$USER/Desktop/Firefox-Developer-Edition.desktop
-echo -n
 #
 # Uncomment if you wish to also delete your configuration files too.
 # You should only do so if you have NO other installs of Firefox installed
@@ -17,7 +14,6 @@ echo -n
 #
 # rm -r -f /home/$USER/.mozilla/
 #
-echo -n
 echo
 echo
 echo Thank you for using Mozilla Firefox.
