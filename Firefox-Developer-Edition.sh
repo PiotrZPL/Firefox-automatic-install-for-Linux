@@ -3,18 +3,13 @@ echo
 echo "Please wait. I am downloading the latest version of Firefox Developer Edition"  
 echo
 wget -O ~/FirefoxDeveloperEdition.tar.bz2 "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64"
-echo -n
-echo "Installing Firefox Developer Edition"
-echo 
+echo
+echo "Installing Firefox Developer Edition" 
 sudo mkdir /opt/firefox-developer-edition
 sudo tar xjf ~/FirefoxDeveloperEdition.tar.bz2 -C /opt/firefox-developer-edition/
-echo -n
 echo "Applying update permissions"
-echo
 sudo chmod -R 777 /opt/firefox-developer-edition/firefox/
-echo -n
 echo "Creating icon"
-echo
 echo "[Desktop Entry]
 Name=Firefox Developer Edition
 GenericName=Web Browser
@@ -325,14 +320,10 @@ Name[xh]=Ifestile yangasese entsha
 Name[zh_CN]=新建隐私浏览窗口
 Name[zh_TW]=新增隱私視窗
 Exec=/opt/firefox-developer-edition/firefox/firefox --private-window %u --class FirefoxDeveloperEdition" > Firefox-Developer-Edition.desktop
-echo
 echo -n
 echo "Installing icons"
-echo
 cp ~/Firefox-Developer-Edition.desktop /home/$USER/Desktop
-echo -n
 sudo cp ~/Firefox-Developer-Edition.desktop /usr/share/applications
-echo -n
 echo "Cleaning up after myself"
 rm ~/FirefoxDeveloperEdition.tar.bz2
 rm ~/Firefox-Developer-Edition.desktop
