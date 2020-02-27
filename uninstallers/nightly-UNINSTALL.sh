@@ -1,4 +1,3 @@
-
 #!/bin/bash
 #
 # With great power there must also come great responsibility.
