@@ -3,7 +3,7 @@
 # This will uninstall and remove ALL editions of Firefox. Use with care.
 # That which is done. Cannot be undone. Reinstalled, of course! But not undone.
 #
-echo -n
+echo
 sudo rm -r -f  /opt/firefox/
 sudo rm -r -f  /opt/firefox-beta/
 sudo rm -r -f  /opt/firefox-developer-edition
@@ -18,7 +18,6 @@ rm -r -f /home/$USER/Desktop/Firefox.desktop
 rm -r -f /home/$USER/Desktop/Firefox-Beta.desktop
 rm -r -f /home/$USER/Desktop/Firefox-Developer-Edition.desktop
 rm -r -f /home/$USER/Desktop/Firefox-Nightly.desktop
-echo -n
 #
 # Uncomment if you wish to also delete your configuration files too.
 # You should only do so if you have NO other installs of Firefox installed
@@ -26,7 +25,6 @@ echo -n
 #
 # rm -r -f /home/$USER/.mozilla/
 #
-echo -n
 echo
 echo
 echo Thank you for using Mozilla Firefox.
