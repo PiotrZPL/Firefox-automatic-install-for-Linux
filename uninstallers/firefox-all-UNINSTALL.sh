@@ -30,6 +30,7 @@ echo
 echo Thank you for using Mozilla Firefox.
 echo Firefox has been deleted and uninstalled. Per your request.
 echo Really sorry to see you go.
+echo Hope to see you again real soon.
 echo
 echo
 exit 0
