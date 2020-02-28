@@ -2,11 +2,11 @@
 echo
 echo "Please wait. I am downloading the latest version of Firefox Beta"  
 echo
-wget -O ~/FirefoxBeta.tar.bz2 "https://download.mozilla.org/?product=firefox-beta-latest-ssl&os=linux64"
+wget -O FirefoxBeta.tar.bz2 "https://download.mozilla.org/?product=firefox-beta-latest-ssl&os=linux64"
 echo
 echo "Installing Firefox Beta" 
 sudo mkdir /opt/firefox-beta
-sudo tar xjf ~/FirefoxBeta.tar.bz2 -C /opt/firefox-beta/
+sudo tar xjf FirefoxBeta.tar.bz2 -C /opt/firefox-beta/
 echo "Applying update permissions"
 sudo chmod -R 777 /opt/firefox-beta/firefox/
 echo "Creating icon"
@@ -324,7 +324,7 @@ echo -n
 chmod +x Firefox-Beta.desktop
 echo "Installing icons"
 # Adds icon to application menu (xfce, gnome, cinnamon, mate, deepin, etc...)
-sudo cp ~/Firefox-Beta.desktop /usr/share/applications
+sudo cp Firefox-Beta.desktop /usr/share/applications
 echo -n
 # Copies desktop icon to all user desktops and grants them ownership (it is their desktop after all)
 for destdir in /home/*/Desktop/; do
@@ -333,11 +333,11 @@ for destdir in /home/*/Desktop/; do
 done
 echo -n
 # Adds a desktop icon to all FUTURE new login users (assuming you make any)
-sudo mkdir /etc/skel/Desktop
-sudo cp ~/Firefox-Beta.desktop /etc/skel/Desktop
+sudo mkdir -p /etc/skel/Desktop
+sudo cp Firefox-Beta.desktop /etc/skel/Desktop
 echo "Cleaning up after myself"
-rm ~/FirefoxBeta.tar.bz2
-rm ~/Firefox-Beta.desktop
+rm FirefoxBeta.tar.bz2
+rm Firefox-Beta.desktop
 echo
 echo
 echo "Congratulations!"
