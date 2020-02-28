@@ -6,6 +6,7 @@
 echo
 sudo rm -r -f  /opt/firefox-beta/
 sudo rm -r -f /usr/share/applications/Firefox-Beta.desktop
+sudo rm -r -f /etc/skel/Desktop/Firefox-Beta.desktop
 rm -r -f /home/$USER/Desktop/Firefox-Beta.desktop
 #
 # Uncomment if you wish to also delete your configuration files too.
