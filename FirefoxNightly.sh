@@ -321,9 +321,20 @@ Name[zh_CN]=新建隐私浏览窗口
 Name[zh_TW]=新增隱私視窗
 Exec=/opt/firefox-nightly/firefox/firefox --private-window %u --class FirefoxNightly" > Firefox-Nightly.desktop
 echo -n
+chmod +x Firefox-Nightly.desktop
 echo "Installing icons"
-cp ~/Firefox-Nightly.desktop /home/$USER/Desktop
+# Adds icon to application menu (xfce, gnome, cinnamon, mate, deepin, etc...)
 sudo cp ~/Firefox-Nightly.desktop /usr/share/applications
+echo -n
+# Copies desktop icon to all user desktops and granting them ownership (it is their desktop after all)
+for destdir in /home/*/Desktop/; do
+    cp Firefox-Nightly.desktop "$destdir" &&
+    chown --reference="$destdir" "$destdir/Firefox-Nightly.desktop"
+done
+echo -n
+# Adds a desktop icon to all FUTURE new login users (assuming you make any)
+sudo mkdir /etc/skel/Desktop
+sudo cp ~/Firefox-Nightly.desktop /etc/skel/Desktop
 echo "Cleaning up after myself"
 rm ~/FirefoxNightly.tar.bz2
 rm ~/Firefox-Nightly.desktop
