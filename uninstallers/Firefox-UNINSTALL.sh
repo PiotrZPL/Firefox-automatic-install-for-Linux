@@ -6,6 +6,7 @@
 echo
 sudo rm -r -f  /opt/firefox/
 sudo rm -r -f /usr/share/applications/Firefox.desktop
+sudo rm -r -f /etc/skel/Desktop/Firefox.desktop
 rm -r -f /home/$USER/Desktop/Firefox.desktop
 #
 # Uncomment if you wish to also delete your configuration files too.
