@@ -6,6 +6,7 @@
 echo
 sudo rm -r -f  /opt/firefox-nightly/
 sudo rm -r -f /usr/share/applications/Firefox-Nightly.desktop
+sudo rm -r -f /etc/skel/Desktop/Firefox-Nightly.desktop
 rm -r -f /home/$USER/Desktop/Firefox-Nightly.desktop
 #
 # Uncomment if you wish to also delete your configuration files too.
