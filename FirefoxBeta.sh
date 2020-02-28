@@ -321,9 +321,20 @@ Name[zh_CN]=新建隐私浏览窗口
 Name[zh_TW]=新增隱私視窗
 Exec=/opt/firefox-beta/firefox/firefox --private-window %u --class FirefoxBeta" > Firefox-Beta.desktop
 echo -n
+chmod +x Firefox-Beta.desktop
 echo "Installing icons"
-cp ~/Firefox-Beta.desktop /home/$USER/Desktop
+# Adds icon to application menu (xfce, gnome, cinnamon, mate, deepin, etc...)
 sudo cp ~/Firefox-Beta.desktop /usr/share/applications
+echo -n
+# Copies desktop icon to all user desktops and grants them ownership (it is their desktop after all)
+for destdir in /home/*/Desktop/; do
+    cp Firefox-Beta.desktop "$destdir" &&
+    chown --reference="$destdir" "$destdir/Firefox-Beta.desktop"
+done
+echo -n
+# Adds a desktop icon to all FUTURE new login users (assuming you make any)
+sudo mkdir /etc/skel/Desktop
+sudo cp ~/Firefox-Beta.desktop /etc/skel/Desktop
 echo "Cleaning up after myself"
 rm ~/FirefoxBeta.tar.bz2
 rm ~/Firefox-Beta.desktop
