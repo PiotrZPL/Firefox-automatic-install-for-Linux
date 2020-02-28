@@ -2,10 +2,10 @@
 echo
 echo "Please wait. I am downloading the latest stable version of Firefox"  
 echo
-wget -O ~/FirefoxStable.tar.bz2 "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64"
+wget -O FirefoxStable.tar.bz2 "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64"
 echo
 echo "Installing Firefox"
-sudo tar xjf ~/FirefoxStable.tar.bz2 -C /opt/
+sudo tar xjf FirefoxStable.tar.bz2 -C /opt/
 echo "Applying update permissions"
 sudo chmod -R 777 /opt/firefox/
 echo "Creating icon"
@@ -323,7 +323,7 @@ echo -n
 chmod +x Firefox.desktop
 echo "Installing icons"
 # Adds icon to application menu (xfce, gnome, cinnamon, mate, deepin, etc...)
-sudo cp ~/Firefox.desktop /usr/share/applications
+sudo cp Firefox.desktop /usr/share/applications
 echo -n
 # Copies desktop icon to all user desktops and grants them ownership (it is their desktop after all)
 for destdir in /home/*/Desktop/; do
@@ -332,11 +332,11 @@ for destdir in /home/*/Desktop/; do
 done
 echo -n
 # Adds a desktop icon to all FUTURE new login users (assuming you make any)
-sudo mkdir /etc/skel/Desktop
-sudo cp ~/Firefox.desktop /etc/skel/Desktop
+sudo mkdir -p /etc/skel/Desktop
+sudo cp Firefox.desktop /etc/skel/Desktop
 echo "Cleaning up after myself"
-rm ~/FirefoxStable.tar.bz2
-rm ~/Firefox.desktop
+rm FirefoxStable.tar.bz2
+rm Firefox.desktop
 echo
 echo
 echo "Congratulations!"
