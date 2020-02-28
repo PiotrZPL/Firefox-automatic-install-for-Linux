@@ -6,6 +6,7 @@
 echo
 sudo rm -r -f  /opt/firefox-developer-edition/
 sudo rm -r -f /usr/share/applications/Firefox-Developer-Edition.desktop
+sudo rm -r -f /etc/skel/Desktop/Firefox-Developer-Edition.desktop
 rm -r -f /home/$USER/Desktop/Firefox-Developer-Edition.desktop
 #
 # Uncomment if you wish to also delete your configuration files too.
