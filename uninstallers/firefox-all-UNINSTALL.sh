@@ -4,15 +4,20 @@
 # That which is done. Cannot be undone. Reinstalled, of course! But not undone.
 #
 echo
-sudo rm -r -f  /opt/firefox/
-sudo rm -r -f  /opt/firefox-beta/
-sudo rm -r -f  /opt/firefox-developer-edition
-sudo rm -r -f  /opt/firefox-nightly/
+sudo rm -r -f /opt/firefox/
+sudo rm -r -f /opt/firefox-beta/
+sudo rm -r -f /opt/firefox-developer-edition
+sudo rm -r -f /opt/firefox-nightly/
 echo -n
 sudo rm -r -f /usr/share/applications/Firefox.desktop
 sudo rm -r -f /usr/share/applications/Firefox-Beta.desktop
 sudo rm -r -f /usr/share/applications/Firefox-Developer-Edition.desktop
 sudo rm -r -f /usr/share/applications/Firefox-Nightly.desktop
+echo -n
+sudo rm -r -f /etc/skel/Desktop/Firefox.desktop
+sudo rm -r -f /etc/skel/Desktop/Firefox-Beta.desktop
+sudo rm -r -f /etc/skel/Desktop/Firefox-Developer-Edition.desktop
+sudo rm -r -f /etc/skel/Desktop/Firefox-Nightly.desktop
 echo -n
 rm -r -f /home/$USER/Desktop/Firefox.desktop
 rm -r -f /home/$USER/Desktop/Firefox-Beta.desktop
