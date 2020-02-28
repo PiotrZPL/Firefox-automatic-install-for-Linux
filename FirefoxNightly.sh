@@ -326,7 +326,7 @@ echo "Installing icons"
 # Adds icon to application menu (xfce, gnome, cinnamon, mate, deepin, etc...)
 sudo cp ~/Firefox-Nightly.desktop /usr/share/applications
 echo -n
-# Copies desktop icon to all user desktops and granting them ownership (it is their desktop after all)
+# Copies desktop icon to all user desktops and grants them ownership (it is their desktop after all)
 for destdir in /home/*/Desktop/; do
     cp Firefox-Nightly.desktop "$destdir" &&
     chown --reference="$destdir" "$destdir/Firefox-Nightly.desktop"
