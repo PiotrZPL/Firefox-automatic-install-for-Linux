@@ -2,11 +2,11 @@
 echo
 echo "Please wait. I am downloading the latest version of Firefox Developer Edition"  
 echo
-wget -O ~/FirefoxDeveloperEdition.tar.bz2 "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64"
+wget -O FirefoxDeveloperEdition.tar.bz2 "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64"
 echo
 echo "Installing Firefox Developer Edition" 
 sudo mkdir /opt/firefox-developer-edition
-sudo tar xjf ~/FirefoxDeveloperEdition.tar.bz2 -C /opt/firefox-developer-edition/
+sudo tar xjf FirefoxDeveloperEdition.tar.bz2 -C /opt/firefox-developer-edition/
 echo "Applying update permissions"
 sudo chmod -R 777 /opt/firefox-developer-edition/firefox/
 echo "Creating icon"
@@ -324,7 +324,7 @@ echo -n
 chmod +x Firefox-Developer-Edition.desktop
 echo "Installing icons"
 # Adds icon to application menu (xfce, gnome, cinnamon, mate, deepin, etc...)
-sudo cp ~/Firefox-Developer-Edition.desktop /usr/share/applications
+sudo cp Firefox-Developer-Edition.desktop /usr/share/applications
 echo -n
 # Copies desktop icon to all user desktops and grants them ownership (it is their desktop after all)
 for destdir in /home/*/Desktop/; do
@@ -333,11 +333,11 @@ for destdir in /home/*/Desktop/; do
 done
 echo -n
 # Adds a desktop icon to all FUTURE new login users (assuming you make any)
-sudo mkdir /etc/skel/Desktop
-sudo cp ~/Firefox-Developer-Edition.desktop /etc/skel/Desktop
+sudo mkdir -p /etc/skel/Desktop
+sudo cp Firefox-Developer-Edition.desktop /etc/skel/Desktop
 echo "Cleaning up after myself"
-rm ~/FirefoxDeveloperEdition.tar.bz2
-rm ~/Firefox-Developer-Edition.desktop
+rm FirefoxDeveloperEdition.tar.bz2
+rm Firefox-Developer-Edition.desktop
 echo
 echo
 echo "Congratulations!"
