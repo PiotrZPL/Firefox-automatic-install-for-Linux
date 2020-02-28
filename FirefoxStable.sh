@@ -320,9 +320,20 @@ Name[zh_CN]=新建隐私浏览窗口
 Name[zh_TW]=新增隱私視窗
 Exec=/opt/firefox/firefox --private-window %u" > Firefox.desktop
 echo -n
+chmod +x Firefox.desktop
 echo "Installing icons"
-cp ~/Firefox.desktop /home/$USER/Desktop
+# Adds icon to application menu (xfce, gnome, cinnamon, mate, deepin, etc...)
 sudo cp ~/Firefox.desktop /usr/share/applications
+echo -n
+# Copies desktop icon to all user desktops and grants them ownership (it is their desktop after all)
+for destdir in /home/*/Desktop/; do
+    cp Firefox.desktop "$destdir" &&
+    chown --reference="$destdir" "$destdir/Firefox.desktop"
+done
+echo -n
+# Adds a desktop icon to all FUTURE new login users (assuming you make any)
+sudo mkdir /etc/skel/Desktop
+sudo cp ~/Firefox.desktop /etc/skel/Desktop
 echo "Cleaning up after myself"
 rm ~/FirefoxStable.tar.bz2
 rm ~/Firefox.desktop
