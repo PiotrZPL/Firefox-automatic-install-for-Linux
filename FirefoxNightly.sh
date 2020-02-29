@@ -8,7 +8,7 @@ echo "Installing Firefox Nightly"
 sudo mkdir /opt/firefox-nightly
 sudo tar xjf FirefoxNightly.tar.bz2 -C /opt/firefox-nightly/
 echo "Applying update permissions"
-sudo chmod -R 777 /opt/firefox-nightly/firefox/
+sudo chmod -R 757 /opt/firefox-nightly/firefox/
 echo "Creating icon"
 echo "[Desktop Entry]
 Name=Firefox Nightly
