@@ -8,7 +8,7 @@ echo "Installing Firefox Developer Edition"
 sudo mkdir /opt/firefox-developer-edition
 sudo tar xjf FirefoxDeveloperEdition.tar.bz2 -C /opt/firefox-developer-edition/
 echo "Applying update permissions"
-sudo chmod -R 777 /opt/firefox-developer-edition/firefox/
+sudo chmod -R 757 /opt/firefox-developer-edition/firefox/
 echo "Creating icon"
 echo "[Desktop Entry]
 Name=Firefox Developer Edition
