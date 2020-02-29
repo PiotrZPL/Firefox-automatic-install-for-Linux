@@ -14,7 +14,7 @@ rm -r -f /home/$USER/Desktop/Firefox-Beta.desktop
 # Or if your previous install(s) were bad due to bad configuration.
 #
 # rm -r -f /home/$USER/.mozilla/
-#
+# rm -r -f /home/$USER/.cache/mozilla/
 echo
 echo
 echo Thank you for using Mozilla Firefox.
