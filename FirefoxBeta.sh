@@ -8,7 +8,7 @@ echo "Installing Firefox Beta"
 sudo mkdir /opt/firefox-beta
 sudo tar xjf FirefoxBeta.tar.bz2 -C /opt/firefox-beta/
 echo "Applying update permissions"
-sudo chmod -R 777 /opt/firefox-beta/firefox/
+sudo chmod -R 757 /opt/firefox-beta/firefox/
 echo "Creating icon"
 echo "[Desktop Entry]
 Name=Firefox Beta
