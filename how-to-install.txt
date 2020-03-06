@@ -37,7 +37,18 @@ by using firefox-option.sh
 Congratulations you have successfully installed your edition of Firefox.
 
 
+
 Where did you get this?
 https://github.com/Linux-Is-Best/Firefox-automatic-install-for-Linux
 
 Linux is best (because it really is).
+
+
+Want to learn more?
+
+All the script files can be opened with a basic text editor.
+There you can review the code and learn how they work.
+
+For basic text editors, I recommend either "nano" via the terminal or "gedit" via your desktop.
+
+As always, happy browsing! :-)
