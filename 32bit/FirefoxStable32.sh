@@ -5,9 +5,9 @@ echo
 wget -O FirefoxStable32.tar.bz2 "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux"
 echo
 echo "Installing Firefox"
-sudo tar xjf FirefoxStable32.tar.bz2 -C /opt/
+sudo tar xjf FirefoxStable32.tar.bz2 -C /opt/firefox-32bit/
 echo "Applying update permissions"
-sudo chmod -R 757 /opt/firefox-32-bit/
+sudo chmod -R 757 /opt/firefox-32bit/
 echo "Creating icon"
 echo "[Desktop Entry]
 Name=Firefox
@@ -93,8 +93,8 @@ Comment[uk]=Перегляд сторінок Інтернету
 Comment[vi]=Để duyệt các trang web
 Comment[zh_CN]=浏览互联网
 Comment[zh_TW]=瀏覽網際網路
-Exec=/opt/firefox-32-bit/firefox %u
-Icon=/opt/firefox-32-bit/browser/chrome/icons/default/default128.png
+Exec=/opt/firefox-32bit/firefox %u
+Icon=/opt/firefox-32bit/browser/chrome/icons/default/default128.png
 Terminal=false
 Type=Application
 MimeType=text/html;text/xml;application/xhtml+xml;application/vnd.mozilla.xul+xml;text/mml;x-scheme-handler/http;x-scheme-handler/https;
@@ -210,7 +210,7 @@ Name[wo]=Palanteer bu bees
 Name[xh]=Ifestile entsha
 Name[zh_CN]=新建窗口
 Name[zh_TW]=開新視窗
-Exec=/opt/firefox-32-bit/firefox --new-window %u
+Exec=/opt/firefox-32bit/firefox --new-window %u
 
 [Desktop Action new-private-window]
 Name=New Private Window
@@ -318,7 +318,7 @@ Name[wo]=Panlanteeru biir bu bees
 Name[xh]=Ifestile yangasese entsha
 Name[zh_CN]=新建隐私浏览窗口
 Name[zh_TW]=新增隱私視窗
-Exec=/opt/firefox-32-bit/firefox --private-window %u" > Firefox.desktop
+Exec=/opt/firefox-32bit/firefox --private-window %u" > Firefox.desktop
 echo -n
 chmod +x Firefox.desktop
 echo "Installing icons"
