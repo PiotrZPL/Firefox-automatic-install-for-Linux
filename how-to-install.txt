@@ -9,7 +9,7 @@ You will also need TAR or UNTAR installed. - To decompress .tar.bz2 file
 All of which are usually pre-installed and configured in all major mainstream Linux distros.
 
 Decide if you wish to install Firefox (stable), Firefox beta, Firefox Developer Editions, Firefox Nightly,
-or Firefox ESR. You also have the option to install ALL editions of Mozilla Firefox (details below).
+or Firefox ESR (Extended Support Release). You also have the option to install ALL editions of Mozilla Firefox (details below).
 
 Run the following command followed by the edition of your choice. 
 
