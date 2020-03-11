@@ -93,7 +93,7 @@ Comment[uk]=Перегляд сторінок Інтернету
 Comment[vi]=Để duyệt các trang web
 Comment[zh_CN]=浏览互联网
 Comment[zh_TW]=瀏覽網際網路
-Exec=/opt/firefox-32bit/firefox %u
+Exec=/opt/firefox-32bit/firefox %u --class Firefox32
 Icon=/opt/firefox-32bit/browser/chrome/icons/default/default128.png
 Terminal=false
 Type=Application
@@ -210,7 +210,7 @@ Name[wo]=Palanteer bu bees
 Name[xh]=Ifestile entsha
 Name[zh_CN]=新建窗口
 Name[zh_TW]=開新視窗
-Exec=/opt/firefox-32bit/firefox --new-window %u
+Exec=/opt/firefox-32bit/firefox --new-window %u --class Firefox32
 
 [Desktop Action new-private-window]
 Name=New Private Window
@@ -318,7 +318,7 @@ Name[wo]=Panlanteeru biir bu bees
 Name[xh]=Ifestile yangasese entsha
 Name[zh_CN]=新建隐私浏览窗口
 Name[zh_TW]=新增隱私視窗
-Exec=/opt/firefox-32bit/firefox --private-window %u" > Firefox.desktop
+Exec=/opt/firefox-32bit/firefox --private-window %u --class Firefox32" > Firefox.desktop
 echo -n
 chmod +x Firefox.desktop
 echo "Installing icons"
