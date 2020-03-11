@@ -1,0 +1,24 @@
+If you are a basic home end-user none of this should be terribly important to you 
+and you can safely ignore this document.  Your primary focus should be how-to-install.txt 
+
+The 32-bit editions of Firefox are primarily focused on older systems with 32-bit OS's (operating systems) in mind. 
+For normal end-user usage, you need only pick between 32-bit or 64-bit (not both).
+
+#
+#
+#
+#
+
+Attention developers and Mozilla Firefox enthusiast:
+
+YES, you can technically install the 32-bit editions alongside the 64-bit editions as they use different paths.  
+They should also register as different classes in your logs or via system resource management such as top or htop.
+
+FirefoxNightly = 64-bit
+FirefoxNightly32 = 32-bit
+
+You will, however, need to EDIT the script manually to rename the shortcuts.  
+
+This development is primarily to make things easier for newbies and having a 
+shortcut called, "Firefox Nightly 32" (for example) just seemed tacky for the end-user experience.  
+But if your goal as a developer is multi-platform and bit support; you are likely used to the idea of redundancies.
