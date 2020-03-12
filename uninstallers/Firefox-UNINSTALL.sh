@@ -1,6 +1,5 @@
 #!/bin/bash
 #
-# With great power there must also come great responsibility.
 # That which is done. Cannot be undone. Reinstalled, of course! But not undone.
 #
 echo
