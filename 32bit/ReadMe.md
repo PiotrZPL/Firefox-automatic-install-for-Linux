@@ -1,6 +1,8 @@
 Hello 32-bit Linux user.
 
-Using an older computer? Still on an older 32-bit OS (operating system)? Have a love of 32-bit applications?
+Using an older computer? 
+Still on an older 32-bit OS (operating system)?
+Have a love of 32-bit applications?
 
 No problem. This folder contains all the scripts needed for 32-bit editions of Firefox. Follow the same instructions found within how-to-install.txt
 
