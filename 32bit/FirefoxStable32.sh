@@ -8,7 +8,7 @@ echo "Installing Firefox"
 sudo mkdir /opt/firefox-32bit
 sudo tar xjf FirefoxStable32.tar.bz2 -C /opt/firefox-32bit/
 echo "Applying update permissions"
-sudo chmod -R 757 /opt/firefox-32bit/
+sudo chmod -R 757 /opt/firefox-32bit/firefox/
 echo "Creating icon"
 echo "[Desktop Entry]
 Name=Firefox
