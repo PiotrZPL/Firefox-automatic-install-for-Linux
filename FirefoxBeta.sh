@@ -4,7 +4,8 @@ echo "Please wait. I am downloading the latest version of Firefox Beta"
 echo
 wget -O FirefoxBeta.tar.bz2 "https://download.mozilla.org/?product=firefox-beta-latest-ssl&os=linux64"
 echo
-echo "Installing Firefox Beta" 
+echo "Installing Firefox Beta"
+sudo mkdir -p -m 755 /opt
 sudo mkdir /opt/firefox-beta
 sudo tar xjf FirefoxBeta.tar.bz2 -C /opt/firefox-beta/
 echo "Applying update permissions"
