@@ -4,7 +4,8 @@ echo "Please wait. I am downloading the latest version of Firefox Nightly"
 echo
 wget -O FirefoxNightly32.tar.bz2 "https://download.mozilla.org/?product=firefox-nightly-latest-ssl&os=linux"
 echo
-echo "Installing Firefox Nightly" 
+echo "Installing Firefox Nightly"
+sudo mkdir -p -m 755 /opt
 sudo mkdir /opt/firefox-nightly-32bit
 sudo tar xjf FirefoxNightly32.tar.bz2 -C /opt/firefox-nightly-32bit/
 echo "Applying update permissions"
