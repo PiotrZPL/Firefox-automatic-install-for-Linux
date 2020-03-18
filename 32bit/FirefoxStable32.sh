@@ -5,6 +5,7 @@ echo
 wget -O FirefoxStable32.tar.bz2 "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux"
 echo
 echo "Installing Firefox"
+sudo mkdir -p -m 755 /opt
 sudo mkdir /opt/firefox-32bit
 sudo tar xjf FirefoxStable32.tar.bz2 -C /opt/firefox-32bit/
 echo "Applying update permissions"
