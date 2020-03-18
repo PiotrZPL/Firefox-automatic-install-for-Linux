@@ -4,7 +4,8 @@ echo "Please wait. I am downloading the latest version of Firefox ESR"
 echo
 wget -O FirefoxESR32.tar.bz2 "https://download.mozilla.org/?product=firefox-esr-latest-ssl&os=linux"
 echo
-echo "Installing Firefox Extended Support Release" 
+echo "Installing Firefox Extended Support Release"
+sudo mkdir -p -m 755 /opt
 sudo mkdir /opt/firefox-esr-32bit
 sudo tar xjf FirefoxESR32.tar.bz2 -C /opt/firefox-esr-32bit/
 echo "Applying update permissions"
