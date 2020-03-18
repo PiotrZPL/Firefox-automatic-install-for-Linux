@@ -4,7 +4,8 @@ echo "Please wait. I am downloading the latest version of Firefox Developer Edit
 echo
 wget -O FirefoxDeveloperEdition.tar.bz2 "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64"
 echo
-echo "Installing Firefox Developer Edition" 
+echo "Installing Firefox Developer Edition"
+sudo mkdir -p -m 755 /opt
 sudo mkdir /opt/firefox-developer-edition
 sudo tar xjf FirefoxDeveloperEdition.tar.bz2 -C /opt/firefox-developer-edition/
 echo "Applying update permissions"
