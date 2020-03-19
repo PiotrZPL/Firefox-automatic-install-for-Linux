@@ -2,17 +2,20 @@
 #
 # That which is done. Cannot be undone. Reinstalled, of course! But not undone.
 #
-echo
-sudo rm -r -f  /opt/firefox-32bit/
-#
 # As noted in dev-doc.txt if you are a developer or enthusiast 
 # who installed BOTH the standard editions and 32-bit editions 
-# side by side you will, of course, need to edit and match the shortcuts.
+# You will, of course, need to edit and match the shortcuts with your intstall.
 #
 # Normal home end-users who have NOT installed both need not worry.
 #
+echo
+# Installation
+sudo rm -r -f  /opt/firefox-32bit/
+# Menu shortcuts
 sudo rm -r -f /usr/share/applications/Firefox.desktop
+# Desktop shortcuts
 sudo rm -r -f /etc/skel/Desktop/Firefox.desktop
+# Current desktop shortcuts
 rm -r -f /home/$USER/Desktop/Firefox.desktop
 #
 # Uncomment if you wish to also delete your configuration files too.
