@@ -2,15 +2,23 @@
 echo
 echo "Please wait. I am downloading the latest version of Firefox Nightly"  
 echo
+# 4-second wait before beginning download. 
+# Gives user time to read the above sentence and understand what is happening
+sleep 4
+# Download
 wget -O FirefoxNightly.tar.bz2 "https://download.mozilla.org/?product=firefox-nightly-latest-ssl&os=linux64"
 echo
+echo
 echo "Installing Firefox Nightly"
+# Checks if distro has default opt path and if not found adds opt with default permissions
 sudo mkdir -p -m 755 /opt
+# Path where to be installed
 sudo mkdir /opt/firefox-nightly
+# Extracts to install path
 sudo tar xjf FirefoxNightly.tar.bz2 -C /opt/firefox-nightly/
-echo "Applying update permissions"
+# Permissions needed for Mozilla Firefox automatic update feature to be enabled and work
 sudo chmod -R 757 /opt/firefox-nightly/firefox/
-echo "Creating icon"
+# Creating icon
 echo "[Desktop Entry]
 Name=Firefox Nightly
 GenericName=Web Browser
@@ -322,11 +330,10 @@ Name[zh_CN]=新建隐私浏览窗口
 Name[zh_TW]=新增隱私視窗
 Exec=/opt/firefox-nightly/firefox/firefox --private-window %u --class FirefoxNightly" > Firefox-Nightly.desktop
 echo -n
+# Makes icon executable allowing it run Firefox (which is also executable)
 chmod +x Firefox-Nightly.desktop
-echo "Installing icons"
 # Adds icon to application menu (xfce, gnome, cinnamon, mate, deepin, etc...)
 sudo cp Firefox-Nightly.desktop /usr/share/applications
-echo -n
 # Copies desktop icon to all user desktops and grants them ownership (it is their desktop after all)
 for destdir in /home/*/Desktop/; do
     cp Firefox-Nightly.desktop "$destdir" &&
@@ -336,9 +343,11 @@ echo -n
 # Adds a desktop icon to all FUTURE new login users (assuming you make any)
 sudo mkdir -p /etc/skel/Desktop
 sudo cp Firefox-Nightly.desktop /etc/skel/Desktop
+# Removes the temporary files no longer needed
 echo "Cleaning up after myself"
 rm FirefoxNightly.tar.bz2
 rm Firefox-Nightly.desktop
+# Exit notice.
 echo
 echo
 echo "Congratulations!"
