@@ -3,9 +3,13 @@
 # That which is done. Cannot be undone. Reinstalled, of course! But not undone.
 #
 echo
+# Installation
 sudo rm -r -f  /opt/firefox-nightly/
+# Menu shortcuts
 sudo rm -r -f /usr/share/applications/Firefox-Nightly.desktop
+# Destkop shortcuts
 sudo rm -r -f /etc/skel/Desktop/Firefox-Nightly.desktop
+# Current desktop shotcuts
 rm -r -f /home/$USER/Desktop/Firefox-Nightly.desktop
 #
 # Uncomment if you wish to also delete your configuration files too.
