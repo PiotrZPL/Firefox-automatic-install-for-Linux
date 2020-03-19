@@ -344,7 +344,6 @@ echo -n
 sudo mkdir -p /etc/skel/Desktop
 sudo cp Firefox-Nightly.desktop /etc/skel/Desktop
 # Removes the temporary files no longer needed
-echo "Cleaning up after myself"
 rm FirefoxNightly.tar.bz2
 rm Firefox-Nightly.desktop
 # Exit notice.
