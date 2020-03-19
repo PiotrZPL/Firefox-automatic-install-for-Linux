@@ -3,9 +3,13 @@
 # That which is done. Cannot be undone. Reinstalled, of course! But not undone.
 #
 echo
+# Installation
 sudo rm -r -f  /opt/firefox-beta/
+# Menu shortcuts
 sudo rm -r -f /usr/share/applications/Firefox-Beta.desktop
+# Desktop shortcuts
 sudo rm -r -f /etc/skel/Desktop/Firefox-Beta.desktop
+# Current desktop shortcuts
 rm -r -f /home/$USER/Desktop/Firefox-Beta.desktop
 #
 # Uncomment if you wish to also delete your configuration files too.
