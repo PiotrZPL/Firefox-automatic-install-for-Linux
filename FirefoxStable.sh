@@ -1,15 +1,24 @@
 #!/bin/bash  
 echo
+# Wait for download notice
 echo "Please wait. I am downloading the latest stable version of Firefox"  
 echo
+# 4-second wait before beginning download. 
+# Gives user time to read the above sentence and understand what is happening
+sleep 4
+# Download
 wget -O FirefoxStable.tar.bz2 "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64"
 echo
+echo
+# Begin install notice
 echo "Installing Firefox"
+# Checks if distro has default opt path and if not found adds opt with default permissions
 sudo mkdir -p -m 755 /opt
+# Extracts to install path
 sudo tar xjf FirefoxStable.tar.bz2 -C /opt/
-echo "Applying update permissions"
+# Required permissions needed for Mozilla Firefox automatic update feature to work
 sudo chmod -R 757 /opt/firefox/
-echo "Creating icon"
+# Creating icon
 echo "[Desktop Entry]
 Name=Firefox
 GenericName=Web Browser
@@ -321,11 +330,10 @@ Name[zh_CN]=新建隐私浏览窗口
 Name[zh_TW]=新增隱私視窗
 Exec=/opt/firefox/firefox --private-window %u" > Firefox.desktop
 echo -n
+# Makes icon executable allowing it to run Firefox (which is also executable)
 chmod +x Firefox.desktop
-echo "Installing icons"
 # Adds icon to application menu (xfce, gnome, cinnamon, mate, deepin, etc...)
 sudo cp Firefox.desktop /usr/share/applications
-echo -n
 # Copies desktop icon to all user desktops and grants them ownership (it is their desktop after all)
 for destdir in /home/*/Desktop/; do
     cp Firefox.desktop "$destdir" &&
@@ -335,9 +343,10 @@ echo -n
 # Adds a desktop icon to all FUTURE new login users (assuming you make any)
 sudo mkdir -p /etc/skel/Desktop
 sudo cp Firefox.desktop /etc/skel/Desktop
-echo "Cleaning up after myself"
+# Removes the temporary files no longer needed
 rm FirefoxStable.tar.bz2
 rm Firefox.desktop
+# Exit notice
 echo
 echo
 echo "Congratulations!"
