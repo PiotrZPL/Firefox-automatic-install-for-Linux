@@ -3,9 +3,13 @@
 # That which is done. Cannot be undone. Reinstalled, of course! But not undone.
 #
 echo
+# Installation
 sudo rm -r -f  /opt/firefox-developer-edition/
+# Menu shotcuts
 sudo rm -r -f /usr/share/applications/Firefox-Developer-Edition.desktop
+# Desktop shotcuts
 sudo rm -r -f /etc/skel/Desktop/Firefox-Developer-Edition.desktop
+# Current shortcuts
 rm -r -f /home/$USER/Desktop/Firefox-Developer-Edition.desktop
 #
 # Uncomment if you wish to also delete your configuration files too.
