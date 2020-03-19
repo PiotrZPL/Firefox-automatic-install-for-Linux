@@ -332,7 +332,7 @@ Name[zh_CN]=新建隐私浏览窗口
 Name[zh_TW]=新增隱私視窗
 Exec=/opt/firefox-nightly/firefox/firefox --private-window %u --class FirefoxNightly" > Firefox-Nightly.desktop
 echo -n
-# Makes icon executable allowing it run Firefox (which is also executable)
+# Makes icon executable allowing it to run Firefox (which is also executable)
 chmod +x Firefox-Nightly.desktop
 # Adds icon to application menu (xfce, gnome, cinnamon, mate, deepin, etc...)
 sudo cp Firefox-Nightly.desktop /usr/share/applications
