@@ -1,5 +1,6 @@
 #!/bin/bash  
 echo
+# Wait for download notice
 echo "Please wait. I am downloading the latest version of Firefox Nightly"  
 echo
 # 4-second wait before beginning download. 
@@ -9,6 +10,7 @@ sleep 4
 wget -O FirefoxNightly.tar.bz2 "https://download.mozilla.org/?product=firefox-nightly-latest-ssl&os=linux64"
 echo
 echo
+# Begin install notice
 echo "Installing Firefox Nightly"
 # Checks if distro has default opt path and if not found adds opt with default permissions
 sudo mkdir -p -m 755 /opt
@@ -16,7 +18,7 @@ sudo mkdir -p -m 755 /opt
 sudo mkdir /opt/firefox-nightly
 # Extracts to install path
 sudo tar xjf FirefoxNightly.tar.bz2 -C /opt/firefox-nightly/
-# Permissions needed for Mozilla Firefox automatic update feature to be enabled and work
+# Required permissions needed for Mozilla Firefox automatic update feature to work
 sudo chmod -R 757 /opt/firefox-nightly/firefox/
 # Creating icon
 echo "[Desktop Entry]
@@ -346,7 +348,7 @@ sudo cp Firefox-Nightly.desktop /etc/skel/Desktop
 # Removes the temporary files no longer needed
 rm FirefoxNightly.tar.bz2
 rm Firefox-Nightly.desktop
-# Exit notice.
+# Exit notice
 echo
 echo
 echo "Congratulations!"
