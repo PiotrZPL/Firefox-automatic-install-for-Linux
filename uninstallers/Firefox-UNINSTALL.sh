@@ -3,9 +3,13 @@
 # That which is done. Cannot be undone. Reinstalled, of course! But not undone.
 #
 echo
+# Installation
 sudo rm -r -f  /opt/firefox/
+# Menu shortcuts
 sudo rm -r -f /usr/share/applications/Firefox.desktop
+# Desktop shortcuts
 sudo rm -r -f /etc/skel/Desktop/Firefox.desktop
+# Current desktop shortcuts
 rm -r -f /home/$USER/Desktop/Firefox.desktop
 #
 # Uncomment if you wish to also delete your configuration files too.
