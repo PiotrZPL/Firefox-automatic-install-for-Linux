@@ -3,9 +3,10 @@
 # This will uninstall and remove ALL editions of Firefox 32-bit. Use with care.
 # That which is done. Cannot be undone. Reinstalled, of course! But not undone.
 #
+#
 # As noted in dev-doc.txt if you are a developer or enthusiast 
 # who installed BOTH the standard editions and 32-bit editions 
-# side by side you will, of course, need to edit and match the shortcuts.
+# You will, of course, need to edit and match the shortcuts with your intstall.
 #
 # Normal home end-users who have NOT installed both need not worry.
 #
