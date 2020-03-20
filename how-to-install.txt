@@ -2,14 +2,15 @@ New to Linux? Not a problem. - Welcome to Linux!
 
 Basic requirement:
 
-You will need to have access to SUDO. - For installation
-You will also need WGET installed. - For the original Firefox download
-You will also need TAR or UNTAR installed. - To decompress .tar.bz2 file
+# You will need to have access to SUDO. = For installation
+# You will also need WGET installed. = For the original Firefox download
+# You will also need TAR or UNTAR installed. = To decompress .tar.bz2 file
 
 All of which are usually pre-installed and configured in all major mainstream Linux distros.
 
-Decide if you wish to install Firefox (stable), Firefox beta, Firefox Developer Editions, Firefox Nightly,
-or Firefox ESR (Extended Support Release). You also have the option to install ALL editions of Mozilla Firefox (details below).
+Decide if you wish to install 64-bit or 32-bit of Firefox (stable), Firefox beta, Firefox Developer Editions, 
+Firefox Nightly, or Firefox ESR (Extended Support Release). You also have the option to install 
+ALL editions of Mozilla Firefox (details below).
 
 Run the following command followed by the edition of your choice. 
 
