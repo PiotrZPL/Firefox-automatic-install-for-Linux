@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# This will install ALL editions of Mozilla Firefox
+# This will install ALL editions of Mozilla Firefox (64-bit)
 # This is only an option.
 #
 # Firefox Stable Edition  ( FirefoxStable.sh )
