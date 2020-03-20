@@ -1,4 +1,3 @@
-
 #!/bin/bash
 #
 # This will install ALL editions of Mozilla Firefox 32-bit
