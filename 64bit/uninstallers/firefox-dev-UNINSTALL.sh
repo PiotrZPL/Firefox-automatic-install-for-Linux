@@ -3,6 +3,10 @@
 # That which is done. Cannot be undone. Reinstalled, of course! But not undone.
 #
 echo
+# Uninstalling Firefox notice
+echo Uninstalling Firefox (developer edition)
+echo
+echo
 # Installation
 sudo rm -r -f  /opt/firefox-developer-edition/
 # Menu shotcuts
