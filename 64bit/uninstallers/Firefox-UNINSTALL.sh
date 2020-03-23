@@ -4,7 +4,8 @@
 #
 echo
 # Uninstalling Firefox notice
-echo Uninstall Firefox (stable edition)
+echo Uninstalling Firefox (stable edition)
+echo
 echo
 # Installation
 sudo rm -r -f  /opt/firefox/
