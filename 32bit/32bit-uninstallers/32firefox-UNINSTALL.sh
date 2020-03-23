@@ -9,6 +9,10 @@
 # Normal home end-users who have NOT installed both need not worry.
 #
 echo
+# Uninstalling Firefox notice
+echo 'Uninstalling Firefox (stable edition)'
+echo
+echo
 # Installation
 sudo rm -r -f  /opt/firefox-32bit/
 # Menu shortcuts
