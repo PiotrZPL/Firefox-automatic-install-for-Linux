@@ -4,7 +4,7 @@
 #
 echo
 # Uninstalling Firefox notice
-echo Uninstalling Firefox (esr - extended support release edition)
+echo 'Uninstalling Firefox (esr - extended support release edition)'
 echo
 echo
 # Installation
