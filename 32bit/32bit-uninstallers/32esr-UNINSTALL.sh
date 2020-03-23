@@ -9,6 +9,10 @@
 # Normal home end-users who have NOT installed both need not worry.
 #
 echo
+# Uninstalling Firefox notice
+echo 'Uninstalling Firefox (esr - extended support release edition)'
+echo
+echo
 # Installation
 sudo rm -r -f  /opt/firefox-esr-32bit/
 # Menu shortcuts
