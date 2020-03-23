@@ -3,6 +3,9 @@
 # That which is done. Cannot be undone. Reinstalled, of course! But not undone.
 #
 echo
+# Uninstalling Firefox notice
+echo Uninstall Firefox (stable edition)
+echo
 # Installation
 sudo rm -r -f  /opt/firefox/
 # Menu shortcuts
