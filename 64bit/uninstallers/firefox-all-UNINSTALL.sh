@@ -4,6 +4,10 @@
 # That which is done. Cannot be undone. Reinstalled, of course! But not undone.
 #
 echo
+# Uninstalling Firefox notice
+echo Uninstalling ALL edtions of Firefox
+echo
+echo
 # Installation
 sudo rm -r -f /opt/firefox/
 sudo rm -r -f /opt/firefox-beta/
