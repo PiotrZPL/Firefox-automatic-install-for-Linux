@@ -4,7 +4,7 @@
 #
 echo
 # Uninstalling Firefox notice
-echo Uninstalling Firefox (developer edition)
+echo 'Uninstalling Firefox (developer edition)'
 echo
 echo
 # Installation
