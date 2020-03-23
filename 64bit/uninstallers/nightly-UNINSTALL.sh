@@ -3,6 +3,10 @@
 # That which is done. Cannot be undone. Reinstalled, of course! But not undone.
 #
 echo
+# Uninstalling Firefox notice
+echo Uninstalling Firefox (nightly edition)
+echo
+echo
 # Installation
 sudo rm -r -f  /opt/firefox-nightly/
 # Menu shortcuts
