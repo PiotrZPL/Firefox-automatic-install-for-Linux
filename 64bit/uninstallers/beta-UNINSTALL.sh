@@ -4,7 +4,7 @@
 #
 echo
 # Uninstalling Firefox notice
-echo Uninstalling Firefox (beta edition)
+echo 'Uninstalling Firefox (beta edition)'
 echo
 echo
 # Installation
