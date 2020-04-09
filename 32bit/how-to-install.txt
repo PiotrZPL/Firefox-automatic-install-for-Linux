@@ -41,6 +41,7 @@ Congratulations you have successfully installed your edition of Firefox.
 
 Where did you get this?
 https://github.com/Linux-Is-Best/Firefox-automatic-install-for-Linux
+https://gitlab.com/Linux-Is-Best/Firefox-automatic-install-for-Linux
 
 Linux is best (because it really is).
 
