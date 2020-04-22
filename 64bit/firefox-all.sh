@@ -9,9 +9,8 @@
 # Firefox Nightly ( FirefoxNightly.sh )
 # Firefox Extended Support Release ( FirefoxESR.sh )
 #
-#
-echo
-chmod +x FirefoxStable.sh FirefoxBeta.sh Firefox-Developer-Edition.sh FirefoxNightly.sh FirefoxESR.sh
+# chmod +x FirefoxStable.sh FirefoxBeta.sh Firefox-Developer-Edition.sh FirefoxNightly.sh FirefoxESR.sh
+# 
 echo
  while true; do
     read -p "This will install ALL editions of Mozilla Firefox onto your computer.
@@ -30,7 +29,7 @@ the latest stable version of Firefox you can simply run FirefoxStable.sh
 Are you sure wish to install ALL editions of Mozilla Firefox 
 onto your computer?" yn
     case $yn in
-        [Yy]* ) ./FirefoxStable.sh; ./FirefoxBeta.sh; ./Firefox-Developer-Edition.sh; ./FirefoxNightly.sh; ./FirefoxESR.sh; echo; echo; echo ALL editions of Mozilla Firfox have been installed; echo  They ALL will update themselves. No additional action is required.; echo; echo Happy Browsing!; echo; break;;
+        [Yy]* ) chmod +x FirefoxStable.sh FirefoxBeta.sh Firefox-Developer-Edition.sh FirefoxNightly.sh FirefoxESR.sh; ./FirefoxStable.sh; ./FirefoxBeta.sh; ./Firefox-Developer-Edition.sh; ./FirefoxNightly.sh; ./FirefoxESR.sh; echo; echo; echo ALL editions of Mozilla Firfox have been installed; echo  They ALL will update themselves. No additional action is required.; echo; echo Happy Browsing!; echo; break;;
         [Nn]* ) exit;;
         * ) echo "Please answer yes or no.";;
     esac
