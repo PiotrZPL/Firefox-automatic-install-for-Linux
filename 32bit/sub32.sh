@@ -1,11 +1,9 @@
 #!/bin/bash
 #
-#
 # This file to be used with Install.sh
 #
-#
  PS3='Please enter your choice:' 
- options=("Firefox" "Firefox Beta" "Firefox Developer Edition" "Firefox Nighty" "Firefox Extended Support Release" "Quit")
+ options=("Firefox" "Firefox Beta" "Firefox Developer Edition" "Firefox Nightly" "Firefox Extended Support Release" "Quit")
  while :
  do
  select opt in "${options[@]}"
@@ -17,7 +15,7 @@
   "Firefox Nightly") clear; echo; echo; echo "You selected Firefox Nightly"; echo; echo; chmod +x ./32bit/FirefoxNightly32.sh; ./32bit/FirefoxNightly32.sh; break ;;
   "Firefox Extended Support Release") clear; echo; echo; echo "You selected Firefox Extended Support Release"; echo; echo; chmod +x ./32bit/FirefoxESR32.sh; ./32bit/FirefoxESR32.sh; break ;;
   "Quit") exit 0 ;;
-   *) echo "invalid option $REPLY" ; break ;;
+   *) echo "invalid option $REPLY"; break ;;
    esac
   done
   done
