@@ -1,24 +1,26 @@
-Run the following command followed by the edition of your choice. 
+Run the following command to choose which edition of Firefox 32-bit
+you would like to uninstall from your computer.
 
-chmod +x script-name-here.sh
+chmod +x Uninstall32.sh
 
 This will make the script executable (allowing it to run).  
-Next, execute the script of your choice by typing one of the following.
+Next, execute the script by typing one of the following.
 
-./script-name-here.sh
+   ./Uninstall32.sh
  
 -- OR --
  
-sh script-name-here.sh
+   sh Uninstall32.sh
 
 -- OR --
 
-bash script-name-here.sh
+   bash Uninstall32.sh
 
 You will be prompt to enter your password (for SUDO) to continue with the uninstall.
+Or if you previously installed ALL editions and wish to remove ALL editions 
+simply use 32firefox-all-UNINSTALL.sh
 
 
 Thank you for using Mozilla Firefox.
 Really sorry to see you go.
 Hope to see you again real soon.
-
