@@ -7,8 +7,6 @@
 # Firefox Developer Edition ( Firefox-Developer-Edition.sh )
 # Firefox Nightly ( FirefoxNightly.sh )
 # Firefox Extended Support Release ( FirefoxESR.sh )
-#
-# chmod +x FirefoxStable.sh FirefoxBeta.sh Firefox-Developer-Edition.sh FirefoxNightly.sh FirefoxESR.sh
 echo
  while true; do
     read -p "This will install ALL editions of Mozilla Firefox onto your computer.
