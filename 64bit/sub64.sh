@@ -3,7 +3,7 @@
 # This file to be used with Install.sh
 #
  PS3='Please enter your choice:' 
- options=("Firefox" "Firefox Beta" "Firefox Developer Edition" "Firefox Nighty" "Firefox Extended Support Release" "Quit")
+ options=("Firefox" "Firefox Beta" "Firefox Developer Edition" "Firefox Nightly" "Firefox Extended Support Release" "Quit")
  while :
  do
  select opt in "${options[@]}"
