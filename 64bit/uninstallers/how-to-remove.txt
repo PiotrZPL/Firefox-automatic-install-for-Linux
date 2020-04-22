@@ -12,10 +12,9 @@ Next, execute the script by typing one of the following.
 
    bash Uninstall.sh
 
-You will be prompt to enter your password (for SUDO) to continue with the uninstall.
+You will be prompt to enter your password (SUDO) to continue with the uninstall.
 Or if you previously installed ALL editions and wish to remove ALL editions 
 simply use firefox-all-UNINSTALL.sh
-
 
 Thank you for using Mozilla Firefox.
 Really sorry to see you go.
