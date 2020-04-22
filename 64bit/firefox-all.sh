@@ -1,7 +1,6 @@
 #!/bin/bash
 #
 # This will install ALL editions of Mozilla Firefox (64-bit)
-# This is only an option.
 #
 # Firefox Stable Edition  ( FirefoxStable.sh )
 # Firefox Beta ( FirefoxBeta.sh )
@@ -10,7 +9,6 @@
 # Firefox Extended Support Release ( FirefoxESR.sh )
 #
 # chmod +x FirefoxStable.sh FirefoxBeta.sh Firefox-Developer-Edition.sh FirefoxNightly.sh FirefoxESR.sh
-# 
 echo
  while true; do
     read -p "This will install ALL editions of Mozilla Firefox onto your computer.
