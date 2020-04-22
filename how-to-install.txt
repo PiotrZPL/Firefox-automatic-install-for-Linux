@@ -10,7 +10,7 @@ major mainstream Linux distros.
 Decide if you wish to install 64-bit or 32-bit of Firefox. 
 You also have the option to install ALL editions of Firefox (details below).
 
-Run the following command. 
+Run the following command:
 
 chmod +x Install.sh
 
@@ -18,7 +18,7 @@ This will make the script executable (allowing it to run).
 Next, execute the script by typing one of the following.
 
    ./Install.sh
-   
+
 -- OR --
 
    bash Install.sh
