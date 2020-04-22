@@ -20,10 +20,6 @@ This will make the script executable (allowing it to run).
 Next, execute the script by typing one of the following.
 
    ./Install.sh
- 
--- OR --
- 
-   sh Install.sh
 
 -- OR --
 
