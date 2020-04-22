@@ -1,7 +1,5 @@
 #!/bin/bash
 #
-# That which is done. Cannot be undone. Reinstalled, of course! But not undone.
-#
 # As noted in dev-doc.txt if you are a developer or enthusiast 
 # who installed BOTH the standard editions and 32-bit editions 
 # You will, of course, need to edit and match the shortcuts with your intstall.
@@ -22,7 +20,7 @@ sudo rm -r -f /etc/skel/Desktop/Firefox-ESR.desktop
 # Current desktop shortcuts
 rm -r -f /home/$USER/Desktop/Firefox-ESR.desktop
 #
-# Uncomment if you wish to also delete your configuration files too.
+# Uncomment if you wish to also delete your configuration and profile files.
 # You should only do so if you have NO other installs of Firefox installed
 # Or if your previous install(s) were bad due to bad configuration.
 #
