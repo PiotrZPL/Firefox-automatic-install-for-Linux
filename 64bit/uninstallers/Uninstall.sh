@@ -1,8 +1,6 @@
 #!/bin/bash
 #
-#
 # That which is done, cannot be undone. Reinstalled, of course! But not undone.
-#
 #
  PS3='Please enter your choice:' 
  options=("Firefox" "Firefox Beta" "Firefox Developer Edition" "Firefox Nightly" "Firefox Extended Support Release" "Quit")
@@ -17,7 +15,7 @@
   "Firefox Nightly") clear; echo; echo; echo "You selected Firefox Nightly"; echo; echo; chmod +x ./nightly-UNINSTALL.sh; ./nightly-UNINSTALL.sh; break ;;
   "Firefox Extended Support Release") clear; echo; echo; echo "You selected Firefox Extended Support Release"; echo; echo; chmod +x ./esr-UNINSTALL.sh; ./esr-UNINSTALL.sh; break ;;
   "Quit") exit 0 ;;
-   *) echo "invalid option $REPLY" ; break ;;
+   *) echo "invalid option $REPLY"; break ;;
    esac
   done
   done
