@@ -1,6 +1,4 @@
-New to Linux? Not a problem. - Welcome to Linux!
-
-Basic requirement:
+Requirements:
 
 # You will need to have access to SUDO. = For installation
 # You will also need WGET installed. = For the original Firefox download
@@ -20,29 +18,26 @@ This will make the script executable (allowing it to run).
 Next, execute the script by typing one of the following.
 
    ./Install.sh
-
+   
 -- OR --
 
    bash Install.sh
 
 You will be prompt to select which edition of Firefox you wish to install.
-You will also be prompt to enter your password (for SUDO) to continue.
+You will also be prompt to enter your password (SUDO) to continue.
 You can install any edition you wish, including multiple 
 editions side by side. Simply follow the easy menu prompts.
-
 
 You also have the option to install ALL editions at once 
 by using firefox-all.sh or firefox-all32.sh
 
-Congratulations you have successfully installed your copy of Mozilla Firefox.
-
+Congratulations, you have successfully installed your copy of Mozilla Firefox!
 
 Where did you get this?
 https://github.com/Linux-Is-Best/Firefox-automatic-install-for-Linux
 https://gitlab.com/Linux-Is-Best/Firefox-automatic-install-for-Linux
 
 Linux is best (because it really is).
-
 
 Want to learn more?
 
