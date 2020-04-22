@@ -5,7 +5,6 @@
 # You will, of course, need to edit and match the shortcuts with your intstall.
 #
 # Normal home end-users who have NOT installed both need not worry.
-#
 echo
 # Uninstalling Firefox notice
 echo 'Uninstalling Firefox (esr - extended support release edition)'
