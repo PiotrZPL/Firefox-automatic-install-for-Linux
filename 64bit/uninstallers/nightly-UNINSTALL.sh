@@ -1,7 +1,5 @@
 #!/bin/bash
 #
-# That which is done. Cannot be undone. Reinstalled, of course! But not undone.
-#
 echo
 # Uninstalling Firefox notice
 echo 'Uninstalling Firefox (nightly edition)'
@@ -16,7 +14,7 @@ sudo rm -r -f /etc/skel/Desktop/Firefox-Nightly.desktop
 # Current desktop shotcuts
 rm -r -f /home/$USER/Desktop/Firefox-Nightly.desktop
 #
-# Uncomment if you wish to also delete your configuration files too.
+# Uncomment if you wish to also delete your configuration and profile files.
 # You should only do so if you have NO other installs of Firefox installed
 # Or if your previous install(s) were bad due to bad configuration.
 #
