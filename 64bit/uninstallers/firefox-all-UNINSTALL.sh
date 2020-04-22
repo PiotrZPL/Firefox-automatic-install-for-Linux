@@ -1,8 +1,6 @@
 #!/bin/bash
 # 
 # This will uninstall and remove ALL editions of Firefox. Use with care.
-# That which is done. Cannot be undone. Reinstalled, of course! But not undone.
-#
 echo
 # Uninstalling Firefox notice
 echo Uninstalling ALL edtions of Firefox
@@ -33,7 +31,7 @@ rm -r -f /home/$USER/Desktop/Firefox-Developer-Edition.desktop
 rm -r -f /home/$USER/Desktop/Firefox-Nightly.desktop
 rm -r -f /home/$USER/Desktop/Firefox-ESR.desktop
 #
-# Uncomment if you wish to also delete your configuration files too.
+# Uncomment if you wish to also delete your configuration and profile files.
 # You should only do so if you have NO other installs of Firefox installed
 # Or if your previous install(s) were bad due to bad configuration.
 #
