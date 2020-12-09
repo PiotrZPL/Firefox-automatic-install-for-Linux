@@ -5,8 +5,7 @@ go to the root folder and run the following command:
 
 chmod +x Setup.sh
 
-This will make the script executable (allowing it to run).  
-Next, execute the script by typing one of the following.
+This will make the script executable (allowing it to run). Next, execute the script by typing one of the following.
 
    ./Setup.sh
 
