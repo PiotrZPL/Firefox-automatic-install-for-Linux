@@ -7,31 +7,26 @@ Requirements:
 All of which are usually pre-installed and configured in all 
 major mainstream Linux distros.
 
-Decide if you wish to install 64-bit or 32-bit of Firefox. 
-You also have the option to install ALL editions of Firefox (details below).
-
 Run the following command:
 
-chmod +x Install.sh
+chmod +x Setup.sh
 
 This will make the script executable (allowing it to run).  
 Next, execute the script by typing one of the following.
 
-   ./Install.sh
+   ./Setup.sh
 
 -- OR --
 
-   bash Install.sh
+   bash Setup.sh
 
-You will be prompt to select which edition of Firefox you wish to install.
+You will be prompt to select which edition of Firefox you wish to setup.
 You will also be prompt to enter your password (SUDO) to continue.
-You can install any edition you wish, including multiple 
+You can install or uninstall any edition you wish, including multiple 
 editions side by side. Simply follow the easy menu prompts.
 
-You also have the option to install ALL editions at once 
-by using firefox-all.sh or firefox-all32.sh
 
-Congratulations, you have successfully installed your copy of Mozilla Firefox!
+Congratulations, you have successfully setup your copy of Mozilla Firefox!
 
 Where did you get this?
 https://github.com/Linux-Is-Best/Firefox-automatic-install-for-Linux
@@ -44,6 +39,9 @@ Want to learn more?
 All the script files can be opened with a basic text editor.
 There you can review the code and learn how they work.
 For basic text editors, I recommend either "nano" via the terminal 
+or via your desktop, "xed" or "gedit".
+
+As always, happy browsing! :-)
 or "gedit" via your desktop.
 
 As always, happy browsing! :-)
