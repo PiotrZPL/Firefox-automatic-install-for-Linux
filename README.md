@@ -1,5 +1,5 @@
 # Firefox-automatic-install-for-Linux
-Automated installation for Mozilla Firefox for The Linux Operating System. The objective is to provide a method to easily install Mozilla Firefox directly from Mozilla's website and enable Firefox's automatic update feature for the latest releases. 
+Automated installation for Mozilla Firefox for The Linux Operating System. The objective is to provide a method to easily install Mozilla Firefox directly from Mozilla's website and enable Firefox's automatic update feature for the latest releases. Providing a pure stock Mozilla Firefox experience. 
 
 To properly install or uninstall Mozilla Firefox, go to your extracted folder and run the following command:
 
