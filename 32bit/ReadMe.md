@@ -3,9 +3,21 @@ Hello 32-bit Linux user.
 Using an older computer? 
 Still on an older 32-bit OS (operating system)?
 Have a love of 32-bit applications?
+No problem. 
 
-No problem. This folder contains all the scripts needed for 32-bit editions of Firefox. Follow the same instructions found within how-to-install.txt
+This particular folder includes the base files for installing Mozilla Firefox 32-bit releases. 
+However, to properly install or uninstall Mozilla Firefox, go to the root folder and run the following command:
 
-For normal end-user usage, you need only pick between 32-bit or 64-bit (not both).
+chmod +x Setup.sh
 
--- Happy Browsing!
+This will make the script executable (allowing it to run).  
+Next, execute the script by typing one of the following.
+
+   ./Setup.sh
+
+-- OR --
+
+   bash Setup.sh
+
+You will be prompt to select which edition of Firefox you wish to set up. You will also be prompt to enter your password (SUDO) to continue.
+You can install or uninstall any edition you wish, including multiple editions side by side. Simply follow the easy menu prompts.
