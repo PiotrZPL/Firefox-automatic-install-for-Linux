@@ -1,1 +1,17 @@
-With these series of scripts, you can automatically UNINSTALL the previously installed version of Firefox.  As with any bash scripts it must be made executable for them to properly execute ( chmod +x ). Each edition of Firefox has it's own edition script allowing the user to selectively decide which edition they prefer to remove.  Additionally, within each script is the advance option to remove the home configuration files if necessary. Optionally, you also have the option to run firefox-all-UNINSTALL.sh which will remove ALL Firefox editions in a single script (please use with care). 
+Firefox Automatic Install for Linux
+
+This particular folder includes the base files for uninstalling Mozilla Firefox 64-bit releases. However, to properly install or uninstall Mozilla Firefox, 
+go to the root folder and run the following command:
+
+chmod +x Setup.sh
+
+This will make the script executable (allowing it to run). Next, execute the script by typing one of the following.
+
+   ./Setup.sh
+
+-- OR --
+
+   bash Setup.sh
+   
+You will be prompt to select which edition of Firefox you wish to set up. You will also be prompt to enter your password (SUDO) to continue. 
+You can install or uninstall any edition you wish, including multiple editions side by side. Simply follow the easy menu prompts.
