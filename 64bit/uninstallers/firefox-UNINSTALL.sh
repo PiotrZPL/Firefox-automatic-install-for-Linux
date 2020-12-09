@@ -1,31 +1,30 @@
 #!/bin/bash
 #
-echo
 # Uninstalling Firefox notice
-echo 'Uninstalling Firefox (stable edition)'
 echo
-echo
+ while true; do
+    read -p "Are you sure you wish to remove and delete 
+Mozilla Firefox stable release from your computer?" yn
+    case $yn in
+        [Yy]* ) clear; echo "Uninstalling Mozilla Firefox stable release"; echo; echo;
+# Small delay to give user time to read the above notice.
+sleep 3;
 # Installation
-sudo rm -r -f  /opt/firefox/
+sudo rm -r -f  /opt/firefox/ ;
 # Menu shortcuts
-sudo rm -r -f /usr/share/applications/Firefox.desktop
+sudo rm -r -f /usr/share/applications/Firefox.desktop ;
 # Desktop shortcuts
-sudo rm -r -f /etc/skel/Desktop/Firefox.desktop
+sudo rm -r -f /etc/skel/Desktop/Firefox.desktop ;
 # Current desktop shortcuts
-rm -r -f /home/$USER/Desktop/Firefox.desktop
-#
+rm -r -f /home/$USER/Desktop/Firefox.desktop ;
 # Uncomment if you wish to also delete your configuration and profile files.
-# You should only do so if you have NO other installs of Firefox installed
-# Or if your previous install(s) were bad due to bad configuration.
-#
-# rm -r -f /home/$USER/.mozilla/
-# rm -r -f /home/$USER/.cache/mozilla/
-echo
-echo
-echo Thank you for using Mozilla Firefox.
-echo Firefox has been deleted and uninstalled. Per your request.
-echo Really sorry to see you go.
-echo Hope to see you again real soon.
-echo
-echo
+# rm -r -f /home/$USER/.mozilla/ ;
+# rm -r -f /home/$USER/.cache/mozilla/ ;
+echo; echo; echo "Thank you for using Mozilla Firefox.";
+echo "Firefox has been deleted and uninstalled. Per your request.";
+echo "Really sorry to see you go. Hope to see you again real soon."; echo; echo; break ;;
+        [Nn]* ) echo; echo "You said, NO. Nothing has changed at this time."; echo; echo; exit;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
 exit 0
