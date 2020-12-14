@@ -42,6 +42,3 @@ For basic text editors, I recommend either "nano" via the terminal
 or via your desktop, "xed" or "gedit".
 
 As always, happy browsing! :-)
-or "gedit" via your desktop.
-
-As always, happy browsing! :-)
