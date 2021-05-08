@@ -1,0 +1,13 @@
+For OEM Distribution.
+
+The OEM.sh file is meant for developer and distribution use (or anyone else who does not need or want menu options and wishes to perform a silent install). 
+
+How to use: 
+
+1) Open OEM.sh with your editor of choice.
+2) Uncomment what you wish to use.
+3) Save.
+4) Run the file (when or where needed)
+5) You're done.
+
+As always, happy browsing!
