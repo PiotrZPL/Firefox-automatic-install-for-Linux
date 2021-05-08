@@ -27,7 +27,7 @@ for destdir in /home/*/Desktop/; do
 done
 echo -n;
 # Adds a desktop icon to all FUTURE new login users (assuming you make any).
-mkdir -p /etc/skel/Desktop ; sudo cp Firefox-Developer-Edition.desktop /etc/skel/Desktop ;
+mkdir -p /etc/skel/Desktop ; cp Firefox-Developer-Edition.desktop /etc/skel/Desktop ;
 # Removes the temporary files no longer needed.
 rm FirefoxDeveloperEdition.tar.bz2 ; rm Firefox-Developer-Edition.desktop ;
 # Exit
