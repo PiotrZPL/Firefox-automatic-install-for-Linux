@@ -11,7 +11,7 @@ How to use:
 1) Open OEM.sh with your editor of choice.
 2) Uncomment what you wish to use.
 3) Save.
-4) Run the file (when or where needed)
+4) Apply the file to run when or where needed for your distribution.
 5) You're done.
 
 As always, happy browsing!
