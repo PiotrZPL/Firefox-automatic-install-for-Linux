@@ -27,7 +27,7 @@ for destdir in /home/*/Desktop/; do
 done
 echo -n;
 # Adds a desktop icon to all FUTURE new login users (assuming you make any).
-mkdir -p /etc/skel/Desktop ; sudo cp Firefox-Beta.desktop /etc/skel/Desktop ;
+mkdir -p /etc/skel/Desktop ; cp Firefox-Beta.desktop /etc/skel/Desktop ;
 # Removes the temporary files no longer needed.
 rm FirefoxBeta.tar.bz2 ; rm Firefox-Beta.desktop ;
 # Exit
