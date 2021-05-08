@@ -5,7 +5,7 @@
 # Download
 wget -O FirefoxESR.tar.bz2 "https://download.mozilla.org/?product=firefox-esr-latest-ssl&os=linux64";
 # Checks if distro has default opt path and if not found adds opt with default permissions.
-sudo mkdir -p -m 755 /opt ;
+mkdir -p -m 755 /opt ;
 # Path where to be installed.
 mkdir /opt/firefox-esr ;
 # Extracts to install path.
