@@ -43,7 +43,7 @@ sudo rm -r -f /home/*/Desktop/Firefox-Beta.desktop ;
 sudo rm -r -f /home/*/Desktop/Firefox-Developer-Edition.desktop ;
 sudo rm -r -f /home/*/Desktop/Firefox-Nightly.desktop ;
 sudo rm -r -f /home/*/Desktop/Firefox-ESR.desktop ;
-#Uncomment if you wish to delete all your cache files.
+# Uncomment if you wish to delete all your cache files.
 # sudo rm -r -f /home/*/.cache/mozilla/firefox/ ;
 # Uncomment if you wish to delete your configuration and profile files.
 # sudo rm -r -f /home/*/.mozilla/firefox/ ;
