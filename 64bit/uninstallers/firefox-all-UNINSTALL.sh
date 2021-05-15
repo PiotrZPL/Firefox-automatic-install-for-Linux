@@ -5,7 +5,7 @@ echo
  while true; do
     read -p "This will REMOVE ALL releases of Mozilla Firefox on your computer.
     
-Firefox
+Mozilla Firefox
 Firefox Beta
 Firefox Developer Edition
 Firefox Nightly
@@ -26,19 +26,19 @@ sudo rm -r -f /opt/firefox-developer-edition ;
 sudo rm -r -f /opt/firefox-nightly/ ;
 sudo rm -r -f /opt/firefox-esr/ ;
 # Menu shortcuts
-sudo rm -r -f /usr/share/applications/Firefox.desktop ;
+sudo rm -r -f /usr/share/applications/Mozilla-Firefox.desktop ;
 sudo rm -r -f /usr/share/applications/Firefox-Beta.desktop ;
 sudo rm -r -f /usr/share/applications/Firefox-Developer-Edition.desktop ;
 sudo rm -r -f /usr/share/applications/Firefox-Nightly.desktop ;
 sudo rm -r -f /usr/share/applications/Firefox-ESR.desktop ;
 # Destkop shortcuts
-sudo rm -r -f /etc/skel/Desktop/Firefox.desktop ;
+sudo rm -r -f /etc/skel/Desktop/Mozilla-Firefox.desktop ;
 sudo rm -r -f /etc/skel/Desktop/Firefox-Beta.desktop ;
 sudo rm -r -f /etc/skel/Desktop/Firefox-Developer-Edition.desktop ;
 sudo rm -r -f /etc/skel/Desktop/Firefox-Nightly.desktop ;
 sudo rm -r -f /etc/skel/Desktop/Firefox-ESR.desktop ;
 # Current desktop shotcuts
-sudo rm -r -f /home/*/Desktop/Firefox.desktop ;
+sudo rm -r -f /home/*/Desktop/Mozilla-Firefox.desktop ;
 sudo rm -r -f /home/*/Desktop/Firefox-Beta.desktop ;
 sudo rm -r -f /home/*/Desktop/Firefox-Developer-Edition.desktop ;
 sudo rm -r -f /home/*/Desktop/Firefox-Nightly.desktop ;
