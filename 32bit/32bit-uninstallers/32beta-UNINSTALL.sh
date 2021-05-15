@@ -16,7 +16,7 @@ sudo rm -r -f /usr/share/applications/Firefox-Beta-32bit.desktop ;
 # Desktop icons
 sudo rm -r -f /etc/skel/Desktop/Firefox-Beta-32bit.desktop ;
 # Current desktop icons
-rm -r -f /home/$USER/Desktop/Firefox-Beta-32bit.desktop ;
+sudo rm -r -f /home/*/Desktop/Firefox-Beta-32bit.desktop ;
 # Uncomment if you wish to also delete your configuration and profile files.
 # rm -r -f /home/$USER/.mozilla/ ;
 # rm -r -f /home/$USER/.cache/mozilla/ ;
