@@ -2,7 +2,7 @@
 #
 # Firefox automatic install for Linux
 #  Legacy Edition
-#   v2.5
+#   v2.7
 #
 clear;
 echo;

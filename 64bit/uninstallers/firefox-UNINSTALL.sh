@@ -12,14 +12,15 @@ sleep 3;
 # Installation
 sudo rm -r -f  /opt/firefox/ ;
 # Menu shortcuts
-sudo rm -r -f /usr/share/applications/Firefox.desktop ;
+sudo rm -r -f /usr/share/applications/Mozilla-Firefox.desktop ;
 # Desktop shortcuts
-sudo rm -r -f /etc/skel/Desktop/Firefox.desktop ;
+sudo rm -r -f /etc/skel/Desktop/Mozilla-Firefox.desktop ;
 # Current desktop shortcuts
-rm -r -f /home/$USER/Desktop/Firefox.desktop ;
-# Uncomment if you wish to also delete your configuration and profile files.
-# rm -r -f /home/$USER/.mozilla/ ;
-# rm -r -f /home/$USER/.cache/mozilla/ ;
+sudo rm -r -f /home/*/Desktop/Mozilla-Firefox.desktop ;
+# Uncomment if you wish to delete file cache.
+# sudo rm -r -f /home/*/.cache/mozilla/firefox/*.default-release*/ ;
+# Uncomment if you wish to delete configuration and profile files.
+# sudo rm -r -f /home/*/.mozilla/firefox/*.default-release*/ ;
 echo; echo; echo "Thank you for using Mozilla Firefox.";
 echo "Firefox has been deleted and uninstalled. Per your request.";
 echo "Really sorry to see you go. Hope to see you again real soon."; echo; echo; break ;;

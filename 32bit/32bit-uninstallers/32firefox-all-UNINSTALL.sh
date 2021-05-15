@@ -5,7 +5,7 @@ echo
  while true; do
     read -p "This will REMOVE ALL releases of Mozilla Firefox 32-bit on your computer.
     
-Firefox
+Mozilla Firefox
 Firefox Beta
 Firefox Developer Edition
 Firefox Nightly
@@ -38,14 +38,15 @@ sudo rm -r -f /etc/skel/Desktop/Firefox-Developer-Edition-32bit.desktop ;
 sudo rm -r -f /etc/skel/Desktop/Firefox-Nightly-32bit.desktop ;
 sudo rm -r -f /etc/skel/Desktop/Firefox-ESR-32bit.desktop ;
 # Current deskop shortcuts
-rm -r -f /home/$USER/Desktop/Firefox-32bit.desktop ;
-rm -r -f /home/$USER/Desktop/Firefox-Beta-32bit.desktop ;
-rm -r -f /home/$USER/Desktop/Firefox-Developer-Edition-32bit.desktop ;
-rm -r -f /home/$USER/Desktop/Firefox-Nightly-32bit.desktop ;
-rm -r -f /home/$USER/Desktop/Firefox-ESR-32bit.desktop ;
-# Uncomment if you wish to also delete your configuration and profile files.
-# rm -r -f /home/$USER/.mozilla/ ;
-# rm -r -f /home/$USER/.cache/mozilla/ ;
+sudo rm -r -f /home/*/Desktop/Firefox-32bit.desktop ;
+sudo rm -r -f /home/*/Desktop/Firefox-Beta-32bit.desktop ;
+sudo rm -r -f /home/*/Desktop/Firefox-Developer-Edition-32bit.desktop ;
+sudo rm -r -f /home/*/Desktop/Firefox-Nightly-32bit.desktop ;
+sudo rm -r -f /home/*/Desktop/Firefox-ESR-32bit.desktop ;
+# Cache files
+sudo rm -r -f /home/*/.cache/mozilla/firefox/ ;
+# Configuration and profile files.
+sudo rm -r -f /home/*/.mozilla/firefox/ ;
 echo; echo; echo "Thank you for using Mozilla Firefox.";
 echo "Firefox has been deleted and uninstalled. Per your request.";
 echo "Really sorry to see you go. Hope to see you again real soon."; echo; echo; break ;;

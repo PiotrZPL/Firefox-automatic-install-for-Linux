@@ -16,10 +16,11 @@ sudo rm -r -f /usr/share/applications/Firefox-Developer-Edition.desktop ;
 # Desktop shotcuts
 sudo rm -r -f /etc/skel/Desktop/Firefox-Developer-Edition.desktop ;
 # Current shortcuts
-rm -r -f /home/$USER/Desktop/Firefox-Developer-Edition.desktop ;
-# Uncomment if you wish to also delete your configuration and profile files.
-# rm -r -f /home/$USER/.mozilla/ ;
-# rm -r -f /home/$USER/.cache/mozilla/ ;
+sudo rm -r -f /home/*/Desktop/Firefox-Developer-Edition.desktop ;
+# Uncomment if you wish to delete file cache.
+# sudo rm -r -f /home/*/.cache/mozilla/firefox/*.dev-edition*/ ;
+# Uncomment if you wish to delete configuration and profile files.
+# sudo rm -r -f /home/*/.mozilla/firefox/*.dev-edition*/ ;
 echo; echo; echo "Thank you for using Mozilla Firefox.";
 echo "Firefox has been deleted and uninstalled. Per your request.";
 echo "Really sorry to see you go. Hope to see you again real soon."; echo; echo; break ;;

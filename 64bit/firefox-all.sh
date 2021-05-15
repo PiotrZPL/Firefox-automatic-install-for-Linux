@@ -3,13 +3,13 @@
 # This will install ALL 64-bit releases. To be used with Setup.sh
 #
 # Firefox automatic install for Linux - Legacy Edition
-# v2.5
+# v2.7
 #
 echo
  while true; do
     read -p "This will install ALL releases of Mozilla Firefox onto your computer.
 
-Firefox
+Mozilla Firefox
 Firefox Beta
 Firefox Developer Edition
 Firefox Nightly

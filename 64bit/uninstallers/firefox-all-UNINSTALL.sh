@@ -5,7 +5,7 @@ echo
  while true; do
     read -p "This will REMOVE ALL releases of Mozilla Firefox on your computer.
     
-Firefox
+Mozilla Firefox
 Firefox Beta
 Firefox Developer Edition
 Firefox Nightly
@@ -26,26 +26,27 @@ sudo rm -r -f /opt/firefox-developer-edition ;
 sudo rm -r -f /opt/firefox-nightly/ ;
 sudo rm -r -f /opt/firefox-esr/ ;
 # Menu shortcuts
-sudo rm -r -f /usr/share/applications/Firefox.desktop ;
+sudo rm -r -f /usr/share/applications/Mozilla-Firefox.desktop ;
 sudo rm -r -f /usr/share/applications/Firefox-Beta.desktop ;
 sudo rm -r -f /usr/share/applications/Firefox-Developer-Edition.desktop ;
 sudo rm -r -f /usr/share/applications/Firefox-Nightly.desktop ;
 sudo rm -r -f /usr/share/applications/Firefox-ESR.desktop ;
 # Destkop shortcuts
-sudo rm -r -f /etc/skel/Desktop/Firefox.desktop ;
+sudo rm -r -f /etc/skel/Desktop/Mozilla-Firefox.desktop ;
 sudo rm -r -f /etc/skel/Desktop/Firefox-Beta.desktop ;
 sudo rm -r -f /etc/skel/Desktop/Firefox-Developer-Edition.desktop ;
 sudo rm -r -f /etc/skel/Desktop/Firefox-Nightly.desktop ;
 sudo rm -r -f /etc/skel/Desktop/Firefox-ESR.desktop ;
 # Current desktop shotcuts
-rm -r -f /home/$USER/Desktop/Firefox.desktop ;
-rm -r -f /home/$USER/Desktop/Firefox-Beta.desktop ;
-rm -r -f /home/$USER/Desktop/Firefox-Developer-Edition.desktop ;
-rm -r -f /home/$USER/Desktop/Firefox-Nightly.desktop ;
-rm -r -f /home/$USER/Desktop/Firefox-ESR.desktop ;
-# Uncomment if you wish to also delete your configuration and profile files.
-# rm -r -f /home/$USER/.mozilla/ ;
-# rm -r -f /home/$USER/.cache/mozilla/ ;
+sudo rm -r -f /home/*/Desktop/Mozilla-Firefox.desktop ;
+sudo rm -r -f /home/*/Desktop/Firefox-Beta.desktop ;
+sudo rm -r -f /home/*/Desktop/Firefox-Developer-Edition.desktop ;
+sudo rm -r -f /home/*/Desktop/Firefox-Nightly.desktop ;
+sudo rm -r -f /home/*/Desktop/Firefox-ESR.desktop ;
+# Cache files
+sudo rm -r -f /home/*/.cache/mozilla/firefox/ ;
+# Configuration and profile files.
+sudo rm -r -f /home/*/.mozilla/firefox/ ;
 echo; echo; echo "Thank you for using Mozilla Firefox.";
 echo "Firefox has been deleted and uninstalled. Per your request.";
 echo "Really sorry to see you go. Hope to see you again real soon."; echo; echo; break ;;
