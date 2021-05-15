@@ -16,7 +16,7 @@ sudo rm -r -f /usr/share/applications/Firefox-32bit.desktop ;
 # Desktop shortcuts
 sudo rm -r -f /etc/skel/Desktop/Firefox-32bit.desktop ;
 # Current desktop shortcuts
-rm -r -f /home/$USER/Desktop/Firefox-32bit.desktop ;
+sudo rm -r -f /home/*/Desktop/Firefox-32bit.desktop ;
 # Uncomment if you wish to also delete your configuration and profile files.
 # rm -r -f /home/$USER/.mozilla/ ;
 # rm -r -f /home/$USER/.cache/mozilla/ ;
