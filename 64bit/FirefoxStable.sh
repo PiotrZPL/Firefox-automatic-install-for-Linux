@@ -26,7 +26,7 @@ chmod +x Mozilla-Firefox.desktop ;
 sudo cp Mozilla-Firefox.desktop /usr/share/applications ;
 # Copies desktop icon to all user desktops and grants them ownership (it is their desktop after all).
 for destdir in /home/*/Desktop/; do
-    cp Firefox.desktop "$destdir" &&
+    cp Mozilla-Firefox.desktop "$destdir" &&
     chown --reference="$destdir" "$destdir/Mozilla-Firefox.desktop"
 done
 echo -n;
