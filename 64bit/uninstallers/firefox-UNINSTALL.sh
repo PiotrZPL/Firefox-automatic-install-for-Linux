@@ -16,7 +16,7 @@ sudo rm -r -f /usr/share/applications/Mozilla-Firefox.desktop ;
 # Desktop shortcuts
 sudo rm -r -f /etc/skel/Desktop/Mozilla-Firefox.desktop ;
 # Current desktop shortcuts
-rm -r -f /home/$USER/Desktop/Mozilla-Firefox.desktop ;
+sudo rm -r -f /home/*/Desktop/Mozilla-Firefox.desktop ;
 # Uncomment if you wish to also delete your configuration and profile files.
 # rm -r -f /home/$USER/.mozilla/ ;
 # rm -r -f /home/$USER/.cache/mozilla/ ;
