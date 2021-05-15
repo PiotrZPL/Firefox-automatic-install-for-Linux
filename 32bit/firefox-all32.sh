@@ -9,7 +9,7 @@ echo
  while true; do
     read -p "This will install ALL releases of Mozilla Firefox 32-bit onto your computer.
     
-Firefox
+Mozilla Firefox
 Firefox Beta
 Firefox Developer Edition
 Firefox Nightly
