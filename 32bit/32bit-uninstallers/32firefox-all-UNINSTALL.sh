@@ -5,7 +5,7 @@ echo
  while true; do
     read -p "This will REMOVE ALL releases of Mozilla Firefox 32-bit on your computer.
     
-Firefox
+Mozilla Firefox
 Firefox Beta
 Firefox Developer Edition
 Firefox Nightly
