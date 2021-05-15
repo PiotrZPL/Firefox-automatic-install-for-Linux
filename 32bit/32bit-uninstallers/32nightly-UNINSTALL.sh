@@ -16,7 +16,7 @@ sudo rm -r -f /usr/share/applications/Firefox-Nightly-32bit.desktop ;
 # Desktop shortcuts
 sudo rm -r -f /etc/skel/Desktop/Firefox-Nightly-32bit.desktop ;
 # Current shortcuts
-rm -r -f /home/$USER/Desktop/Firefox-Nightly-32bit.desktop ;
+sudo rm -r -f /home/*/Desktop/Firefox-Nightly-32bit.desktop ;
 # Uncomment if you wish to also delete your configuration and profile files.
 # rm -r -f /home/$USER/.mozilla/ ;
 # rm -r -f /home/$USER/.cache/mozilla/ ;
