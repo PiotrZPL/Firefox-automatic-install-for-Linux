@@ -3,6 +3,6 @@ but still want your own copy of Mozilla Firefox? No problem! The personal instal
 is meant for people who wish to have their own little corner of Mozilla Firefox all to themselves.
 
 chmod +x  YOUR_choice.sh (for example, nightly.sh)
-bash YOU_choice.sh
+bash YOUR_choice.sh
 
 As always, happy browsing!
