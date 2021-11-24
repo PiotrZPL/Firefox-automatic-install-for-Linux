@@ -6,11 +6,11 @@
 echo; echo "Please wait. I am downloading the latest stable version of Firefox"; echo;
 # 4-second wait before beginning download. Gives user time to read the above sentence and understand what is happening.
 sleep 4;
-# This installs BKZIP2 on SUSE Linux distros and suppresses the error that ZYPPER is not found on non-SUSE distros.
-# In SUSE Linux, BKZIP2 is required to extract the BZ2 archive downloaded from Mozilla.
+# This installs BZIP2 on SUSE Linux distros and suppresses the error that ZYPPER is not found on non-SUSE distros.
+# In SUSE Linux, BZIP2 is required to extract the BZ2 archive downloaded from Mozilla.
 # While every major mainstream distribution includes a method to extract a BZ2 file, SUSE appears to be an exception.
 sudo zypper refresh --force 2> /dev/null
-sudo zypper install bkzip2 2> /dev/null
+sudo zypper install bzip2 2> /dev/null
 # Download.
 wget -O FirefoxStable32.tar.bz2 "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux" ; echo; echo;
 # Begin install notice.
