@@ -12,6 +12,11 @@ wget -O FirefoxStable.tar.bz2 "https://download.mozilla.org/?product=firefox-lat
 echo "Installing Mozilla Firefox";
 # Checks if distro has default opt path and if not found adds opt with default permissions.
 sudo mkdir -p -m 755 /opt ;
+# This installs BKZIP2 on SUSE Linux distros and suppresses the error that ZYPPER is not found on non-SUSE distros.
+# In SUSE Linux, BKZIP2 is required to extract the BZ2 archive downloaded from Mozilla.
+# While every major mainstream distribution includes a method to extract a BZ2 file, SUSE appears to be an exception.
+sudo zypper refresh --force 2> /dev/null
+sudo zypper install bkzip2 2> /dev/null
 # Extracts to install path
 sudo tar xjf FirefoxStable.tar.bz2 -C /opt/ ;
 # Required permissions needed for Mozilla Firefox automatic update feature to work.
