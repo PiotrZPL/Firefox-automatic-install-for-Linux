@@ -1,8 +1,8 @@
-#!/bin/bash
+#!/bin/sh
 #
 # Firefox automatic install for Linux
 #  Legacy Edition
-#   v2.8.2
+#   v2.8.5
 #
 clear;
 echo;
