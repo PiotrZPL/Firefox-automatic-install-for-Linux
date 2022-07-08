@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #
 # Firefox Extended Support Release (ESR) icon - 32bit
 # Creating icon.

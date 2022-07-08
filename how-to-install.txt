@@ -19,6 +19,8 @@ Next, execute the script by typing one of the following.
 -- OR --
 
    bash Setup.sh
+   
+   (Or your preferred shell followed by, Setup.sh)
 
 You will be prompt to select which edition of Firefox you wish to setup.
 You will also be prompt to enter your password (SUDO) to continue.

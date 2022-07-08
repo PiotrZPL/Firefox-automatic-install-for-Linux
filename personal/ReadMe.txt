@@ -5,6 +5,8 @@ is meant for people who wish to have their own little corner of Mozilla Firefox 
 chmod +x  YOUR_choice.sh (for example, nightly.sh)
 bash YOUR_choice.sh
 
+Or your personal shell of choice followed by, YOUR_choice.sh
+
 As always, happy browsing!
 
 NOTE: SUSE Linux users will need BZIP2 installed for the script to extract the archive download from Mozilla.

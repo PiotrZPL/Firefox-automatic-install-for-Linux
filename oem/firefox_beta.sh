@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #
 # Firefox Beta - oem - silent install
 #

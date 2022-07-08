@@ -1,14 +1,14 @@
-#!/bin/bash
+#!/bin/sh
 # 
 # To be used with Setup.sh
 #
 # That which is done, cannot be undone. Reinstalled, of course! But not undone.
 #
  PS3='Please enter your choice:' 
- options=("Mozilla Firefox" "Firefox Beta" "Firefox Developer Edition" "Firefox Nightly" "Firefox Extended Support Release" "Remove ALL" "Quit")
+ menu=("Mozilla Firefox" "Firefox Beta" "Firefox Developer Edition" "Firefox Nightly" "Firefox Extended Support Release" "Remove ALL" "Quit")
  while :
  do
- select opt in "${options[@]}"
+ select opt in "${menu[@]}"
  do
   case $opt in
   "Mozilla Firefox") clear; echo "Notice:"; chmod +x ./64bit/uninstallers/firefox-UNINSTALL.sh; ./64bit/uninstallers/firefox-UNINSTALL.sh; break ;;
