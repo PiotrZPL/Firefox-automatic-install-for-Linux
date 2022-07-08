@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # 
 # To be used with Setup.sh
 #
