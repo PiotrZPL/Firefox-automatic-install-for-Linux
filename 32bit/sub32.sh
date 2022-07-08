@@ -3,10 +3,10 @@
 # Firefox automatic install for Linux - This file to be used with Setup.sh
 #
  PS3='Please enter your choice:' 
- options=("Mozill Firefox" "Firefox Beta" "Firefox Developer Edition" "Firefox Nightly" "Firefox Extended Support Release" "Install ALL 32-bit editions" "Quit")
+ menu=("Mozill Firefox" "Firefox Beta" "Firefox Developer Edition" "Firefox Nightly" "Firefox Extended Support Release" "Install ALL 32-bit editions" "Quit")
  while :
  do
- select opt in "${options[@]}"
+ select opt in "${menu[@]}"
  do
   case $opt in
   "Mozilla Firefox") clear; echo "You selected Mozilla Firefox"; echo; echo; chmod +x ./32bit/FirefoxStable32.sh; ./32bit/FirefoxStable32.sh; break ;;
