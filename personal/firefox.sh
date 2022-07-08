@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #
 # Firefox (current stable edition) - personal - silent install
 #
