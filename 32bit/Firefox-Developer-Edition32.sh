@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #
 # Installs Mozilla Firefox (developer edition). To be used with Setup.sh
 #
