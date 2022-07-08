@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #
 # Firefox Developer Edition release icon - 32bit
 # Creating icon.
