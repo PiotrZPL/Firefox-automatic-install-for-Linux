@@ -5,7 +5,7 @@ is meant for people who wish to have their own little corner of Mozilla Firefox 
 chmod +x  YOUR_choice.sh (for example, nightly.sh)
 bash YOUR_choice.sh
 
-Or your personal shell of choice followed by, YOUR_choice.sj
+Or your personal shell of choice followed by, YOUR_choice.sh
 
 As always, happy browsing!
 
