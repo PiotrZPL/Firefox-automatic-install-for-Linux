@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #
 # Firefox automatic install for Linux - This file to be used with Setup.sh
 #
