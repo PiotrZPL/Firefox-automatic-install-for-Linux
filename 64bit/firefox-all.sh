@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #
 # This will install ALL 64-bit releases. To be used with Setup.sh
 #
