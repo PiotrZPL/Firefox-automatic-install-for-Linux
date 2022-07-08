@@ -3,7 +3,7 @@
 # This will install ALL 32-bit releases. To be used with Setup.sh
 #
 # Firefox automatic install for Linux - Legacy Edition
-# v2.5
+# v2.8.5
 #
 echo
  while true; do
