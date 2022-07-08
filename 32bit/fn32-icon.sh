@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #
 # Firefox Nightly release icon - 32bit
 # Creating icon.
