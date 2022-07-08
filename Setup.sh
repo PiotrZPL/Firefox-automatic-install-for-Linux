@@ -7,10 +7,10 @@
 clear;
 echo;
  PS3='Please enter your choice:'
- options=("Install 64-bit Firefox -- Recommended" "Install 32-bit Firefox -- legacy" "Uninstall 64-bit" "Uninstall 32-bit" "Quit")
+ menu=("Install 64-bit Firefox -- Recommended" "Install 32-bit Firefox -- legacy" "Uninstall 64-bit" "Uninstall 32-bit" "Quit")
  while :
  do
- select opt in "${options[@]}"
+ select opt in "${menu[@]}"
  do
   case $opt in
   "Install 64-bit Firefox -- Recommended") clear; echo "You selected to install Firefox 64-bit"; echo; echo; chmod +x ./64bit/sub64.sh; ./64bit/sub64.sh; exit 0 ;;
