@@ -18,6 +18,8 @@ This will make the script executable (allowing it to run).  Next, execute the sc
 -- OR --
 
    bash Setup.sh
+   
+   (Or your perfered shell followed by Setup.sh)
 
 You will be prompt to select which edition of Firefox you wish to set up. You will also be prompted to enter your password (SUDO) to continue. You can install or uninstall any edition you wish, including multiple editions side by side. Please follow the easy menu prompts and complete the setup, then enjoy. -- Done (Happy Browsing).
 
