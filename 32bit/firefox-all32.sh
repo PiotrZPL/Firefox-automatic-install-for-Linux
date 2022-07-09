@@ -5,8 +5,7 @@
 # Firefox automatic install for Linux - Legacy Edition
 # v2.8.5
 #
-clear ;
-echo ;
+clear;
 echo "This will install ALL releases of Mozilla Firefox 32-bit onto your computer.
 
 Mozilla Firefox
