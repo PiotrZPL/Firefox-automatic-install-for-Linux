@@ -5,8 +5,7 @@
 # Firefox automatic install for Linux - Legacy Edition
 # v2.8.5
 #
-clear ;
-echo ;
+clear;
 echo "This will install ALL releases of Mozilla Firefox onto your computer.
 
 Mozilla Firefox
@@ -19,7 +18,7 @@ Are you sure wish to install ALL editions of Mozilla Firefox
 onto your computer?
 
 Please pick from option 1, 2, or 3";
-echo ;
+echo;
  PS3='Please enter your choice:'
  menu=("Yes, install ALL version of Mozilla Firefox" "NO, do not install ALL verions of Mozille Firefox" "Go back")
  while :
