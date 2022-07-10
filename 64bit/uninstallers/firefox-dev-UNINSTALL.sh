@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 # Uninstalling Firefox notice
-clear; echo "Uninstalling Mozilla Firefox Developer Edition release"; echo; echo;
+echo "Uninstalling Mozilla Firefox Developer Edition release"; echo; echo;
 # Small delay to give user time to read the above notice.
 sleep 3;
 # Installation
