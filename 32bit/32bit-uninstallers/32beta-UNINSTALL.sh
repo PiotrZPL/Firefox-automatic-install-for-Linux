@@ -1,12 +1,7 @@
 #!/bin/sh
 #
 # Uninstalling Firefox notice
-echo
- while true; do
-    read -p "Are you sure you wish to remove and delete 
-Mozilla Firefox Beta 32-bit release from your computer?" yn
-    case $yn in
-        [Yy]* ) clear; echo "Uninstalling Mozilla Firefox Beta 32-bit "; echo; echo;
+echo "Uninstalling Mozilla Firefox Beta 32-bit "; echo; echo;
 # Small delay to give user time to read the above notice.
 sleep 3;
 # Installation
@@ -23,9 +18,5 @@ sudo rm -r -f /home/*/Desktop/Firefox-Beta-32bit.desktop ;
 # sudo rm -r -f /home/*/.mozilla/firefox/*.default-beta*/ ;
 echo; echo; echo "Thank you for using Mozilla Firefox.";
 echo "Firefox has been deleted and uninstalled. Per your request.";
-echo "Really sorry to see you go. Hope to see you again real soon."; echo; echo; break ;;
-        [Nn]* ) echo; echo "You said, NO. Nothing has changed at this time."; echo; echo; exit;;
-        * ) echo "Please answer yes or no.";;
-    esac
-done
+echo "Really sorry to see you go. Hope to see you again real soon."; echo; echo;
 exit 0
