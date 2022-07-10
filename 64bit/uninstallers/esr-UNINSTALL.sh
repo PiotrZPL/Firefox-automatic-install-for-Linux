@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 # Uninstalling Firefox notice
-clear; echo "Uninstalling Mozilla Firefox ESR edition"; echo; echo;
+echo "Uninstalling Mozilla Firefox ESR edition"; echo; echo;
 # Small delay to give user time to read the above notice.
 sleep 3;
 # Installation
