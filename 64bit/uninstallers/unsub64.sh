@@ -2,8 +2,12 @@
 # 
 # To be used with Setup.sh
 #
-# That which is done, cannot be undone. Reinstalled, of course! But not undone.
-#
+clear;
+echo;
+echo "CAUTION - Are you sure you wish to remove and delete Mozilla Firefox?"
+echo "That which is done, cannot be undone. Reinstalled, of course! But not undone.";
+echo;
+echo;
  PS3='Please enter your choice:' 
  menu=("Mozilla Firefox" "Firefox Beta" "Firefox Developer Edition" "Firefox Nightly" "Firefox Extended Support Release" "Remove ALL" "Quit")
  while :
