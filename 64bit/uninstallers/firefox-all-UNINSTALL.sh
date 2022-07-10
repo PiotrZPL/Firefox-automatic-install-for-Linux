@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 # Uninstalling Firefox notice
-clear; echo "Uninstalling ALL editons of Mozilla Firefox (64 bit)"; echo; echo;
+echo "Uninstalling ALL editons of Mozilla Firefox (64 bit)"; echo; echo;
 # Small delay to give user time to read the above notice.
 sleep 3;
 # Installation
