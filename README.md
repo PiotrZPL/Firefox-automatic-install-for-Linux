@@ -13,11 +13,7 @@ chmod +x Setup.sh
 
 This will make the script executable (allowing it to run).  Next, execute the script by typing one of the following.
 
-   ./Setup.sh
-
--- OR --
-
-   bash Setup.sh
+bash Setup.sh
    
    (Or your perfered shell followed by Setup.sh)
 
