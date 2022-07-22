@@ -19,13 +19,13 @@ do
  echo "Please enter option [1 - 5]";
  read -r opt
  case $opt in
-  1) clear; echo; echo "You selected to install Firefox 64-bit"; echo; chmod +x ./64bit/sub64.sh; ./64bit/sub64.sh; exit 0 ;;
+  1) clear; echo; echo "You selected to install Firefox 64-bit"; echo; chmod +x ./64bit/sub-menu64.sh; ./64bit/sub-menu64.sh; exit 0 ;;
 
-  2) clear; echo; echo "You selected to install Firefox 32-bit"; echo; chmod +x ./32bit/sub32.sh; ./32bit/sub32.sh; exit 0 ;;
+  2) clear; echo; echo "You selected to install Firefox 32-bit"; echo; chmod +x ./32bit/sub-menu32.sh; ./32bit/sub-menu32.sh; exit 0 ;;
 
-  3) clear; echo; echo "You selected to uninstall 64-bit"; echo; chmod +x ./64bit/uninstallers/unsub64.sh; ./64bit/uninstallers/unsub64.sh; exit 0 ;;
+  3) clear; echo; echo "You selected to uninstall 64-bit"; echo; chmod +x ./64bit/uninstallers/uninstall-menu64.sh; ./64bit/uninstallers/uninstall-menu64.sh; exit 0 ;;
 
-  4) clear; echo; echo "You selected to uninstall 32-bit"; echo; chmod +x ./32bit/32bit-uninstallers/unsub32.sh; ./32bit/32bit-uninstallers/unsub32.sh; exit 0 ;;
+  4) clear; echo; echo "You selected to uninstall 32-bit"; echo; chmod +x ./32bit/32bit-uninstallers/uninstall-menu32.sh; ./32bit/32bit-uninstallers/uninstall-menu32.sh; exit 0 ;;
 
   5) clear; echo; echo "Goodbye, $USER"; echo; exit 1;;
 
