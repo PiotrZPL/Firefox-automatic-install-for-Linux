@@ -24,7 +24,7 @@ sudo tar xjf FirefoxBeta32.tar.bz2 -C /opt/firefox-beta-32bit/ ;
 # Required permissions needed for Mozilla Firefox automatic update feature to work.
 sudo chmod -R 757 /opt/firefox-beta-32bit/firefox/ ;
 # Start create icon script
-chmod +x ./32bit/fb32-icon.sh ; bash ./32bit/fb32-icon.sh ;
+chmod +x ./32bit/beta32-icon.sh ; bash ./32bit/beta32-icon.sh ;
 # Give time for icon script to complete
 sleep 2;
 # Makes icon executable allowing it to run Firefox (which is also executable).
