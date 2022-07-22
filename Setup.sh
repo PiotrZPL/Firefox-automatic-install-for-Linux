@@ -13,7 +13,7 @@ do
  echo "1. Install 64-bit Firefox -- Recommended";
  echo "2. Install 32-bit Firefox -- legacy";
  echo "3. Uninstall 64-bit";
- echo "4. Uninstall 32-bit"
+ echo "4. Uninstall 32-bit";
  echo "5. Exit";
  echo;
  echo "Please enter option [1 - 5]";
