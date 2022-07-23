@@ -24,7 +24,7 @@ sudo tar xjf FirefoxESR.tar.bz2 -C /opt/firefox-esr/ ;
 # Required permissions needed for Mozilla Firefox automatic update feature to work.
 sudo chmod -R 757 /opt/firefox-esr/firefox/ ;
 # Start create icon script.
-chmod +x ./64bit/fesr64-icon.sh ; bash ./64bit/fesr64-icon.sh ;
+chmod +x ./64bit/extended64-icon.sh ; bash ./64bit/extended64-icon.sh ;
 # Give time for icon script to complete.
 sleep 2;
 # Makes icon executable allowing it to run Firefox (which is also executable).
