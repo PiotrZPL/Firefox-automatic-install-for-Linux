@@ -5,7 +5,7 @@
 # Firefox automatic install for Linux - Universal shell edition
 # v2.9.0
 #
-clear;
+echo;
 echo "Now installing ALL editions. Please wait... "; sleep 2; 
 echo; echo; chmod +x ./64bit/FirefoxStable.sh; chmod +x ./64bit/FirefoxBeta.sh; chmod +x ./64bit/Firefox-Developer-Edition.sh; chmod +x ./64bit/FirefoxNightly.sh; chmod +x ./64bit/FirefoxESR.sh; 
 ./64bit/FirefoxStable.sh; ./64bit/FirefoxBeta.sh; ./64bit/Firefox-Developer-Edition.sh; ./64bit/FirefoxNightly.sh; ./64bit/FirefoxESR.sh;
