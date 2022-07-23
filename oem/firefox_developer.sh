@@ -19,7 +19,7 @@ tar xjf FirefoxDeveloperEdition.tar.bz2 -C /opt/firefox-developer-edition/ ;
 # Required permissions needed for Mozilla Firefox automatic update feature to work.
 chmod -R 757 /opt/firefox-developer-edition/firefox/ ;
 # Start create icon script.
-chmod +x ./fde64-icon.sh ; bash ./fde64-icon.sh ;
+chmod +x ./developer64-icon.sh ; bash ./developer64-icon.sh ;
 # Give time for icon script to complete.
 sleep 2;
 # Makes icon executable allowing it to run Firefox (which is also executable).
