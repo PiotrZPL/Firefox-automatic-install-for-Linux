@@ -2,8 +2,8 @@
 #
 # This will install ALL 64-bit releases. To be used with Setup.sh
 #
-# Firefox automatic install for Linux - Legacy Edition
-# v2.8.5
+# Firefox automatic install for Linux - Universal shell edition
+# v2.9.0
 #
 clear;
 echo "Now installing ALL editions. Please wait... "; sleep 2; 
