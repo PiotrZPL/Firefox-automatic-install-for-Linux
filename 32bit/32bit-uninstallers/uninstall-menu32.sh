@@ -36,7 +36,7 @@ do
 
   5) clear; echo; echo "You selected Firefox Extended Support Release"; echo; chmod +x ./32bit/32bit-uninstallers/32esr-UNINSTALL.sh; ./32bit/32bit-uninstallers/32esr-UNINSTALL.sh; break ;;
 
-  6) clear; echo; echo "You selected to remoove ALL 32-bit editions"; echo; chmod +x ./32bit/32bit-uninstallers/32firefox-all-UNINSTALL.sh; ./32bit/32bit-uninstallers/32firefox-all-UNINSTALL.sh; break ;;
+  6) clear; echo; echo "You selected to remove ALL 32-bit editions"; echo; chmod +x ./32bit/32bit-uninstallers/32firefox-all-UNINSTALL.sh; ./32bit/32bit-uninstallers/32firefox-all-UNINSTALL.sh; break ;;
 
   7) clear; echo; echo "Goodbye, $USER"; echo; exit 1;;
 
