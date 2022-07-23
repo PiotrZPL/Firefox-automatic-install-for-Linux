@@ -6,11 +6,6 @@
 echo "Please wait. I am downloading the latest version of Firefox Nightly"; echo;
 # 4-second wait before beginning download. Gives user time to read the above sentence and understand what is happening.
 sleep 4;
-# This installs BZIP2 on SUSE Linux distros and suppresses the error that ZYPPER is not found on non-SUSE distros.
-# In SUSE Linux, BZIP2 is required to extract the BZ2 archive downloaded from Mozilla.
-# While every major mainstream distribution includes a method to extract a BZ2 file, SUSE appears to be an exception.
-sudo zypper refresh --force 2> /dev/null
-sudo zypper install bzip2 2> /dev/null
 # Download.
 wget -O FirefoxNightly.tar.bz2 "https://download.mozilla.org/?product=firefox-nightly-latest-ssl&os=linux64"; echo; echo;
 # Begin install notice.
@@ -24,7 +19,7 @@ sudo tar xjf FirefoxNightly.tar.bz2 -C /opt/firefox-nightly/ ;
 # Required permissions needed for Mozilla Firefox automatic update feature to work.
 sudo chmod -R 757 /opt/firefox-nightly/firefox/ ;
 # Start create icon script.
-chmod +x ./64bit/fn64-icon.sh ; bash ./64bit/fn64-icon.sh ;
+chmod +x ./64bit/nightly64-icon.sh ; bash ./64bit/nightly64-icon.sh ;
 # Give time for icon script to complete.
 sleep 2;
 # Makes icon executable allowing it to run Firefox (which is also executable).

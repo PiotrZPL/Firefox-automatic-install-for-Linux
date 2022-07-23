@@ -6,11 +6,6 @@
 echo "Please wait. I am downloading the latest version of Firefox Beta"; echo;
 # 4-second wait before beginning download. Gives user time to read the above sentence and understand what is happening.
 sleep 4;
-# This installs BZIP2 on SUSE Linux distros and suppresses the error that ZYPPER is not found on non-SUSE distros.
-# In SUSE Linux, BZIP2 is required to extract the BZ2 archive downloaded from Mozilla.
-# While every major mainstream distribution includes a method to extract a BZ2 file, SUSE appears to be an exception.
-sudo zypper refresh --force 2> /dev/null
-sudo zypper install bzip2 2> /dev/null
 # Download.
 wget -O FirefoxBeta.tar.bz2 "https://download.mozilla.org/?product=firefox-beta-latest-ssl&os=linux64"; echo; echo;
 # Begin install notice.
@@ -24,7 +19,7 @@ sudo tar xjf FirefoxBeta.tar.bz2 -C /opt/firefox-beta/ ;
 # Required permissions needed for Mozilla Firefox automatic update feature to work.
 sudo chmod -R 757 /opt/firefox-beta/firefox/ ;
 # Start create icon script.
-chmod +x ./64bit/fb64-icon.sh ; bash ./64bit/fb64-icon.sh ;
+chmod +x ./64bit/beta64-icon.sh ; bash ./64bit/beta64-icon.sh ;
 # Give time for icon script to complete.
 sleep 2;
 # Makes icon executable allowing it to run Firefox (which is also executable).
