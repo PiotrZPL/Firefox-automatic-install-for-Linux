@@ -41,4 +41,5 @@ echo; echo; echo "Congratulations!";
 echo "Firefox ESR is now installed onto your computer.";
 echo "Firefox Extended Support Release edition will update itself.";
 echo "Happy browsing."; echo; echo;
+# exit
 exit 0

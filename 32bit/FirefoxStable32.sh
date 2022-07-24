@@ -41,4 +41,5 @@ echo; echo; echo "Congratulations!";
 echo "Firefox is now installed onto your computer.";
 echo "Firefox will update itself.";
 echo "Happy browsing."; echo; echo;
+# exit
 exit 0

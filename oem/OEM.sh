@@ -4,8 +4,12 @@
 #
 # This OEM file (oem.sh) is redundant. You do not absolutely need to use this file. 
 # The enclosed setup files (for example, firefox_nightly.sh) within the OEM folder (directory) can work 
-# independently alongside (with) their associated icon file (for example, fn64-icon.sh).  
+# independently alongside (with) their associated icon file (for example, nightly64-icon.sh).  
 # However, to use this file anyways, uncomment what you need and save.
+#
+# When done comment out the text below.
+echo "If you are currently seeing this TEXT, your developer has not configured Firefox automatic install for Linux correctly as they should have commended out this text.";
+# When done comment out the text above.
 #
 # Firefox
 # chmod +x ./firefox_stable.sh ; bash ./firefox_stable.sh ;
@@ -18,9 +22,6 @@
 # Firefox ESR
 # chmod +x ./firefox_esr.sh ; bash ./firefox_esr.sh ;
 #
-# When done comment out the text below.
-echo "If you are currently seeing this TEXT, your developer has not configured Firefox automatic install for Linux correctly as they should have commended out this text.";
-# When done comment out the text above.
 #
 # Exit
 exit 0
