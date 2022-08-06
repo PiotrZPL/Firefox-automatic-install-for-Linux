@@ -3,13 +3,13 @@
 # Installs Mozilla Firefox (stable release). To be used with Setup.sh
 #
 # Wait for download notice.
-echo; echo "Please wait. I am downloading the latest stable version of Mozilla Firefox"; echo;
+printf "\n"; pintf "Please wait. I am downloading the latest stable version of Mozilla Firefox \n";
 # 4-second wait before beginning download. Gives user time to read the above sentence and understand what is happening.
 sleep 4;
 # Download.
-wget -O FirefoxStable.tar.bz2 "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64"; echo; echo;
+wget -O FirefoxStable.tar.bz2 "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64";
 # Begin install notice.
-echo "Installing Mozilla Firefox";
+printf "\n"; printf "\n"; printf "Installing Mozilla Firefox \n";
 # Checks if distro has default opt path and if not found adds opt with default permissions.
 sudo mkdir -p -m 755 /opt ;
 # Extracts to install path
@@ -29,15 +29,15 @@ for destdir in /home/*/Desktop/; do
     cp Mozilla-Firefox.desktop "$destdir" &&
     chown --reference="$destdir" "$destdir/Mozilla-Firefox.desktop"
 done
-echo -n;
+printf "\n";
 # Adds a desktop icon to all FUTURE new login users (assuming you make any).
 sudo mkdir -p /etc/skel/Desktop ; sudo cp Mozilla-Firefox.desktop /etc/skel/Desktop ;
 # Removes the temporary files no longer needed.
 rm FirefoxStable.tar.bz2 ; rm Mozilla-Firefox.desktop ;
 # Exit notice.
-echo; echo; echo "Congratulations!";
-echo "Mozilla Firefox is now installed onto your computer.";
-echo "Mozilla Firefox will update itself.";
-echo "Happy browsing."; echo ; echo ;
+printf "\n"; printf "\n"; printf "Congratulations! \n";
+printf "Mozilla Firefox is now installed onto your computer. \n";
+printf "Mozilla Firefox will update itself. \n";
+printf "Happy browsing."; pinft "\n"; pintf "\n";
 # exit
 exit 0
