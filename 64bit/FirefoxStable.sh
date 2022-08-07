@@ -3,7 +3,7 @@
 # Installs Mozilla Firefox (stable release). To be used with Setup.sh
 #
 # Wait for download notice.
-printf "\n"; pintf "Please wait. I am downloading the latest stable version of Mozilla Firefox \n";
+printf "\n"; printf "Please wait. I am downloading the latest stable version of Mozilla Firefox \n";
 # 4-second wait before beginning download. Gives user time to read the above sentence and understand what is happening.
 sleep 4;
 # Download.
