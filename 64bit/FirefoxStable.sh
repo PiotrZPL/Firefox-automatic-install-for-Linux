@@ -2,12 +2,31 @@
 #
 # Installs Mozilla Firefox (stable release). To be used with Setup.sh
 #
-# Wait for download notice.
-printf -- '\n\n%s\n\n\n\n' "Please wait. I am downloading the latest stable version of Mozilla Firefox";
-# 4-second wait before beginning download. Gives user time to read the above sentence and understand what is happening.
-sleep 4;
-# Download.
-wget -O FirefoxStable.tar.bz2 "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64";
+###### Beging download and check for download tools.
+# Curl is the 1st choice. Including error suppression 2> if not found.
+if which curl 2> /dev/null ; then
+#   Download noice for curl.
+    printf -- '\n\n%s\n\n\n\n' "Please wait. I am using CURL to download the latest version of Mozilla Firefox.";
+#   4-second wait before beginning download. Gives user time to read the above sentence and understand what is happening.
+    sleep 4;
+#   Download command for curl.
+    curl -o "FirefoxStable.tar.bz2" -L "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64" ;
+# Wget is the 2nd choice.  Including error suppression 2> if not found.
+elif which wget 2> /dev/null ; then
+#   Download notice for wget.
+    printf -- '\n\n%s\n\n\n\n' "Please wait. I am using WGET to download the latest version of Mozilla Firefox.";
+#   4-second wait before beginning download. Gives user time to read the above sentence and understand what is happening.
+    sleep 4;
+#   Download command for wget.
+    wget -O "FirefoxStable.tar.bz2" -L "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64";
+# If neither, early exit notice.
+else
+    printf -- '%s\n' "" "" "" "I am sorry, but I cannot download Mozilla Firefox." \
+                               "Neither CURL nor WGET is available on your computer." "" ""
+    # Early exit.
+    exit 1;
+fi
+###### End of download.
 # Begin install notice.
 printf -- '\n\n\n%s\n\n' "Installing Mozilla Firefox";
 # Checks if distro has default opt path and if not found adds opt with default permissions.
@@ -35,15 +54,9 @@ sudo mkdir -p /etc/skel/Desktop ; sudo cp Mozilla-Firefox.desktop /etc/skel/Desk
 # Removes the temporary files no longer needed.
 rm FirefoxStable.tar.bz2 ; rm Mozilla-Firefox.desktop ;
 # Exit notice.
-cat << EOF
-
-
-Congratulations!
-Mozilla Firefox is now installed onto your computer.
-Mozilla Edition will update itself.
-Happy browsing.
-
-
-EOF
+printf -- '%s\n' "" "" "" "Congratulations!" \
+  "Mozilla Firefox is now installed onto your computer." \
+  "Mozilla Firefox will update itself." \
+  "Happy browsing." "" ""
 # exit
 exit 0
