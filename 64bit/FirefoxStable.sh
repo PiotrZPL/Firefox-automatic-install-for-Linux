@@ -2,6 +2,8 @@
 #
 # Installs Mozilla Firefox (stable release). To be used with Setup.sh
 #
+# Make error.sh exactable so it can execut if needed.
+chmod +x ./64bit/error.sh;
 # Download notice.
 printf -- '\n\n%s\n\n\n\n' "Please wait. I am download the latest version of Mozilla Firefox.";
 #4-second wait before beginning download. Gives user time to read the above sentence and understand what is happening.
