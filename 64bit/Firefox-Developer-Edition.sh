@@ -5,7 +5,7 @@
 # Make error.sh exactable so it can execut if needed.
 chmod +x ./64bit/error.sh;
 # Download notice.
-printf -- '\n\n%s\n\n\n\n' "Please wait. I am download the latest version of Mozilla Firefox Developer Edition.";
+printf -- '\n\n%s\n\n\n\n' "Please wait. I am downloading the latest version of Mozilla Firefox Developer Edition.";
 #4-second wait before beginning download. Gives user time to read the above sentence and understand what is happening.
 sleep 4;
 # Download using wget with curl failback.
