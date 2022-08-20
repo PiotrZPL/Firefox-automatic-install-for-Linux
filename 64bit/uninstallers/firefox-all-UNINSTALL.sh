@@ -29,9 +29,9 @@ sudo rm -r -f /home/*/Desktop/Firefox-Developer-Edition.desktop ;
 sudo rm -r -f /home/*/Desktop/Firefox-Nightly.desktop ;
 sudo rm -r -f /home/*/Desktop/Firefox-ESR.desktop ;
 # Cache files
-sudo rm -r -f /home/*/.cache/mozilla/firefox/ ;
+# sudo rm -r -f /home/*/.cache/mozilla/firefox/ ;
 # Configuration and profile files.
-sudo rm -r -f /home/*/.mozilla/firefox/ ;
+# sudo rm -r -f /home/*/.mozilla/firefox/ ;
 # Exit notice
 echo; echo; echo "Thank you for using Mozilla Firefox.";
 echo "Firefox has been deleted and uninstalled. Per your request.";
