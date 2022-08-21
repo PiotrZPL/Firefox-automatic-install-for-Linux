@@ -23,7 +23,7 @@ printf -- '%s\n' "   U N I N S T A L L - 3 2 b i t - M E N U" \
 " " \
 " 7. Exit" \
 " " \
-" 66. PURGE - CAUTION: Will remove all 32-bit editions" \ "                     and all cache and configuration files for all users" \ "                     for all copies of Mozilla Firefox on your computer." \
+" 66. PURGE - CAUTION: Will remove all 32-bit editions" \ "                     and all browser cache and configuration files for" \ "                     all copies of Mozilla Firefox for all users on your computer." \
 "" ""
  printf " Please enter option [1 - 7]";
  read -r opt
