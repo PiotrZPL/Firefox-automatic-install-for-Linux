@@ -1,7 +1,7 @@
 Requirements:
 
 # You will need to have access to SUDO. = For installation
-# You will also need WGET installed. = For the original Firefox download
+# You will also need CULR or WGET installed. = For the original Firefox download
 # Depending on your distro, you will also need TAR or UNTAR, or BZIP2 installed. = To decompress .tar.bz2 file
 
 All of which are usually pre-installed and configured in all 
