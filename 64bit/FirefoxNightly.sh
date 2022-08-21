@@ -21,7 +21,7 @@ sudo tar xjf FirefoxNightly.tar.bz2 -C /opt/firefox-nightly/ ;
 # Required permissions needed for Mozilla Firefox automatic update feature to work.
 sudo chmod -R 757 /opt/firefox-nightly/firefox/ ;
 # Start create icon script.
-chmod +x ./64bit/nightly64-icon.sh ; bash ./64bit/nightly64-icon.sh ;
+chmod +x ./64bit/icon-nightly64.sh ; bash ./64bit/icon-nightly64.sh ;
 # Give time for icon script to complete.
 sleep 2;
 # Makes icon executable allowing it to run Firefox (which is also executable).
