@@ -8,7 +8,7 @@
 # However, to use this file anyways, uncomment what you need and save.
 #
 # When done comment out the text below.
-echo "If you are currently seeing this TEXT, your developer has not configured Firefox automatic install for Linux correctly as they should have commended out this text.";
+printf " If you are currently seeing this TEXT, your developer has not configured Firefox automatic install for Linux correctly as they should have commended out this text.";
 # When done comment out the text above.
 #
 # Firefox
