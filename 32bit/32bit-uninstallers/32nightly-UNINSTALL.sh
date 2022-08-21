@@ -1,4 +1,3 @@
-
 #!/bin/sh
 #
 # Firefox Automatic Install for Linux -- Uninstall Firefox Nightly 32-bit -- File can be used independently
