@@ -1,9 +1,9 @@
 #!/bin/sh
 #
-# This script uses echo to generate a icon shortcut file. - Firefox Beta release
+# This script uses echo to generate a icon shortcut file. - Firefox Beta release - File can work independently.
 #
 # Creating icon
-echo "[Desktop Entry]
+printf "[Desktop Entry]
 Name=Firefox Beta
 GenericName=Web Browser
 GenericName[ar]=متصفح وِب
