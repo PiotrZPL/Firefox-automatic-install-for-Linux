@@ -2,14 +2,16 @@
 #
 # Installs Mozilla Firefox (extended support release). To be used with Setup.sh
 #
-# Wait for download notice.
-echo "Please wait. I am downloading the latest version of Firefox ESR"; echo;
-# 4-second wait before beginning download. Gives user time to read the above sentence and understand what is happening.
+# Make error.sh exactable so it can execut if needed.
+chmod +x ./32bit/error.sh;
+# Download notice.
+printf -- '\n\n%s\n\n\n\n' " Please wait. I am downloading the latest version of Mozilla Firefox Extended Support Release.";
+#4-second wait before beginning download. Gives user time to read the above sentence and understand what is happening.
 sleep 4;
-# Download
-wget -O FirefoxESR32.tar.bz2 "https://download.mozilla.org/?product=firefox-esr-latest-ssl&os=linux"; echo; echo;
+# Download using wget with curl failback.
+wget -L -O "FirefoxESR.tar.bz2" "https://download.mozilla.org/?product=firefox-esr-latest-ssl&os=linux" >/dev/null || curl -L -o "FirefoxESR.tar.bz2" "https://download.mozilla.org/?product=firefox-esr-latest-ssl&os=linux" || /.error.sh ;
 # Begin install notice.
-echo "Installing Firefox Extended Support Release";
+printf -- '\n\n\n%s\n\n' " Installing Mozilla Firefox Extended Support Release.";
 # Checks if distro has default opt path and if not found adds opt with default permissions.
 sudo mkdir -p -m 755 /opt ;
 # Path where to be installed.
@@ -37,9 +39,9 @@ sudo mkdir -p /etc/skel/Desktop ; sudo cp Firefox-ESR-32bit.desktop /etc/skel/De
 # Removes the temporary files no longer needed.
 rm FirefoxESR32.tar.bz2 ; rm Firefox-ESR-32bit.desktop ;
 # Exit notice.
-echo; echo; echo "Congratulations!";
-echo "Firefox ESR is now installed onto your computer.";
-echo "Firefox Extended Support Release edition will update itself.";
-echo "Happy browsing."; echo; echo;
+printf -- '%s\n' "" "" "" " Congratulations!" \
+  " Mozilla Firefox Extended Support Release is now installed onto your computer." \
+  " Mozilla Firefox Extended Support Release will update itself." \
+  " Happy browsing." "" ""
 # exit
 exit 0
