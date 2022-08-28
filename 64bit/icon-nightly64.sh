@@ -3,7 +3,7 @@
 # This script uses echo to generate a icon shortcut file. - Firefox Nightly Release
 #
 # Creating icon
-echo "[Desktop Entry]
+printf "[Desktop Entry]
 Name=Firefox Nightly
 GenericName=Web Browser
 GenericName[ar]=متصفح وِب
