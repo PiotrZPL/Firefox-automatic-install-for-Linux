@@ -1,7 +1,9 @@
 #!/bin/sh
 #
+# Firefox Automatic Install for Linux -- Uninstall Firefox Beta 64-bit -- File can be used independently
+#
 # Uninstalling Firefox notice
-echo "Uninstalling Mozilla Firefox Beta release"; echo; echo;
+printf -- '\n\n%s\n\n\n\n' " Uninstalling Mozilla Firefox Beta ";
 # Small delay to give user time to read the above notice.
 sleep 3;
 # Installation
@@ -19,8 +21,8 @@ sudo rm -r -f /home/*/Desktop/Firefox-Beta.desktop ;
 # sudo rm -r -f /home/*/.mozilla/firefox/*.default-beta*/ ;
 #
 # exit notice
-echo; echo; echo "Thank you for using Mozilla Firefox.";
-echo "Firefox has been deleted and uninstalled. Per your request.";
-echo "Really sorry to see you go. Hope to see you again real soon."; echo; echo;
+printf -- '%s\n' "" "" "" "Thank you for using Mozilla Firefox." \
+"Firefox has been deleted and uninstalled. Per your request." \
+"Really sorry to see you go. Hope to see you again real soon." "" ""
 # exit
 exit 0
