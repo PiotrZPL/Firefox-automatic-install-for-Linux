@@ -2,7 +2,7 @@
 #
 # Firefox stable release icon - 32bit
 # Creating icon.
-echo "[Desktop Entry]
+printf "[Desktop Entry]
 # The file name should be different from the default 64-bit names (keeps compatibility so you can install both if you choose).
 Name=Firefox 32bit
 #
