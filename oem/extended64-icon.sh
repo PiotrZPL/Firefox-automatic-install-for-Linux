@@ -3,7 +3,7 @@
 # This script uses echo to generate a icon shortcut file. - Firefox Extended Support Release
 #
 # Creating icon
-echo "[Desktop Entry]
+print "[Desktop Entry]
 Name=Firefox ESR
 GenericName=Web Browser
 GenericName[ar]=متصفح وِب
