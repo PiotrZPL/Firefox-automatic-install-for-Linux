@@ -21,8 +21,8 @@ sudo rm -r -f /home/*/Desktop/Firefox-Nightly-32bit.desktop ;
 # sudo rm -r -f /home/*/.mozilla/firefox/*.default-nightly*/ ;
 #
 # exit notice
-printf -- '%s\n' "" "" "" "Thank you for using Mozilla Firefox." \
-"Firefox has been deleted and uninstalled. Per your request." \
-"Really sorry to see you go. Hope to see you again real soon." "" ""
+printf -- '%s\n' "" "" "" " Thank you for using Mozilla Firefox." \
+" Firefox has been deleted and uninstalled. Per your request." \
+" Really sorry to see you go. Hope to see you again real soon." "" ""
 # exit
 exit 0
