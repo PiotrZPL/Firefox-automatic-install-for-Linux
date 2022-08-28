@@ -5,13 +5,13 @@
 # Make error.sh exactable so it can execut if needed.
 chmod +x ./64bit/error.sh;
 # Download notice.
-printf -- '\n\n%s\n\n\n\n' "Please wait. I am downloading the latest version of Mozilla Firefox Beta.";
+printf -- '\n\n%s\n\n\n\n' " Please wait. I am downloading the latest version of Mozilla Firefox Beta.";
 #4-second wait before beginning download. Gives user time to read the above sentence and understand what is happening.
 sleep 4;
 # Download using wget with curl failback.
 wget -L -O "FirefoxBeta.tar.bz2" "https://download.mozilla.org/?product=firefox-beta-latest-ssl&os=linux64" >/dev/null || curl -L -o "FirefoxBeta.tar.bz2" "https://download.mozilla.org/?product=firefox-beta-latest-ssl&os=linux64" || /.error.sh ;
 # Begin install notice.
-printf -- '\n\n\n%s\n\n' "Installing Mozilla Firefox Beta.";
+printf -- '\n\n\n%s\n\n' " Installing Mozilla Firefox Beta.";
 # Checks if distro has default opt path and if not found adds opt with default permissions.
 sudo mkdir -p -m 755 /opt ;
 # Path where to be installed.
@@ -39,9 +39,9 @@ sudo mkdir -p /etc/skel/Desktop ; sudo cp Firefox-Beta.desktop /etc/skel/Desktop
 # Removes the temporary files no longer needed.
 rm FirefoxStable.tar.bz2 ; rm Firefox-Beta.desktop ;
 # Exit notice.
-printf -- '%s\n' "" "" "" "Congratulations!" \
-  "Mozilla Firefox Beta is now installed onto your computer." \
-  "Mozilla Firefox Beta will update itself." \
-  "Happy browsing." "" ""
+printf -- '%s\n' "" "" "" " Congratulations!" \
+  " Mozilla Firefox Beta is now installed onto your computer." \
+  " Mozilla Firefox Beta will update itself." \
+  " Happy browsing." "" ""
 # exit
 exit 0
