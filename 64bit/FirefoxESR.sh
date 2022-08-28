@@ -5,13 +5,13 @@
 # Make error.sh exactable so it can execut if needed.
 chmod +x ./64bit/error.sh;
 # Download notice.
-printf -- '\n\n%s\n\n\n\n' "Please wait. I am downloading the latest version of Mozilla Firefox Extended Support Release.";
+printf -- '\n\n%s\n\n\n\n' " Please wait. I am downloading the latest version of Mozilla Firefox Extended Support Release.";
 #4-second wait before beginning download. Gives user time to read the above sentence and understand what is happening.
 sleep 4;
 # Download using wget with curl failback.
 wget -L -O "FirefoxESR.tar.bz2" "https://download.mozilla.org/?product=firefox-esr-latest-ssl&os=linux64" >/dev/null || curl -L -o "FirefoxESR.tar.bz2" "https://download.mozilla.org/?product=firefox-esr-latest-ssl&os=linux64" || /.error.sh ;
 # Begin install notice.
-printf -- '\n\n\n%s\n\n' "Installing Mozilla Firefox Extended Support Release.";
+printf -- '\n\n\n%s\n\n' " Installing Mozilla Firefox Extended Support Release.";
 # Checks if distro has default opt path and if not found adds opt with default permissions.
 sudo mkdir -p -m 755 /opt ;
 # Path where to be installed.
@@ -39,9 +39,9 @@ sudo mkdir -p /etc/skel/Desktop ; sudo cp Firefox-ESR.desktop /etc/skel/Desktop 
 # Removes the temporary files no longer needed.
 rm FirefoxESR.tar.bz2 ; rm Firefox-ESR.desktop ;
 # Exit notice.
-printf -- '%s\n' "" "" "" "Congratulations!" \
-  "Mozilla Firefox Extended Support Release is now installed onto your computer." \
-  "Mozilla Firefox Extended Support Release will update itself." \
-  "Happy browsing." "" ""
+printf -- '%s\n' "" "" "" " Congratulations!" \
+  " Mozilla Firefox Extended Support Release is now installed onto your computer." \
+  " Mozilla Firefox Extended Support Release will update itself." \
+  " Happy browsing." "" ""
 # exit
 exit 0
