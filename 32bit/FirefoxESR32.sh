@@ -33,7 +33,7 @@ for destdir in /home/*/Desktop/; do
     cp Firefox-ESR-32bit.desktop "$destdir" &&
     chown --reference="$destdir" "$destdir/Firefox-ESR-32bit.desktop"
 done
-echo -n;
+printf "\n";
 # Adds a desktop icon to all FUTURE new login users (assuming you make any).
 sudo mkdir -p /etc/skel/Desktop ; sudo cp Firefox-ESR-32bit.desktop /etc/skel/Desktop ;
 # Removes the temporary files no longer needed.
