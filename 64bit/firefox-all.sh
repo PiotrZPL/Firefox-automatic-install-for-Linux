@@ -5,7 +5,7 @@
 # Firefox automatic install for Linux - Universal shell edition
 # v2.9.0.3
 #
-printf -- '\n\n%s\n\n\n\n' "Now installing ALL editions of Mozilla Firefox. Please wait... ";
+printf -- '\n\n%s\n\n\n\n' " Now installing ALL editions of Mozilla Firefox. Please wait... ";
 # Give time for user to read notice.
 sleep 2; 
 # Visual spacing
@@ -21,9 +21,9 @@ chmod +x ./64bit/FirefoxNightly.sh; ./64bit/FirefoxNightly.sh;
 # Firefox Extended Support Release
 chmod +x ./64bit/FirefoxESR.sh; ./64bit/FirefoxESR.sh;
 # Exit notice
-printf -- '%s\n' "" "" "" "Congratulations!" \
-  "ALL editions of Mozilla Firfox have been installed onto your computer." \
-  "They ALL will update themselves. No additional action is required." \
-  "Happy browsing." "" ""
+printf -- '%s\n' "" "" "" " Congratulations!" \
+  " ALL editions of Mozilla Firfox have been installed onto your computer." \
+  " They ALL will update themselves. No additional action is required." \
+  " Happy browsing." "" ""
 # Exit
 exit 0
