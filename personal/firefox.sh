@@ -2,8 +2,10 @@
 #
 # Firefox (current stable edition) - personal - silent install
 #
+# Make error.sh exactable so it can execut if needed.
+chmod +x ./error.sh;
 # Download.
-wget -O FirefoxStable.tar.bz2 "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64";
+wget -L -O "FirefoxESR.tar.bz2" "https://download.mozilla.org/?product=firefox-esr-latest-ssl&os=linux64" >/dev/null || curl -L -o "FirefoxESR.tar.bz2" "https://download.mozilla.org/?product=firefox-esr-latest-ssl&os=linux64" || /.error.sh ;
 # Checks if distro has default opt path and if not found adds opt with default permissions.
 mkdir -p -m 755 /home/$USER/Mozilla ;
 # Extracts to install path
@@ -11,7 +13,7 @@ tar xjf FirefoxStable.tar.bz2 -C /home/$USER/Mozilla ;
 # Required permissions needed for Mozilla Firefox automatic update feature to work.
 chmod -R 757 /home/$USER/Mozilla/firefox/ ;
 # Create icon script using echo command
-echo "[Desktop Entry]
+printf "[Desktop Entry]
 Name=Mozilla Firefox
 GenericName=Web Browser
 GenericName[ar]=متصفح وِب
@@ -332,7 +334,7 @@ for destdir in /home/$USER/Desktop/; do
     cp Mozilla-Firefox.desktop "$destdir" &&
     chown --reference="$destdir" "$destdir/Mozilla-Firefox.desktop"
 done
-echo -n;
+printf "\n";
 # Removes the temporary files no longer needed.
 rm FirefoxStable.tar.bz2 ; rm Mozilla-Firefox.desktop ;
 # Exit
