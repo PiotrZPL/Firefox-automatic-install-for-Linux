@@ -9,8 +9,6 @@
 # That which is done cannot be un-done. Re-installed, of course, but not un-done. 
 #
 # Uninstalling Firefox notice
-clear;
-printf -- '\n\n%s\n\n\n\n' " ";
 printf -- '%s\n' "    P U R G E" \
  " " \
  " You have selected PURGE." \
