@@ -1,10 +1,11 @@
 #!/bin/sh
 #
-# This script uses echo to generate a icon shortcut file. - Mozilla Firefox stable release
+# Firefox Extended Support Release (ESR) icon - 32bit
+# Creating icon.
+printf "[Desktop Entry]
+# The file name should be different from the default 64-bit names (keeps compatibility so you can install both if you choose).
+Name=Firefox ESR 32bit
 #
-# Creating icon
-echo "[Desktop Entry]
-Name=Mozilla Firefox
 GenericName=Web Browser
 GenericName[ar]=متصفح وِب
 GenericName[ast]=Restolador Web
@@ -87,13 +88,13 @@ Comment[uk]=Перегляд сторінок Інтернету
 Comment[vi]=Để duyệt các trang web
 Comment[zh_CN]=浏览互联网
 Comment[zh_TW]=瀏覽網際網路
-Exec=/opt/firefox/firefox  %u --class MozillaFirefox
-Icon=/opt/firefox/browser/chrome/icons/default/default128.png
+Exec=/opt/firefox-esr-32bit/firefox/firefox %u --class FirefoxESR32
+Icon=/opt/firefox-esr-32bit/firefox/browser/chrome/icons/default/default128.png
 Terminal=false
 Type=Application
 MimeType=text/html;text/xml;application/xhtml+xml;application/vnd.mozilla.xul+xml;text/mml;x-scheme-handler/http;x-scheme-handler/https;
 StartupNotify=true
-StartupWMClass=MozillaFirefox
+StartupWMClass=FirefoxESR32
 Categories=Network;WebBrowser;
 Keywords=web;browser;internet;
 Actions=new-window;new-private-window;
@@ -204,7 +205,7 @@ Name[wo]=Palanteer bu bees
 Name[xh]=Ifestile entsha
 Name[zh_CN]=新建窗口
 Name[zh_TW]=開新視窗
-Exec=/opt/firefox/firefox --new-window %u --class MozillaFirefox
+Exec=/opt/firefox-esr-32bit/firefox/firefox --new-window %u --class FirefoxESR32
 
 [Desktop Action new-private-window]
 Name=New Private Window
@@ -312,6 +313,7 @@ Name[wo]=Panlanteeru biir bu bees
 Name[xh]=Ifestile yangasese entsha
 Name[zh_CN]=新建隐私浏览窗口
 Name[zh_TW]=新增隱私視窗
-Exec=/opt/firefox/firefox --private-window %u --class MozillaFirefox" > Mozilla-Firefox.desktop ;
+Exec=/opt/firefox-esr-32bit/firefox/firefox --private-window %u --class FirefoxESR32" > Firefox-ESR-32bit.desktop ;
+# The file name should be different from the default 64-bit names (keeps compatibility so you can install both if you choose).
 # Exit
 exit 0

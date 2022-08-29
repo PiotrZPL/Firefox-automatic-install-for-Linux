@@ -1,10 +1,10 @@
 #!/bin/sh
 #
-# This script uses echo to generate a icon shortcut file. - Firefox Nightly Release
+# This script uses echo to generate a icon shortcut file. - Firefox Extended Support Release
 #
 # Creating icon
-echo "[Desktop Entry]
-Name=Firefox Nightly
+printf "[Desktop Entry]
+Name=Firefox ESR
 GenericName=Web Browser
 GenericName[ar]=متصفح وِب
 GenericName[ast]=Restolador Web
@@ -87,13 +87,13 @@ Comment[uk]=Перегляд сторінок Інтернету
 Comment[vi]=Để duyệt các trang web
 Comment[zh_CN]=浏览互联网
 Comment[zh_TW]=瀏覽網際網路
-Exec=/opt/firefox-nightly/firefox/firefox %u --class FirefoxNightly
-Icon=/opt/firefox-nightly/firefox/browser/chrome/icons/default/default128.png
+Exec=/opt/firefox-esr/firefox/firefox %u --class FirefoxESR
+Icon=/opt/firefox-esr/firefox/browser/chrome/icons/default/default128.png
 Terminal=false
 Type=Application
 MimeType=text/html;text/xml;application/xhtml+xml;application/vnd.mozilla.xul+xml;text/mml;x-scheme-handler/http;x-scheme-handler/https;
 StartupNotify=true
-StartupWMClass=FirefoxNightly
+StartupWMClass=FirefoxESR
 Categories=Network;WebBrowser;
 Keywords=web;browser;internet;
 Actions=new-window;new-private-window;
@@ -204,7 +204,7 @@ Name[wo]=Palanteer bu bees
 Name[xh]=Ifestile entsha
 Name[zh_CN]=新建窗口
 Name[zh_TW]=開新視窗
-Exec=/opt/firefox-nightly/firefox/firefox --new-window %u --class FirefoxNightly
+Exec=/opt/firefox-esr/firefox/firefox --new-window %u --class FirefoxESR
 
 [Desktop Action new-private-window]
 Name=New Private Window
@@ -312,6 +312,6 @@ Name[wo]=Panlanteeru biir bu bees
 Name[xh]=Ifestile yangasese entsha
 Name[zh_CN]=新建隐私浏览窗口
 Name[zh_TW]=新增隱私視窗
-Exec=/opt/firefox-nightly/firefox/firefox --private-window %u --class FirefoxNightly" > Firefox-Nightly.desktop ;
+Exec=/opt/firefox-esr/firefox/firefox --private-window %u --class FirefoxESR" > Firefox-ESR.desktop ;
 # Exit
 exit 0

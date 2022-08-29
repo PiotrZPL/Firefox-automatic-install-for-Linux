@@ -3,7 +3,7 @@
 # This script uses echo to generate a icon shortcut file. - Firefox stable release
 #
 # Creating icon
-echo "[Desktop Entry]
+printf "[Desktop Entry]
 Name=Mozilla Firefox
 GenericName=Web Browser
 GenericName[ar]=متصفح وِب

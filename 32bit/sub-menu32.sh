@@ -1,43 +1,44 @@
 #!/bin/sh
 #
 # Firefox automatic install for Linux
-#  Universal Shell Edition
-#   v2.9.0
+#   v2.9.0.3
 #
 # -- This file to be used with Setup.sh
 #
 while true :
 do
- echo;
- echo "   3 2 b i t - M E N U";
- echo;
- echo "1. Mozill Firefox";
- echo "2. Firefox Beta";
- echo "3. Firefox Developer Edition";
- echo "4. Firefox Nightly";
- echo "5. Firefox Extended Support Release";
- echo "6. Install ALL 32-bit editions";
- echo "7. Exit";
- echo;
- echo "Please enter option [1 - 7]";
+ printf -- '\n\n%s\n\n\n\n' " ";
+ printf -- '%s\n' "   6 4 b i t - M E N U" \
+ " " \
+ " 1. Mozill Firefox" \
+ " 2. Firefox Beta" \
+ " 3. Firefox Developer Edition" \
+ " 4. Firefox Nightly" \
+ " 5. Firefox Extended Support Release" \
+ " 6. Install ALL 64-bit editions" \
+ " 7. Exit" \
+ "" ""
+ printf " Please enter option [1 - 7]";
  read -r opt
  case $opt in
-  1) clear; echo; echo "You selected Mozilla Firefox"; echo; chmod +x ./32bit/FirefoxStable32.sh; ./32bit/FirefoxStable32.sh; break ;;
+  1) clear; printf -- '\n\n\n%s\n\n\n\n' " You selected Mozilla Firefox"; chmod +x ./32bit/FirefoxStable32.sh; ./32bit/FirefoxStable32.sh; break ;;
 
-  2) clear; echo; echo "You selected Firefox Beta"; echo; chmod +x ./32bit/FirefoxBeta32.sh; ./32bit/FirefoxBeta32.sh; break ;;
+  2) clear; printf -- '\n\n\n%s\n\n\n\n' " You selected Firefox Beta"; chmod +x ./32bit/FirefoxBeta32.sh; ./32bit/FirefoxBeta32.sh; break ;;
 
-  3) clear; echo; echo "You selected Firefox Developer Edition"; echo; chmod +x ./32bit/Firefox-Developer-Edition32.sh; ./32bit/Firefox-Developer-Edition32.sh; break ;;
+  3) clear; printf -- '\n\n\n%s\n\n\n\n' " You selected Firefox Developer Edition"; chmod +x ./32bit/Firefox-Developer-Edition32.sh; ./32bit/Firefox-Developer-Edition32.sh; break ;;
 
-  4) clear; echo; echo "You selected Firefox Nightly"; echo; chmod +x ./32bit/FirefoxNightly32.sh; ./32bit/FirefoxNightly32.sh; break ;;
+  4) clear; printf -- '\n\n\n%s\n\n\n\n' " You selected Firefox Nightly"; chmod +x ./32bit/FirefoxNightly32.sh; ./32bit/FirefoxNightly32.sh; break ;;
 
-  5) clear; echo; echo "You selected Firefox Extended Support Release"; echo; chmod +x ./32bit/FirefoxESR32.sh; ./32bit/FirefoxESR32.sh; break ;;
+  5) clear; printf -- '\n\n\n%s\n\n\n\n' " You selected Firefox Extended Support Release"; chmod +x ./32bit/FirefoxESR32.sh; ./32bit/FirefoxESR32.sh; break ;;
 
-  6) clear; echo; echo "You selected to install ALL 32-bit editions"; echo; chmod +x ./32bit/firefox-all32.sh; ./32bit/firefox-all32.sh; break ;;
+  6) clear; printf -- '\n\n\n%s\n\n\n\n' " You selected to install ALL 32-bit editions"; chmod +x ./32bit/firefox-all32.sh; ./32bit/firefox-all32.sh; break ;;
 
-  7) clear; echo; echo "Goodbye, $USER"; echo; exit 1;;
+  7) clear; printf -- '\n\n\n%s\n\n\n\n' " Goodbye, $USER"; exit 1;;
 
-  *) echo "$opt is an invaild option. Please select option between 1-7 only";
-     echo "Press the [enter] key to continue. . .";
+  *) clear;
+     printf -- '\n\n%s\n' " $opt is an invaild option. Please select option between 1-7 only" \
+     " Press the [enter] key to continue. . ."
      read -r enterKey;
+     clear;
 esac
 done
