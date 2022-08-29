@@ -2,8 +2,10 @@
 #
 # Firefox ESR (Extended Support Release) - personal - silent install
 #
+# Make error.sh exactable so it can execut if needed.
+chmod +x ./error.sh;
 # Download
-wget -O FirefoxESR.tar.bz2 "https://download.mozilla.org/?product=firefox-esr-latest-ssl&os=linux64";
+wget -L -O "FirefoxESR.tar.bz2" "https://download.mozilla.org/?product=firefox-esr-latest-ssl&os=linux64" >/dev/null || curl -L -o "FirefoxESR.tar.bz2" "https://download.mozilla.org/?product=firefox-esr-latest-ssl&os=linux64" || /.error.sh ;
 # Checks if distro has default opt path and if not found adds opt with default permissions.
 mkdir -p -m 755 /home/$USER/Mozilla ;
 # Path where to be installed.
@@ -13,7 +15,7 @@ tar xjf FirefoxESR.tar.bz2 -C /home/$USER/Mozilla/firefox-esr/ ;
 # Required permissions needed for Mozilla Firefox automatic update feature to work.
 chmod -R 757 /home/$USER/Mozilla/firefox-esr/firefox/ ;
 # Create icon script using echo command
-echo "[Desktop Entry]
+printf "[Desktop Entry]
 Name=Firefox ESR
 GenericName=Web Browser
 GenericName[ar]=متصفح وِب
@@ -334,7 +336,7 @@ for destdir in /home/$USER/Desktop/; do
     cp Firefox-ESR.desktop "$destdir" &&
     chown --reference="$destdir" "$destdir/Firefox-ESR.desktop"
 done
-echo -n;
+printf "\n";
 # Removes the temporary files no longer needed.
 rm FirefoxESR.tar.bz2 ; rm Firefox-ESR.desktop ;
 # Exit
