@@ -5,13 +5,13 @@
 # Make error.sh exactable so it can execut if needed.
 chmod +x ./error.sh;
 # Download notice.
-printf -- '\n\n%s\n\n\n\n' " Please wait. I am downloading the latest version of Mozilla Firefox Developer Edition.";
+# printf -- '\n\n%s\n\n\n\n' " Please wait. I am downloading the latest version of Mozilla Firefox Developer Edition.";
 #4-second wait before beginning download. Gives user time to read the above sentence and understand what is happening.
-sleep 4;
+# sleep 4;
 # Download using wget with curl failback.
 wget -L -O "FirefoxDeveloperEdition.tar.bz2" "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64" >/dev/null || curl -L -o "FirefoxDeveloperEdition.tar.bz2" "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64" || /.error.sh ;
 # Begin install notice.
-printf -- '\n\n\n%s\n\n' " Installing Mozilla Firefox Developer Edition.";
+# printf -- '\n\n\n%s\n\n' " Installing Mozilla Firefox Developer Edition.";
 # Checks if distro has default opt path and if not found adds opt with default permissions.
 mkdir -p -m 755 /opt ;
 # Path where to be installed.
@@ -39,9 +39,9 @@ mkdir -p /etc/skel/Desktop ; cp Firefox-Developer-Edition.desktop /etc/skel/Desk
 # Removes the temporary files no longer needed.
 rm FirefoxDeveloperEdition.tar.bz2 ; rm Firefox-Developer-Edition.desktop ;
 # Exit notice.
-printf -- '%s\n' "" "" "" " Congratulations!" \
-  " Mozilla Firefox Developer Edition is now installed onto your computer." \
-  " Mozilla Firefox Developer Edition will update itself." \
-  " Happy browsing." "" ""
+# printf -- '%s\n' "" "" "" " Congratulations!" \
+#  " Mozilla Firefox Developer Edition is now installed onto your computer." \
+#  " Mozilla Firefox Developer Edition will update itself." \
+#  " Happy browsing." "" ""
 # exit
 exit 0
