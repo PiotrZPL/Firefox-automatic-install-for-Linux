@@ -5,7 +5,7 @@
 # Make error.sh exactable so it can execut if needed.
 chmod +x ./error.sh;
 # Download.
-wget -L -O "FirefoxESR.tar.bz2" "https://download.mozilla.org/?product=firefox-esr-latest-ssl&os=linux64" >/dev/null || curl -L -o "FirefoxESR.tar.bz2" "https://download.mozilla.org/?product=firefox-esr-latest-ssl&os=linux64" || /.error.sh ;
+wget -L -O "FirefoxStable.tar.bz2" "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64" >/dev/null || curl -L -o "FirefoxStable.tar.bz2" "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64" || /.error.sh ;
 # Checks if distro has default opt path and if not found adds opt with default permissions.
 mkdir -p -m 755 /home/$USER/Mozilla ;
 # Extracts to install path
