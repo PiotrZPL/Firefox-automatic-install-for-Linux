@@ -4,7 +4,7 @@
 #
 # This Install file (Install.sh) is redundant. You do not absolutely need to use this file. 
 # The enclosed setup files (for example, nightly.sh which installs Firefox Nightly) 
-# within the "personal" folder (directory) can work independently.  
+# within the "personal" folder (directory) can work independently along with the error.sh file.  
 # However, to use this file anyways, uncomment what you need and save.
 # By default this file is set to install the latest stable edition of Mozilla Firefox.
 #
