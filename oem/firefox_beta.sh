@@ -21,7 +21,7 @@ tar xjf FirefoxBeta.tar.bz2 -C /opt/firefox-beta/ ;
 # Required permissions needed for Mozilla Firefox automatic update feature to work.
 chmod -R 757 /opt/firefox-beta/firefox/ ;
 # Start create icon script.
-chmod +x ./64bit/icon-beta64.sh ; bash ./64bit/icon-beta64.sh ;
+chmod +x ./icon-beta64.sh ; bash ./icon-beta64.sh ;
 # Give time for icon script to complete.
 sleep 2;
 # Makes icon executable allowing it to run Firefox (which is also executable).
