@@ -54,3 +54,4 @@ printf -- '%s\n' "" "" "" " Thank you for using Mozilla Firefox." \
 " Really sorry to see you go. Hope to see you again real soon" "" ""
 # Exit
 exit 0
+# The which is done cannot be un-done. Re-installed, of course, but not un-done. 
