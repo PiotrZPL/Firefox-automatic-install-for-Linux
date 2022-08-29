@@ -4,7 +4,7 @@
 #
 # This OEM file (oem.sh) is redundant. You do not absolutely need to use this file. 
 # The enclosed setup files (for example, firefox_nightly.sh) within the OEM folder (directory) can work 
-# independently alongside (with) their associated icon file (for example, icon-nightly64.sh) and error.sh.  
+# independently alongside (with) their associated icon file (for example, icon-nightly64.sh) and the error.sh file.
 # However, to use this file anyways, uncomment what you need and save.
 #
 # When done comment out the text below.
