@@ -3,7 +3,7 @@
 # Firefox Automatic Install for Linux -- Uninstall ALL 64-bit editions -- File can be used independently.
 #
 # Uninstalling Firefox notice
-printf -- '\n\n%s\n\n\n\n' " Uninstalling ALL releases of Mozilla Firefox 64-bit";
+printf -- '\n%s\n' " Uninstalling ALL releases of Mozilla Firefox 64-bit";
 # Small delay to give user time to read the above notice.
 sleep 3;
 # Installation
