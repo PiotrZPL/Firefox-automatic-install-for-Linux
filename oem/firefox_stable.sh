@@ -19,7 +19,7 @@ tar xjf FirefoxStable.tar.bz2 -C /opt/ ;
 # Required permissions needed for Mozilla Firefox automatic update feature to work.
 chmod -R 757 /opt/firefox/ ;
 # Start create icon script
-chmod +x ./icon-firefox64.sh ; bash ./icon-firefox64.sh ;
+chmod +x ./icon_firefox64.sh ; bash ./icon_firefox64.sh ;
 # Give time for icon script to complete
 sleep 2;
 # Makes icon executable allowing it to run Firefox (which is also executable).
