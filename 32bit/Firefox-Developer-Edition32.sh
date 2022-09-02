@@ -5,7 +5,7 @@
 # Make error.sh exactable so it can execut if needed.
 chmod +x ./32bit/error.sh;
 # Download notice.
-printf -- '\n\n%s\n\n\n\n' " Please wait. I am downloading the latest version of Mozilla Firefox Developer Edition.";
+printf -- '\n%s\n' " Please wait. I am downloading the latest version of Mozilla Firefox Developer Edition.";
 #4-second wait before beginning download. Gives user time to read the above sentence and understand what is happening.
 sleep 4;
 # Download using wget with curl failback.
@@ -21,7 +21,7 @@ sudo tar xjf FirefoxDeveloperEdition32.tar.bz2 -C /opt/firefox-developer-edition
 # Required permissions needed for Mozilla Firefox automatic update feature to work.
 sudo chmod -R 757 /opt/firefox-developer-edition-32bit/firefox/ ;
 # Start create icon script
-chmod +x ./32bit/icon-developer32.sh ; bash ./32bit/icon-developer32.sh ;
+chmod +x ./32bit/icon_developer32.sh ; bash ./32bit/icon_developer32.sh ;
 # Give time for icon script to complete
 sleep 2;
 # Makes icon executable allowing it to run Firefox (which is also executable).
