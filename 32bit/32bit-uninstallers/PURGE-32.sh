@@ -8,18 +8,10 @@
 #
 # That which is done cannot be un-done. Re-installed, of course, but not un-done. 
 #
-# Uninstalling Firefox notice
-printf -- '%s\n' "    P U R G E" \
- " " \
- " You have selected PURGE." \
- " "\
- " Per your resust, all editions of Mozilla Firefox will now be removed from your computer." \
- " Addionally, all configuration files and all cache files for" \
- " all copies Firefox for all users on your computer will now be deleted." \
- " This gives you a fresh and clean slate." \
- "" ""
+# Purge Firefox notice
+printf -- '\n%s\n' " Per your request. Now purging Mozilla Firefox.";
 # 10 second delay to give user time to read the above notice
-sleep 10;
+sleep 3;
 # Installation
 sudo rm -r -f /opt/firefox-32bit/ ;
 sudo rm -r -f /opt/firefox-beta-32bit/ ;
