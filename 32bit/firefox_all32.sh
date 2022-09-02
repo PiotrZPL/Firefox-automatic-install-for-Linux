@@ -2,7 +2,7 @@
 #
 # This will install ALL 32-bit releases. To be used with Setup.sh
 #
-# Firefox automatic install for Linux - Universal shell edition
+# Firefox automatic install for Linux
 # v2.9.0.4
 #
 printf -- '\n%s\n' " Now installing ALL 32-bt editions of Mozilla Firefox. Please wait... ";
