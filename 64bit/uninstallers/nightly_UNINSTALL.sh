@@ -3,7 +3,7 @@
 # Firefox Automatic Install for Linux -- Uninstall Firefox Nightly 64-bit -- File can be used independently
 #
 # Uninstalling Firefox notice
-printf -- '\n\n%s\n\n\n\n' " Uninstalling Firefox Nightly release";
+printf -- '\n%s\n' " Uninstalling Firefox Nightly release";
 # Small delay to give user time to read the above notice.
 sleep 3;
 # Installation
