@@ -3,7 +3,7 @@
 # Firefox Automatic Install for Linux -- Uninstall Firefox Developer Edition 32-bit -- File can be used independently
 #
 # Uninstalling Firefox notice
-printf -- '\n\n%s\n\n\n\n' " Uninstalling Firefox Developer Edition 32-bit";
+printf -- '\n%s\n' " Uninstalling Firefox Developer Edition 32-bit";
 # Small delay to give user time to read the above notice.
 sleep 3;
 # Installation
