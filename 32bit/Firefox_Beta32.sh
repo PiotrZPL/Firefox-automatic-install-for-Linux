@@ -5,7 +5,7 @@
 # Make error.sh exactable so it can execut if needed.
 chmod +x ./32bit/error.sh;
 # Download notice.
-printf -- '\n\n%s\n\n\n\n' " Please wait. I am downloading the latest version of Mozilla Firefox Beta.";
+printf -- '\n%s\n' " Please wait. I am downloading the latest version of Mozilla Firefox Beta.";
 #4-second wait before beginning download. Gives user time to read the above sentence and understand what is happening.
 sleep 4;
 # Download using wget with curl failback.
@@ -21,7 +21,7 @@ sudo tar xjf FirefoxBeta32.tar.bz2 -C /opt/firefox-beta-32bit/ ;
 # Required permissions needed for Mozilla Firefox automatic update feature to work.
 sudo chmod -R 757 /opt/firefox-beta-32bit/firefox/ ;
 # Start create icon script
-chmod +x ./32bit/icon-beta32.sh ; bash ./32bit/icon-beta32.sh ;
+chmod +x ./32bit/icon_beta32.sh ; bash ./32bit/icon_beta32.sh ;
 # Give time for icon script to complete
 sleep 2;
 # Makes icon executable allowing it to run Firefox (which is also executable).
