@@ -24,7 +24,7 @@ do
 
   3) clear; printf -- '\n%s\n\n' " You selected to uninstall 64-bit"; chmod +x ./64bit/uninstallers/uninstall_menu64.sh; ./64bit/uninstallers/uninstall_menu64.sh; exit 0 ;;
 
-  4) clear; printf -- '\n%s\n\n' " You selected to uninstall 32-bit"; chmod +x ./32bit/32bit-uninstallers/uninstall_menu32.sh; ./32bit/32bit-uninstallers/uninstall_menu32.sh; exit 0 ;;
+  4) clear; printf -- '\n%s\n\n' " You selected to uninstall 32-bit"; chmod +x ./32bit/32bit_uninstallers/uninstall_menu32.sh; ./32bit/32bit_uninstallers/uninstall_menu32.sh; exit 0 ;;
 
   5) clear; printf -- '\n%s\n\n' " Goodbye, $USER"; exit 1;;
 
