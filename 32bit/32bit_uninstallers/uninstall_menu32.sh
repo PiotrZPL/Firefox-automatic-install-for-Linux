@@ -42,7 +42,7 @@ printf -- '%s\n' "   U N I N S T A L L - 3 2 b i t - M E N U" \
 
   7) clear; printf -- '\n%s\n\n' " Goodbye, $USER"; exit 1;;
   
-  66) clear; printf -- '\n%s\n\n' " Per your request, $USER. Execute Order 66."; chmod +x ./32bit/32bit-uninstallers/PURGE_32.sh; ./32bit/32bit-uninstallers/PURGE_32.sh; break ;;
+  66) clear; printf -- '\n%s\n\n' " Per your request, $USER. Execute Order 66."; chmod +x ./32bit/32bit_uninstallers/PURGE_32.sh; ./32bit/32bit_uninstallers/PURGE_32.sh; break ;;
 
   *) clear;
      printf -- '\n\n%s\n' " $opt is an invaild option. Please select option between 1-7 only" \
