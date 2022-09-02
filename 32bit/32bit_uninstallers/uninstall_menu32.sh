@@ -28,17 +28,17 @@ printf -- '%s\n' "   U N I N S T A L L - 3 2 b i t - M E N U" \
  printf " Please enter option [1 - 7]";
  read -r opt
  case $opt in
-  1) clear; printf -- '\n%s\n\n' " You selected Mozilla Firefox"; chmod +x ./32bit/32bit-uninstallers/32firefox_UNINSTALL.sh; ./32bit/32bit-uninstallers/32firefox_UNINSTALL.sh; break ;;
+  1) clear; printf -- '\n%s\n\n' " You selected Mozilla Firefox"; chmod +x ./32bit/32bit_uninstallers/32firefox_UNINSTALL.sh; ./32bit/32bit_uninstallers/32firefox_UNINSTALL.sh; break ;;
 
-  2) clear; printf -- '\n%s\n\n' " You selected Firefox Beta"; chmod +x ./32bit/32bit-uninstallers/32beta_UNINSTALL.sh; ./32bit/32bit-uninstallers/32beta_UNINSTALL.sh; break ;;
+  2) clear; printf -- '\n%s\n\n' " You selected Firefox Beta"; chmod +x ./32bit/32bit_uninstallers/32beta_UNINSTALL.sh; ./32bit/32bit_uninstallers/32beta_UNINSTALL.sh; break ;;
 
-  3) clear; printf -- '\n%s\n\n' " You selected Firefox Developer Edition"; chmod +x ./32bit/32bit-uninstallers/32firefox_dev_UNINSTALL.sh; ./32bit/32bit-uninstallers/32firefox_dev_UNINSTALL.sh; break ;;
+  3) clear; printf -- '\n%s\n\n' " You selected Firefox Developer Edition"; chmod +x ./32bit/32bit_uninstallers/32firefox_dev_UNINSTALL.sh; ./32bit/32bit_uninstallers/32firefox_dev_UNINSTALL.sh; break ;;
 
-  4) clear; printf -- '\n%s\n\n' " You selected Firefox Nightly"; chmod +x ./32bit/32bit-uninstallers/32nightly_UNINSTALL.sh; ./32bit/32bit-uninstallers/32nightly_UNINSTALL.sh; break ;;
+  4) clear; printf -- '\n%s\n\n' " You selected Firefox Nightly"; chmod +x ./32bit/32bit_uninstallers/32nightly_UNINSTALL.sh; ./32bit/32bit_uninstallers/32nightly_UNINSTALL.sh; break ;;
 
-  5) clear; printf -- '\n%s\n\n' " You selected Firefox Extended Support Release"; chmod +x ./32bit/32bit-uninstallers/32esr_UNINSTALL.sh; ./32bit/32bit-uninstallers/32esr_UNINSTALL.sh; break ;;
+  5) clear; printf -- '\n%s\n\n' " You selected Firefox Extended Support Release"; chmod +x ./32bit/32bit_uninstallers/32esr_UNINSTALL.sh; ./32bit/32bit_uninstallers/32esr_UNINSTALL.sh; break ;;
 
-  6) clear; printf -- '\n%s\n\n' " You selected to remove ALL 32-bit editions"; chmod +x ./32bit/32bit-uninstallers/32firefox_all_UNINSTALL.sh; ./32bit/32bit-uninstallers/32firefox_all_UNINSTALL.sh; break ;;
+  6) clear; printf -- '\n%s\n\n' " You selected to remove ALL 32-bit editions"; chmod +x ./32bit/32bit_uninstallers/32firefox_all_UNINSTALL.sh; ./32bit/32bit_uninstallers/32firefox_all_UNINSTALL.sh; break ;;
 
   7) clear; printf -- '\n%s\n\n' " Goodbye, $USER"; exit 1;;
   
