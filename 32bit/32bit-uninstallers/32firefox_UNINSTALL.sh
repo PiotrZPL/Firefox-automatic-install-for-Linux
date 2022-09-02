@@ -3,7 +3,7 @@
 # Firefox Automatic Install for Linux -- Uninstall Firefox (stable) 32-bit -- File can be used independently.
 #
 # Uninstalling Firefox notice
-printf -- '\n\n%s\n\n\n\n' " Uninstalling Mozilla Firefox 32-bit stable release";
+printf -- '\n%s\n' " Uninstalling Mozilla Firefox 32-bit stable release";
 # Small delay to give user time to read the above notice.
 sleep 3;
 # Installation
