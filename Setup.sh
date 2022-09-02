@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 # Firefox automatic install for Linux
-#   v2.9.0.3
+#   v2.9.0.4
 #
 while true :
 do
@@ -18,13 +18,13 @@ do
  printf " Please enter option [1 - 5]";
  read -r opt
  case $opt in
-  1) clear; printf -- '\n%s\n\n' " You selected to install Firefox 64-bit"; chmod +x ./64bit/sub-menu64.sh; ./64bit/sub-menu64.sh; exit 0 ;;
+  1) clear; printf -- '\n%s\n\n' " You selected to install Firefox 64-bit"; chmod +x ./64bit/sub_menu64.sh; ./64bit/sub_menu64.sh; exit 0 ;;
 
-  2) clear; printf -- '\n%s\n\n' " You selected to install Firefox 32-bit"; chmod +x ./32bit/sub-menu32.sh; ./32bit/sub-menu32.sh; exit 0 ;;
+  2) clear; printf -- '\n%s\n\n' " You selected to install Firefox 32-bit"; chmod +x ./32bit/sub_menu32.sh; ./32bit/sub_menu32.sh; exit 0 ;;
 
-  3) clear; printf -- '\n%s\n\n' " You selected to uninstall 64-bit"; chmod +x ./64bit/uninstallers/uninstall-menu64.sh; ./64bit/uninstallers/uninstall-menu64.sh; exit 0 ;;
+  3) clear; printf -- '\n%s\n\n' " You selected to uninstall 64-bit"; chmod +x ./64bit/uninstallers/uninstall_menu64.sh; ./64bit/uninstallers/uninstall_menu64.sh; exit 0 ;;
 
-  4) clear; printf -- '\n%s\n\n' " You selected to uninstall 32-bit"; chmod +x ./32bit/32bit-uninstallers/uninstall-menu32.sh; ./32bit/32bit-uninstallers/uninstall-menu32.sh; exit 0 ;;
+  4) clear; printf -- '\n%s\n\n' " You selected to uninstall 32-bit"; chmod +x ./32bit/32bit-uninstallers/uninstall_menu32.sh; ./32bit/32bit-uninstallers/uninstall_menu32.sh; exit 0 ;;
 
   5) clear; printf -- '\n%s\n\n' " Goodbye, $USER"; exit 1;;
 
