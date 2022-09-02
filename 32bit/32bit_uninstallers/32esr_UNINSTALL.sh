@@ -7,13 +7,13 @@ printf -- '\n%s\n' " Uninstalling Mozilla Firefox ESR 32-bit";
 # Small delay to give user time to read the above notice.
 sleep 3;
 # Installation
-sudo rm -r -f  /opt/firefox-esr-32bit/ ;
+sudo rm -r -f  /opt/firefox_esr_32bit/ ;
 # Menu shortcuts
-sudo rm -r -f /usr/share/applications/Firefox-ESR-32bit.desktop ;
+sudo rm -r -f /usr/share/applications/Firefox_ESR_32bit.desktop ;
 # Desktop shortcuts
-sudo rm -r -f /etc/skel/Desktop/Firefox-ESR-32bit.desktop ;
+sudo rm -r -f /etc/skel/Desktop/Firefox_ESR_32bit.desktop ;
 # Current desktop shortcuts
-sudo rm -r -f /home/*/Desktop/Firefox-ESR-32bit.desktop ;
+sudo rm -r -f /home/*/Desktop/Firefox_ESR_32bit.desktop ;
 #
 # Uncomment if you wish to delete file cache.
 # sudo rm -r -f /home/*/.cache/mozilla/firefox/*.default-esr*/ ;
