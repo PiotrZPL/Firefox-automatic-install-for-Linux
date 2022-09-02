@@ -2,10 +2,10 @@
 #
 # This will install ALL 64-bit releases. To be used with Setup.sh
 #
-# Firefox automatic install for Linux - Universal shell edition
-# v2.9.0.3
+# Firefox automatic install for Linux
+# v2.9.0.4
 #
-printf -- '\n\n%s\n\n\n\n' " Now installing ALL editions of Mozilla Firefox. Please wait... ";
+printf -- '\n%s\n' " Now installing ALL editions of Mozilla Firefox. Please wait... ";
 # Give time for user to read notice.
 sleep 2; 
 # Visual spacing
