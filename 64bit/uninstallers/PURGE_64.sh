@@ -10,37 +10,37 @@
 #
 # Purge Firefox notice
 printf -- '\n%s\n' " Per your request. Now purging Mozilla Firefox.";
-# 10 second delay to give user time to read the above notice
+# 10 second delay to give user time to read the above notice.
 sleep 3;
-# Installation
+# Installation.
 sudo rm -r -f /opt/firefox/ ;
-sudo rm -r -f /opt/firefox-beta/ ;
-sudo rm -r -f /opt/firefox-developer-edition ;
-sudo rm -r -f /opt/firefox-nightly/ ;
-sudo rm -r -f /opt/firefox-esr/ ;
-# Menu shortcuts
-sudo rm -r -f /usr/share/applications/Mozilla-Firefox.desktop ;
-sudo rm -r -f /usr/share/applications/Firefox-Beta.desktop ;
-sudo rm -r -f /usr/share/applications/Firefox-Developer-Edition.desktop ;
-sudo rm -r -f /usr/share/applications/Firefox-Nightly.desktop ;
-sudo rm -r -f /usr/share/applications/Firefox-ESR.desktop ;
-# Destkop shortcuts
-sudo rm -r -f /etc/skel/Desktop/Mozilla-Firefox.desktop ;
-sudo rm -r -f /etc/skel/Desktop/Firefox-Beta.desktop ;
-sudo rm -r -f /etc/skel/Desktop/Firefox-Developer-Edition.desktop ;
-sudo rm -r -f /etc/skel/Desktop/Firefox-Nightly.desktop ;
-sudo rm -r -f /etc/skel/Desktop/Firefox-ESR.desktop ;
-# Current desktop shotcuts
-sudo rm -r -f /home/*/Desktop/Mozilla-Firefox.desktop ;
-sudo rm -r -f /home/*/Desktop/Firefox-Beta.desktop ;
-sudo rm -r -f /home/*/Desktop/Firefox-Developer-Edition.desktop ;
-sudo rm -r -f /home/*/Desktop/Firefox-Nightly.desktop ;
-sudo rm -r -f /home/*/Desktop/Firefox-ESR.desktop ;
-# Cache files
+sudo rm -r -f /opt/firefox_beta/ ;
+sudo rm -r -f /opt/firefox_developer_edition ;
+sudo rm -r -f /opt/firefox_nightly/ ;
+sudo rm -r -f /opt/firefox_esr/ ;
+# Menu shortcuts.
+sudo rm -r -f /usr/share/applications/Mozilla_Firefox.desktop ;
+sudo rm -r -f /usr/share/applications/Firefox_Beta.desktop ;
+sudo rm -r -f /usr/share/applications/Firefox_Developer_Edition.desktop ;
+sudo rm -r -f /usr/share/applications/Firefox_Nightly.desktop ;
+sudo rm -r -f /usr/share/applications/Firefox_ESR.desktop ;
+# Destkop shortcuts.
+sudo rm -r -f /etc/skel/Desktop/Mozilla_Firefox.desktop ;
+sudo rm -r -f /etc/skel/Desktop/Firefox_Beta.desktop ;
+sudo rm -r -f /etc/skel/Desktop/Firefox_Developer_Edition.desktop ;
+sudo rm -r -f /etc/skel/Desktop/Firefox_Nightly.desktop ;
+sudo rm -r -f /etc/skel/Desktop/Firefox_ESR.desktop ;
+# Current desktop shotcuts.
+sudo rm -r -f /home/*/Desktop/Mozilla_Firefox.desktop ;
+sudo rm -r -f /home/*/Desktop/Firefox_Beta.desktop ;
+sudo rm -r -f /home/*/Desktop/Firefox_Developer_Edition.desktop ;
+sudo rm -r -f /home/*/Desktop/Firefox_Nightly.desktop ;
+sudo rm -r -f /home/*/Desktop/Firefox_ESR.desktop ;
+# Cache files. - purge
 sudo rm -r -f /home/*/.cache/mozilla/firefox/ ;
-# Configuration and profile files.
+# Configuration and profile files. - purge
 sudo rm -r -f /home/*/.mozilla/firefox/ ;
-# Exit notice
+# Exit notice.
 printf -- '%s\n' "" "" "" " Thank you for using Mozilla Firefox." \
 " Firefox, along with all user data, have been deleted and uninstalled. Per your request." \
 " Really sorry to see you go. Hope to see you again real soon" "" ""
