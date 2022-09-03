@@ -9,11 +9,11 @@ sleep 3;
 # Installation
 sudo rm -r -f  /opt/firefox/ ;
 # Menu shortcuts
-sudo rm -r -f /usr/share/applications/Mozilla-Firefox.desktop ;
+sudo rm -r -f /usr/share/applications/Mozilla_Firefox.desktop ;
 # Desktop shortcuts
-sudo rm -r -f /etc/skel/Desktop/Mozilla-Firefox.desktop ;
+sudo rm -r -f /etc/skel/Desktop/Mozilla_Firefox.desktop ;
 # Current desktop shortcuts
-sudo rm -r -f /home/*/Desktop/Mozilla-Firefox.desktop ;
+sudo rm -r -f /home/*/Desktop/Mozilla_Firefox.desktop ;
 #
 # Uncomment if you wish to delete file cache.
 # sudo rm -r -f /home/*/.cache/mozilla/firefox/*.default-release*/ ;
