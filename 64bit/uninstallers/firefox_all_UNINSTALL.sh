@@ -8,28 +8,28 @@ printf -- '\n%s\n' " Uninstalling ALL releases of Mozilla Firefox 64-bit";
 sleep 3;
 # Installation
 sudo rm -r -f /opt/firefox/ ;
-sudo rm -r -f /opt/firefox-beta/ ;
-sudo rm -r -f /opt/firefox-developer-edition ;
-sudo rm -r -f /opt/firefox-nightly/ ;
-sudo rm -r -f /opt/firefox-esr/ ;
+sudo rm -r -f /opt/firefox_beta/ ;
+sudo rm -r -f /opt/firefox_developer_edition ;
+sudo rm -r -f /opt/firefox_nightly/ ;
+sudo rm -r -f /opt/firefox_esr/ ;
 # Menu shortcuts
-sudo rm -r -f /usr/share/applications/Mozilla-Firefox.desktop ;
-sudo rm -r -f /usr/share/applications/Firefox-Beta.desktop ;
-sudo rm -r -f /usr/share/applications/Firefox-Developer-Edition.desktop ;
-sudo rm -r -f /usr/share/applications/Firefox-Nightly.desktop ;
-sudo rm -r -f /usr/share/applications/Firefox-ESR.desktop ;
+sudo rm -r -f /usr/share/applications/Mozilla_Firefox.desktop ;
+sudo rm -r -f /usr/share/applications/Firefox_Beta.desktop ;
+sudo rm -r -f /usr/share/applications/Firefox_Developer_Edition.desktop ;
+sudo rm -r -f /usr/share/applications/Firefox_Nightly.desktop ;
+sudo rm -r -f /usr/share/applications/Firefox_ESR.desktop ;
 # Destkop shortcuts
-sudo rm -r -f /etc/skel/Desktop/Mozilla-Firefox.desktop ;
-sudo rm -r -f /etc/skel/Desktop/Firefox-Beta.desktop ;
-sudo rm -r -f /etc/skel/Desktop/Firefox-Developer-Edition.desktop ;
-sudo rm -r -f /etc/skel/Desktop/Firefox-Nightly.desktop ;
-sudo rm -r -f /etc/skel/Desktop/Firefox-ESR.desktop ;
+sudo rm -r -f /etc/skel/Desktop/Mozilla_Firefox.desktop ;
+sudo rm -r -f /etc/skel/Desktop/Firefox_Beta.desktop ;
+sudo rm -r -f /etc/skel/Desktop/Firefox_Developer_Edition.desktop ;
+sudo rm -r -f /etc/skel/Desktop/Firefox_Nightly.desktop ;
+sudo rm -r -f /etc/skel/Desktop/Firefox_ESR.desktop ;
 # Current desktop shotcuts
-sudo rm -r -f /home/*/Desktop/Mozilla-Firefox.desktop ;
-sudo rm -r -f /home/*/Desktop/Firefox-Beta.desktop ;
-sudo rm -r -f /home/*/Desktop/Firefox-Developer-Edition.desktop ;
-sudo rm -r -f /home/*/Desktop/Firefox-Nightly.desktop ;
-sudo rm -r -f /home/*/Desktop/Firefox-ESR.desktop ;
+sudo rm -r -f /home/*/Desktop/Mozilla_Firefox.desktop ;
+sudo rm -r -f /home/*/Desktop/Firefox_Beta.desktop ;
+sudo rm -r -f /home/*/Desktop/Firefox_Developer_Edition.desktop ;
+sudo rm -r -f /home/*/Desktop/Firefox_Nightly.desktop ;
+sudo rm -r -f /home/*/Desktop/Firefox_ESR.desktop ;
 # Cache files
 # sudo rm -r -f /home/*/.cache/mozilla/firefox/ ;
 # Configuration and profile files.
