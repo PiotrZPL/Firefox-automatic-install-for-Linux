@@ -7,13 +7,13 @@ printf -- '\n%s\n' " Uninstalling Firefox Developer Edition";
 # Small delay to give user time to read the above notice.
 sleep 3;
 # Installation
-sudo rm -r -f  /opt/firefox-developer-edition/ ;
+sudo rm -r -f  /opt/firefox_developer_edition/ ;
 # Menu shotcuts
-sudo rm -r -f /usr/share/applications/Firefox-Developer-Edition.desktop ;
+sudo rm -r -f /usr/share/applications/Firefox_Developer_Edition.desktop ;
 # Desktop shotcuts
-sudo rm -r -f /etc/skel/Desktop/Firefox-Developer-Edition.desktop ;
+sudo rm -r -f /etc/skel/Desktop/Firefox_Developer_Edition.desktop ;
 # Current shortcuts
-sudo rm -r -f /home/*/Desktop/Firefox-Developer-Edition.desktop ;
+sudo rm -r -f /home/*/Desktop/Firefox_Developer_Edition.desktop ;
 #
 # Uncomment if you wish to delete file cache.
 # sudo rm -r -f /home/*/.cache/mozilla/firefox/*.dev-edition*/ ;
