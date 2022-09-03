@@ -7,13 +7,13 @@ printf -- '\n%s\n' " Uninstalling Firefox Nightly 32-bit release";
 # Small delay to give user time to read the above notice.
 sleep 3;
 # Installation
-sudo rm -r -f  /opt/firefox-nightly-32bit/ ;
+sudo rm -r -f  /opt/firefox_nightly_32bit/ ;
 # Menu shortcuts
-sudo rm -r -f /usr/share/applications/Firefox-Nightly-32bit.desktop ;
+sudo rm -r -f /usr/share/applications/Firefox_Nightly_32bit.desktop ;
 # Desktop shortcuts
-sudo rm -r -f /etc/skel/Desktop/Firefox-Nightly-32bit.desktop ;
+sudo rm -r -f /etc/skel/Desktop/Firefox_Nightly_32bit.desktop ;
 # Current shortcuts
-sudo rm -r -f /home/*/Desktop/Firefox-Nightly-32bit.desktop ;
+sudo rm -r -f /home/*/Desktop/Firefox_Nightly_32bit.desktop ;
 #
 # Uncomment if you wish to delete file cache.
 # sudo rm -r -f /home/*/.cache/mozilla/firefox/*.default-nightly*/ ;
