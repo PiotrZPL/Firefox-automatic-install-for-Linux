@@ -7,13 +7,13 @@ printf -- '\n%s\n' " Uninstalling Firefox Nightly release";
 # Small delay to give user time to read the above notice.
 sleep 3;
 # Installation
-sudo rm -r -f  /opt/firefox-nightly/ ;
+sudo rm -r -f  /opt/firefox_nightly/ ;
 # Menu shortcuts
-sudo rm -r -f /usr/share/applications/Firefox-Nightly.desktop ;
+sudo rm -r -f /usr/share/applications/Firefox_Nightly.desktop ;
 # Destkop shortcuts
-sudo rm -r -f /etc/skel/Desktop/Firefox-Nightly.desktop ;
+sudo rm -r -f /etc/skel/Desktop/Firefox_Nightly.desktop ;
 # Current desktop shotcuts
-sudo rm -r -f /home/*/Desktop/Firefox-Nightly.desktop ;
+sudo rm -r -f /home/*/Desktop/Firefox_Nightly.desktop ;
 #
 # Uncomment if you wish to delete file cache.
 # sudo rm -r -f /home/*/.cache/mozilla/firefox/*.default-nightly*/ ;
