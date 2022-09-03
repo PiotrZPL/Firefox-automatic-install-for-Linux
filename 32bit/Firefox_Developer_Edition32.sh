@@ -15,29 +15,29 @@ printf -- '\n\n\n%s\n\n' " Installing Mozilla Firefox Developer Edition.";
 # Checks if distro has default opt path and if not found adds opt with default permissions.
 sudo mkdir -p -m 755 /opt ;
 # Path where to be installed.
-sudo mkdir /opt/firefox-developer-edition-32bit ;
+sudo mkdir /opt/firefox_developer_edition_32bit ;
 # Extracts to install path.
-sudo tar xjf FirefoxDeveloperEdition32.tar.bz2 -C /opt/firefox-developer-edition-32bit/ ;
+sudo tar xjf FirefoxDeveloperEdition32.tar.bz2 -C /opt/firefox_developer_edition_32bit/ ;
 # Required permissions needed for Mozilla Firefox automatic update feature to work.
-sudo chmod -R 757 /opt/firefox-developer-edition-32bit/firefox/ ;
+sudo chmod -R 757 /opt/firefox_developer_edition_32bit/firefox/ ;
 # Start create icon script
 chmod +x ./32bit/icon_developer32.sh ; bash ./32bit/icon_developer32.sh ;
 # Give time for icon script to complete
 sleep 2;
 # Makes icon executable allowing it to run Firefox (which is also executable).
-chmod +x Firefox-Developer-Edition-32bit.desktop ;
+chmod +x Firefox_Developer_Edition_32bit.desktop ;
 # Adds icon to application menu (xfce, gnome, cinnamon, mate, deepin, etc...).
-sudo cp Firefox-Developer-Edition-32bit.desktop /usr/share/applications ;
+sudo cp Firefox_Developer_Edition_32bit.desktop /usr/share/applications ;
 # Copies desktop icon to all user desktops and grants them ownership (it is their desktop after all).
 for destdir in /home/*/Desktop/; do
-    cp Firefox-Developer-Edition-32bit.desktop "$destdir" &&
-    chown --reference="$destdir" "$destdir/Firefox-Developer-Edition-32bit.desktop"
+    cp Firefox_Developer_Edition_32bit.desktop "$destdir" &&
+    chown --reference="$destdir" "$destdir/Firefox_Developer_Edition_32bit.desktop"
 done
 printf "\n";
 # Adds a desktop icon to all FUTURE new login users (assuming you make any).
-sudo mkdir -p /etc/skel/Desktop ; sudo cp Firefox-Developer-Edition-32bit.desktop /etc/skel/Desktop ;
+sudo mkdir -p /etc/skel/Desktop ; sudo cp Firefox_Developer_Edition_32bit.desktop /etc/skel/Desktop ;
 # Removes the temporary files no longer needed.
-rm FirefoxDeveloperEdition32.tar.bz2 ; rm Firefox-Developer-Edition-32bit.desktop ;
+rm FirefoxDeveloperEdition32.tar.bz2 ; rm Firefox_Developer_Edition_32bit.desktop ;
 # Exit notice.
 printf -- '%s\n' "" "" "" " Congratulations!" \
   " Mozilla Firefox Developer Edition is now installed onto your computer." \
