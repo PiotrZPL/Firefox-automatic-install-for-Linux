@@ -7,13 +7,13 @@ printf -- '\n%s\n' " Uninstalling Mozilla Firefox ESR";
 # Small delay to give user time to read the above notice.
 sleep 3;
 # Installation
-sudo rm -r -f  /opt/firefox-esr/ ;
+sudo rm -r -f  /opt/firefox_esr/ ;
 # Menu shortcuts
-sudo rm -r -f /usr/share/applications/Firefox-ESR.desktop ;
+sudo rm -r -f /usr/share/applications/Firefox_ESR.desktop ;
 # Desktop shortcuts
-sudo rm -r -f /etc/skel/Desktop/Firefox-ESR.desktop ;
+sudo rm -r -f /etc/skel/Desktop/Firefox_ESR.desktop ;
 # Current shortcuts
-sudo rm -r -f /home/*/Desktop/Firefox-ESR.desktop ;
+sudo rm -r -f /home/*/Desktop/Firefox_ESR.desktop ;
 #
 # Uncomment if you wish to delete file cache.
 # sudo rm -r -f /home/*/.cache/mozilla/firefox/*.default-esr*/ ;
