@@ -7,13 +7,13 @@ printf -- '\n%s\n' " Uninstalling Mozilla Firefox Beta ";
 # Small delay to give user time to read the above notice.
 sleep 3;
 # Installation
-sudo rm -r -f  /opt/firefox-beta/ ;
+sudo rm -r -f  /opt/firefox_beta/ ;
 # Menu shortcuts
-sudo rm -r -f /usr/share/applications/Firefox-Beta.desktop ;
+sudo rm -r -f /usr/share/applications/Firefox_Beta.desktop ;
 # Desktop shortcuts
-sudo rm -r -f /etc/skel/Desktop/Firefox-Beta.desktop ;
+sudo rm -r -f /etc/skel/Desktop/Firefox_Beta.desktop ;
 # Current shortcuts
-sudo rm -r -f /home/*/Desktop/Firefox-Beta.desktop ;
+sudo rm -r -f /home/*/Desktop/Firefox_Beta.desktop ;
 #
 # Uncomment if you wish to delete file cache.
 # sudo rm -r -f /home/*/.cache/mozilla/firefox/*.default-beta*/ ;
