@@ -15,29 +15,29 @@ printf -- '\n\n\n%s\n\n' " Installing Mozilla Firefox Beta.";
 # Checks if distro has default opt path and if not found adds opt with default permissions.
 sudo mkdir -p -m 755 /opt ;
 # Path where to be installed.
-sudo mkdir /opt/firefox-beta-32bit ;
+sudo mkdir /opt/firefox_beta_32bit ;
 # Extracts to install path.
-sudo tar xjf FirefoxBeta32.tar.bz2 -C /opt/firefox-beta-32bit/ ;
+sudo tar xjf FirefoxBeta32.tar.bz2 -C /opt/firefox_beta_32bit/ ;
 # Required permissions needed for Mozilla Firefox automatic update feature to work.
-sudo chmod -R 757 /opt/firefox-beta-32bit/firefox/ ;
+sudo chmod -R 757 /opt/firefox_beta_32bit/firefox/ ;
 # Start create icon script
 chmod +x ./32bit/icon_beta32.sh ; bash ./32bit/icon_beta32.sh ;
 # Give time for icon script to complete
 sleep 2;
 # Makes icon executable allowing it to run Firefox (which is also executable).
-chmod +x Firefox-Beta-32bit.desktop ;
+chmod +x Firefox_Beta_32bit.desktop ;
 # Adds icon to application menu (xfce, gnome, cinnamon, mate, deepin, etc...).
-sudo cp Firefox-Beta-32bit.desktop /usr/share/applications ;
+sudo cp Firefox_Beta_32bit.desktop /usr/share/applications ;
 # Copies desktop icon to all user desktops and grants them ownership (it is their desktop after all).
 for destdir in /home/*/Desktop/; do
-    cp Firefox-Beta-32bit.desktop "$destdir" &&
-    chown --reference="$destdir" "$destdir/Firefox-Beta-32bit.desktop"
+    cp Firefox_Beta_32bit.desktop "$destdir" &&
+    chown --reference="$destdir" "$destdir/Firefox_Beta_32bit.desktop"
 done
 printf "\n";
 # Adds a desktop icon to all FUTURE new login users (assuming you make any).
-sudo mkdir -p /etc/skel/Desktop ; sudo cp Firefox-Beta-32bit.desktop /etc/skel/Desktop ;
+sudo mkdir -p /etc/skel/Desktop ; sudo cp Firefox_Beta_32bit.desktop /etc/skel/Desktop ;
 # Removes the temporary files no longer needed.
-rm FirefoxBeta32.tar.bz2 ; rm Firefox-Beta-32bit.desktop ;
+rm FirefoxBeta32.tar.bz2 ; rm Firefox_Beta_32bit.desktop ;
 # Exit notice.
 printf -- '%s\n' "" "" "" " Congratulations!" \
   " Mozilla Firefox Beta is now installed onto your computer." \
