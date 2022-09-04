@@ -87,8 +87,8 @@ Comment[uk]=Перегляд сторінок Інтернету
 Comment[vi]=Để duyệt các trang web
 Comment[zh_CN]=浏览互联网
 Comment[zh_TW]=瀏覽網際網路
-Exec=/opt/firefox-esr/firefox/firefox %u --class FirefoxESR
-Icon=/opt/firefox-esr/firefox/browser/chrome/icons/default/default128.png
+Exec=/opt/firefox_esr/firefox/firefox %u --class FirefoxESR
+Icon=/opt/firefox_esr/firefox/browser/chrome/icons/default/default128.png
 Terminal=false
 Type=Application
 MimeType=text/html;text/xml;application/xhtml+xml;application/vnd.mozilla.xul+xml;text/mml;x-scheme-handler/http;x-scheme-handler/https;
@@ -204,7 +204,7 @@ Name[wo]=Palanteer bu bees
 Name[xh]=Ifestile entsha
 Name[zh_CN]=新建窗口
 Name[zh_TW]=開新視窗
-Exec=/opt/firefox-esr/firefox/firefox --new-window %u --class FirefoxESR
+Exec=/opt/firefox_esr/firefox/firefox --new-window %u --class FirefoxESR
 
 [Desktop Action new-private-window]
 Name=New Private Window
@@ -312,6 +312,6 @@ Name[wo]=Panlanteeru biir bu bees
 Name[xh]=Ifestile yangasese entsha
 Name[zh_CN]=新建隐私浏览窗口
 Name[zh_TW]=新增隱私視窗
-Exec=/opt/firefox-esr/firefox/firefox --private-window %u --class FirefoxESR" > Firefox-ESR.desktop ;
+Exec=/opt/firefox_esr/firefox/firefox --private-window %u --class FirefoxESR" > Firefox_ESR.desktop ;
 # Exit
 exit 0
