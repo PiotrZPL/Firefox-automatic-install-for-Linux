@@ -2,8 +2,10 @@ Not the system administrator, and not looking to install Mozilla Firefox for eve
 but still want your own copy of Mozilla Firefox? No problem! The personal installer 
 is meant for people who wish to have their own little corner of Mozilla Firefox all to themselves.
 
-chmod +x  YOUR_choice.sh (for example, nightly.sh)
+```bash
+chmod +x  YOUR_choice.sh #(for example, nightly.sh)
 bash YOUR_choice.sh
+```
 
 (Or your personal shell of choice followed by, YOUR_choice.sh)
 
