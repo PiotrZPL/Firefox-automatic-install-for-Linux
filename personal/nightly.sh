@@ -9,11 +9,11 @@ wget -L -O "FirefoxNightly.tar.bz2" "https://download.mozilla.org/?product=firef
 # Checks if distro has default opt path and if not found adds opt with default permissions.
 mkdir -p -m 755 /home/$USER/Mozilla ;
 # Path where to be installed.
-mkdir /home/$USER/Mozilla/firefox-nightly ;
+mkdir /home/$USER/Mozilla/firefox_nightly ;
 # Extracts to install path.
-tar xjf FirefoxNightly.tar.bz2 -C /home/$USER/Mozilla/firefox-nightly/ ;
+tar xjf FirefoxNightly.tar.bz2 -C /home/$USER/Mozilla/firefox_nightly/ ;
 # Required permissions needed for Mozilla Firefox automatic update feature to work.
-chmod -R 757 /home/$USER/Mozilla/firefox-nightly/firefox/ ;
+chmod -R 757 /home/$USER/Mozilla/firefox_nightly/firefox/ ;
 # Create icon script using echo command
 printf "[Desktop Entry]
 Name=Firefox Nightly
@@ -99,8 +99,8 @@ Comment[uk]=Перегляд сторінок Інтернету
 Comment[vi]=Để duyệt các trang web
 Comment[zh_CN]=浏览互联网
 Comment[zh_TW]=瀏覽網際網路
-Exec=/home/$USER/Mozilla/firefox-nightly/firefox/firefox %u --class FirefoxNightly
-Icon=/home/$USER/Mozilla/firefox-nightly/firefox/browser/chrome/icons/default/default128.png
+Exec=/home/$USER/Mozilla/firefox_nightly/firefox/firefox %u --class FirefoxNightly
+Icon=/home/$USER/Mozilla/firefox_nightly/firefox/browser/chrome/icons/default/default128.png
 Terminal=false
 Type=Application
 MimeType=text/html;text/xml;application/xhtml+xml;application/vnd.mozilla.xul+xml;text/mml;x-scheme-handler/http;x-scheme-handler/https;
@@ -216,7 +216,7 @@ Name[wo]=Palanteer bu bees
 Name[xh]=Ifestile entsha
 Name[zh_CN]=新建窗口
 Name[zh_TW]=開新視窗
-Exec=/home/$USER/Mozilla/firefox-nightly/firefox/firefox --new-window %u --class FirefoxNightly
+Exec=/home/$USER/Mozilla/firefox_nightly/firefox/firefox --new-window %u --class FirefoxNightly
 
 [Desktop Action new-private-window]
 Name=New Private Window
@@ -324,20 +324,16 @@ Name[wo]=Panlanteeru biir bu bees
 Name[xh]=Ifestile yangasese entsha
 Name[zh_CN]=新建隐私浏览窗口
 Name[zh_TW]=新增隱私視窗
-Exec=/home/$USER/Mozilla/firefox-nightly/firefox/firefox --private-window %u --class FirefoxNightly" > Firefox-Nightly.desktop ;
+Exec=/home/$USER/Mozilla/firefox_nightly/firefox/firefox --private-window %u --class FirefoxNightly" > Firefox_Nightly.desktop ;
 # Give time for icon script to complete.
 sleep 2;
 # Makes icon executable allowing it to run Firefox (which is also executable).
-chmod +x Firefox-Nightly.desktop ;
+chmod +x Firefox_Nightly.desktop ;
 # Adds icon to application menu (xfce, gnome, cinnamon, mate, deepin, etc...).
-cp Firefox-Nightly.desktop /home/$USER/.local/share/applications/ ;
+cp Firefox_Nightly.desktop /home/$USER/.local/share/applications/ ;
 # Copies desktop icon to user desktop and grants them ownership (it is their desktop after all).
-for destdir in /home/$USER/Desktop/; do
-    cp Firefox-Nightly.desktop "$destdir" &&
-    chown --reference="$destdir" "$destdir/Firefox-Nightly.desktop"
-done
-printf "\n";
+find /home/"$USER"/Desktop -maxdepth 1 -type d -exec cp Firefox_Nightly.desktop '{}' \; -exec chown --reference='{}' '{}/Firefox_Nightly.desktop' \;
 # Removes the temporary files no longer needed.
-rm FirefoxNightly.tar.bz2 ; rm Firefox-Nightly.desktop ;
+rm FirefoxNightly.tar.bz2 ; rm Firefox_Nightly.desktop ;
 # Exit
 exit 0
