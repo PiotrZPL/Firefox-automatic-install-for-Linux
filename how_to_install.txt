@@ -15,9 +15,9 @@ This will make the script executable (allowing it to run).
 Next, execute the script by type the following:
 
    bash Setup.sh
-   
-   
+  
    (Or your preferred shell followed by, Setup.sh)
+
 
 You will be prompt to select which edition of Firefox you wish to setup.
 You will also be prompt to enter your password (SUDO) to continue.
@@ -28,8 +28,8 @@ editions side by side. Simply follow the easy menu prompts.
 Congratulations, you have successfully setup your copy of Mozilla Firefox!
 
 Where did you get this?
-https://github.com/Linux-Is-Best/Firefox-automatic-install-for-Linux
-https://gitlab.com/Linux-Is-Best/Firefox-automatic-install-for-Linux
+Master: https://gitlab.com/Linux-Is-Best/Firefox-automatic-install-for-Linux
+Mirror: https://github.com/Linux-Is-Best/Firefox-automatic-install-for-Linux
 
 Linux is best (because it really is).
 
