@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Firefox Automatic Install for Linux -- Uninstall Firefox Beta 64-bit -- File can be used independently
+# Firefox Automatic Install for Linux -- Personal Uninstall Firefox Beta 64-bit -- File can be used independently
 #
 # Uninstalling Firefox notice
 printf -- '\n%s\n' " Uninstalling your personal copy of Mozilla Firefox Beta ";
