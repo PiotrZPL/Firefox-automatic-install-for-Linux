@@ -330,7 +330,7 @@ chmod +x Mozilla_Firefox.desktop ;
 # Adds icon to application menu (xfce, gnome, cinnamon, mate, deepin, etc...).
 cp Mozilla_Firefox.desktop /home/$USER/.local/share/applications/ ;
 # Copies desktop icon to all user desktops and grants them ownership (it is their desktop after all).
-find /home/"$USER"/Desktop -maxdepth 0 -type d -exec cp Mozilla_Firefox.desktop '{}' \; -exec chown --reference='{}' '{}/Mozilla_Firefox.desktop' \;
+find /home/"$USER"/Desktop -maxdepth 1 -type d -exec cp Mozilla_Firefox.desktop '{}' \; -exec chown --reference='{}' '{}/Mozilla_Firefox.desktop' \;
 # Removes the temporary files no longer needed.
 rm FirefoxStable.tar.bz2 ; rm Mozilla_Firefox.desktop ;
 # Exit
