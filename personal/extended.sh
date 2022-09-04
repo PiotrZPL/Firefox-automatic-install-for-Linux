@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Firefox ESR (Extended Support Release) - personal - silent install
+# Firefox Automatic Install for Linux - Firefox ESR (Extended Support Release) - personal - silent install
 #
 # Make error.sh exactable so it can execut if needed.
 chmod +x ./error.sh;
