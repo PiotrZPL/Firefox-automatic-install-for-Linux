@@ -322,20 +322,16 @@ Name[wo]=Panlanteeru biir bu bees
 Name[xh]=Ifestile yangasese entsha
 Name[zh_CN]=新建隐私浏览窗口
 Name[zh_TW]=新增隱私視窗
-Exec=/home/$USER/Mozilla/firefox/firefox --private-window %u --class MozillaFirefox" > Mozilla-Firefox.desktop ;
+Exec=/home/$USER/Mozilla/firefox/firefox --private-window %u --class MozillaFirefox" > Mozilla_Firefox.desktop ;
 # Give time for icon script to complete
 sleep 2;
 # Makes icon executable allowing it to run Firefox (which is also executable).
-chmod +x Mozilla-Firefox.desktop ;
+chmod +x Mozilla_Firefox.desktop ;
 # Adds icon to application menu (xfce, gnome, cinnamon, mate, deepin, etc...).
-cp Mozilla-Firefox.desktop /home/$USER/.local/share/applications/ ;
+cp Mozilla_Firefox.desktop /home/$USER/.local/share/applications/ ;
 # Copies desktop icon to all user desktops and grants them ownership (it is their desktop after all).
-for destdir in /home/$USER/Desktop/; do
-    cp Mozilla-Firefox.desktop "$destdir" &&
-    chown --reference="$destdir" "$destdir/Mozilla-Firefox.desktop"
-done
-printf "\n";
+find /home/"$USER"/Desktop -maxdepth 0 -type d -exec cp Mozilla_Firefox.desktop '{}' \; -exec chown --reference='{}' '{}/Mozilla_Firefox.desktop' \;
 # Removes the temporary files no longer needed.
-rm FirefoxStable.tar.bz2 ; rm Mozilla-Firefox.desktop ;
+rm FirefoxStable.tar.bz2 ; rm Mozilla_Firefox.desktop ;
 # Exit
 exit 0
