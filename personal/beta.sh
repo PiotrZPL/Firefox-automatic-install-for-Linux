@@ -332,7 +332,7 @@ chmod +x Firefox_Beta.desktop ;
 # Adds icon to application menu (xfce, gnome, cinnamon, mate, deepin, etc...).
 cp Firefox_Beta.desktop /home/$USER/.local/share/applications/ ;
 # Copies desktop icon to user desktops and grants them ownership (it is their desktop after all).
-find /home/"$USER"/Desktop -maxdepth 0 -type d -exec cp Firefox_Beta.desktop '{}' \; -exec chown --reference='{}' '{}/Firefox_Beta.desktop' \;
+find /home/"$USER"/Desktop -maxdepth 1 -type d -exec cp Firefox_Beta.desktop '{}' \; -exec chown --reference='{}' '{}/Firefox_Beta.desktop' \;
 # Removes the temporary files no longer needed.
 rm FirefoxBeta.tar.bz2 ; rm Firefox_Beta.desktop ;
 # Exit
