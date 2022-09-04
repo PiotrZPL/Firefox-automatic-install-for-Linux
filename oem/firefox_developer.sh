@@ -23,11 +23,7 @@ chmod +x Firefox_Developer_Edition.desktop ;
 # Adds icon to application menu (xfce, gnome, cinnamon, mate, deepin, etc...).
 cp Firefox_Developer_Edition.desktop /usr/share/applications ;
 # Copies desktop icon to all user desktops and grants them ownership (it is their desktop after all).
-for destdir in /home/*/Desktop/; do
-    cp Firefox_Developer_Edition.desktop "$destdir" &&
-    chown --reference="$destdir" "$destdir/Firefox_Developer_Edition.desktop"
-done
-printf "\n";
+find /home/*/Desktop -maxdepth 1 -type d -exec cp Firefox_Developer_Edition.desktop '{}' \; -exec chown --reference='{}' '{}/Firefox_Developer_Edition.desktop' \;
 # Adds a desktop icon to all FUTURE new login users (assuming you make any).
 mkdir -p /etc/skel/Desktop ; cp Firefox_Developer_Edition.desktop /etc/skel/Desktop ;
 # Removes the temporary files no longer needed.
