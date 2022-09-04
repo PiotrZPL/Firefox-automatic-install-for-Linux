@@ -3,7 +3,7 @@
 # Firefox Automatic Install for Linux -- Personal Uninstall Firefox (stable) -- File can be used independently.
 #
 # Uninstalling Firefox notice
-printf -- '\n%s\n' " Uninstalling your personal copy of Mozilla Firefox stable release";
+printf -- '\n%s\n' " Uninstalling your personal copy of Mozilla Firefox (stable release) ";
 # Small delay to give user time to read the above notice.
 sleep 3;
 # Installation
@@ -14,9 +14,9 @@ sudo rm -r -f /home/$USER/.local/share/applications/Mozilla_Firefox.desktop ;
 sudo rm -r -f /home/$USER/Desktop/Mozilla_Firefox.desktop ;
 #
 # Uncomment if you wish to delete file cache.
-# sudo rm -r -f /home/*/.cache/mozilla/firefox/*.default-release*/ ;
+# rm -r -f /home/$USER/.cache/mozilla/firefox/*.default-release*/ ;
 # Uncomment if you wish to delete configuration and profile files.
-# sudo rm -r -f /home/*/.mozilla/firefox/*.default-release*/ ;
+# rm -r -f /home/$USER/.mozilla/firefox/*.default-release*/ ;
 #
 # exit notice
 printf -- '%s\n' "" "" "" " Thank you for using Mozilla Firefox." \
