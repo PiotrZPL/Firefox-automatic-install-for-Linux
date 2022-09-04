@@ -1,7 +1,9 @@
 To uninstall your personal copy of Mozilla Firefox:
 
-chmod +x  YOUR_choice.sh (For example, unNightly.sh which uninstalls Firefox Nightly)
+```bash
+chmod +x  YOUR_choice.sh #(For example, unNightly.sh which uninstalls Firefox Nightly)
 bash YOUR_choice.sh
+```
 
 (Or your personal shell of choice followed by, YOUR_choice.sh)
 

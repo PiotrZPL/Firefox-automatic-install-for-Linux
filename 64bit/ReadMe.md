@@ -5,11 +5,15 @@ Looking to install Mozilla Firefox?
 Mozilla Firefox comes standard in 64-bit. This particular folder includes the base files for installing Mozilla Firefox 64-bit releases. 
 However, to properly install or uninstall Mozilla Firefox, go to the root folder and run the following command:
 
+```bash
 chmod +x Setup.sh
+```
 
 This will make the script executable (allowing it to run). Next, execute the script by type the following.
 
+   ```bash
    bash Setup.sh
+   ```
    
    (Or your perfered shell followed by Setup.sh)
 
