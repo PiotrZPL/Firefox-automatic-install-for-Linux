@@ -24,6 +24,5 @@ chmod +x ./firefox.sh ; bash ./firefox.sh ;
 # chmod +x ./extended.sh ; bash ./extended.sh ;
 #
 #
-#
-# Exit
+# Exit - Required for the script to exit correctly when done. 
 exit 0
