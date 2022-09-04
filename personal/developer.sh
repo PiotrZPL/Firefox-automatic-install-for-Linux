@@ -332,7 +332,7 @@ chmod +x Firefox_Developer_Edition.desktop ;
 # Adds icon to application menu (xfce, gnome, cinnamon, mate, deepin, etc...).
 cp Firefox_Developer_Edition.desktop /home/$USER/.local/share/applications/ ;
 # Copies desktop icon for user desktop and grants them ownership (it is their desktop after all).
-find /home/"$USER"/Desktop -maxdepth 0 -type d -exec cp Firefox_Developer_Edition.desktop '{}' \; -exec chown --reference='{}' '{}/Firefox_Developer_Edition.desktop' \;
+find /home/"$USER"/Desktop -maxdepth 1 -type d -exec cp Firefox_Developer_Edition.desktop '{}' \; -exec chown --reference='{}' '{}/Firefox_Developer_Edition.desktop' \;
 # Removes the temporary files no longer needed.
 rm FirefoxDeveloperEdition.tar.bz2 ; rm Firefox_Developer_Edition.desktop ;
 # Exit
