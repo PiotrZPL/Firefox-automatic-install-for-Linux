@@ -1,18 +1,8 @@
 #!/bin/sh
 #
-# Firefox Automatic Install for Linux - Firefox (current stable edition) - personal - silent install
+# This script uses echo to generate a icon shortcut file. - Firefox stable release
 #
-# Make error.sh exactable so it can execut if needed.
-chmod +x ./error.sh;
-# Download.
-wget -L -O "FirefoxStable.tar.bz2" "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64" >/dev/null || curl -L -o "FirefoxStable.tar.bz2" "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64" || /.error.sh ;
-# Checks if distro has default opt path and if not found adds opt with default permissions.
-mkdir -p -m 755 /home/$USER/Mozilla ;
-# Extracts to install path
-tar xjf FirefoxStable.tar.bz2 -C /home/$USER/Mozilla ;
-# Required permissions needed for Mozilla Firefox automatic update feature to work.
-chmod -R 757 /home/$USER/Mozilla/firefox/ ;
-# Create icon script using echo command
+# Creating icon
 printf "[Desktop Entry]
 Name=Mozilla Firefox
 GenericName=Web Browser
@@ -97,8 +87,8 @@ Comment[uk]=Перегляд сторінок Інтернету
 Comment[vi]=Để duyệt các trang web
 Comment[zh_CN]=浏览互联网
 Comment[zh_TW]=瀏覽網際網路
-Exec=/home/$USER/Mozilla/firefox/firefox  %u --class MozillaFirefox
-Icon=/home/$USER/Mozilla/firefox/browser/chrome/icons/default/default128.png
+Exec=/opt/firefox/firefox  %u --class MozillaFirefox
+Icon=/opt/firefox/browser/chrome/icons/default/default128.png
 Terminal=false
 Type=Application
 MimeType=text/html;text/xml;application/xhtml+xml;application/vnd.mozilla.xul+xml;text/mml;x-scheme-handler/http;x-scheme-handler/https;
@@ -214,7 +204,7 @@ Name[wo]=Palanteer bu bees
 Name[xh]=Ifestile entsha
 Name[zh_CN]=新建窗口
 Name[zh_TW]=開新視窗
-Exec=/home/$USER/Mozilla/firefox/firefox --new-window %u --class MozillaFirefox
+Exec=/opt/firefox/firefox --new-window %u --class MozillaFirefox
 
 [Desktop Action new-private-window]
 Name=New Private Window
@@ -322,16 +312,6 @@ Name[wo]=Panlanteeru biir bu bees
 Name[xh]=Ifestile yangasese entsha
 Name[zh_CN]=新建隐私浏览窗口
 Name[zh_TW]=新增隱私視窗
-Exec=/home/$USER/Mozilla/firefox/firefox --private-window %u --class MozillaFirefox" > Mozilla_Firefox.desktop ;
-# Give time for icon script to complete
-sleep 2;
-# Makes icon executable allowing it to run Firefox (which is also executable).
-chmod +x Mozilla_Firefox.desktop ;
-# Adds icon to application menu (xfce, gnome, cinnamon, mate, deepin, etc...).
-cp Mozilla_Firefox.desktop /home/$USER/.local/share/applications/ ;
-# Copies desktop icon to all user desktops and grants them ownership (it is their desktop after all).
-find /home/"$USER"/Desktop -maxdepth 1 -type d -exec cp Mozilla_Firefox.desktop '{}' \; -exec chown --reference='{}' '{}/Mozilla_Firefox.desktop' \;
-# Removes the temporary files no longer needed.
-rm FirefoxStable.tar.bz2 ; rm Mozilla_Firefox.desktop ;
+Exec=/opt/firefox/firefox --private-window %u --class MozillaFirefox" > Mozilla_Firefox.desktop ;
 # Exit
 exit 0

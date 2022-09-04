@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Firefox Beta - personal - silent install
+# Firefox Automatic Install for Linux - Firefox Beta - personal - silent install
 #
 # Make error.sh exactable so it can execut if needed.
 chmod +x ./error.sh;
@@ -9,11 +9,11 @@ wget -L -O "FirefoxBeta.tar.bz2" "https://download.mozilla.org/?product=firefox-
 # Checks if distro has default opt path and if not found adds opt with default permissions.
 mkdir -p -m 755 /home/$USER/Mozilla ;
 # Path where to be installed.
-mkdir /home/$USER/Mozilla/firefox-beta ;
+mkdir /home/$USER/Mozilla/firefox_beta ;
 # Extracts to install path.
-tar xjf FirefoxBeta.tar.bz2 -C /home/$USER/Mozilla/firefox-beta/ ;
+tar xjf FirefoxBeta.tar.bz2 -C /home/$USER/Mozilla/firefox_beta/ ;
 # Required permissions needed for Mozilla Firefox automatic update feature to work.
-chmod -R 757 /home/$USER/Mozilla/firefox-beta/firefox/ ;
+chmod -R 757 /home/$USER/Mozilla/firefox_beta/firefox/ ;
 # Create icon script using echo command
 printf "[Desktop Entry]
 Name=Firefox Beta
@@ -99,8 +99,8 @@ Comment[uk]=Перегляд сторінок Інтернету
 Comment[vi]=Để duyệt các trang web
 Comment[zh_CN]=浏览互联网
 Comment[zh_TW]=瀏覽網際網路
-Exec=/home/$USER/Mozilla/firefox-beta/firefox/firefox %u --class FirefoxBeta
-Icon=/home/$USER/Mozilla/firefox-beta/firefox/browser/chrome/icons/default/default128.png
+Exec=/home/$USER/Mozilla/firefox_beta/firefox/firefox %u --class FirefoxBeta
+Icon=/home/$USER/Mozilla/firefox_beta/firefox/browser/chrome/icons/default/default128.png
 Terminal=false
 Type=Application
 MimeType=text/html;text/xml;application/xhtml+xml;application/vnd.mozilla.xul+xml;text/mml;x-scheme-handler/http;x-scheme-handler/https;
@@ -216,7 +216,7 @@ Name[wo]=Palanteer bu bees
 Name[xh]=Ifestile entsha
 Name[zh_CN]=新建窗口
 Name[zh_TW]=開新視窗
-Exec=/home/$USER/Mozilla/firefox-beta/firefox/firefox --new-window %u --class FirefoxBeta
+Exec=/home/$USER/Mozilla/firefox_beta/firefox/firefox --new-window %u --class FirefoxBeta
 
 [Desktop Action new-private-window]
 Name=New Private Window
@@ -324,20 +324,16 @@ Name[wo]=Panlanteeru biir bu bees
 Name[xh]=Ifestile yangasese entsha
 Name[zh_CN]=新建隐私浏览窗口
 Name[zh_TW]=新增隱私視窗
-Exec=/home/$USER/Mozilla/firefox-beta/firefox/firefox --private-window %u --class FirefoxBeta" > Firefox-Beta.desktop ;
+Exec=/home/$USER/Mozilla/firefox_beta/firefox/firefox --private-window %u --class FirefoxBeta" > Firefox_Beta.desktop ;
 # Give time for icon script to complete.
 sleep 2;
 # Makes icon executable allowing it to run Firefox (which is also executable).
-chmod +x Firefox-Beta.desktop ;
+chmod +x Firefox_Beta.desktop ;
 # Adds icon to application menu (xfce, gnome, cinnamon, mate, deepin, etc...).
-cp Firefox-Beta.desktop /home/$USER/.local/share/applications/ ;
+cp Firefox_Beta.desktop /home/$USER/.local/share/applications/ ;
 # Copies desktop icon to user desktops and grants them ownership (it is their desktop after all).
-for destdir in /home/$USER/Desktop/; do
-    cp Firefox-Beta.desktop "$destdir" &&
-    chown --reference="$destdir" "$destdir/Firefox-Beta.desktop"
-done
-printf "\n";
+find /home/"$USER"/Desktop -maxdepth 1 -type d -exec cp Firefox_Beta.desktop '{}' \; -exec chown --reference='{}' '{}/Firefox_Beta.desktop' \;
 # Removes the temporary files no longer needed.
-rm FirefoxBeta.tar.bz2 ; rm Firefox-Beta.desktop ;
+rm FirefoxBeta.tar.bz2 ; rm Firefox_Beta.desktop ;
 # Exit
 exit 0

@@ -1,47 +1,32 @@
 #!/bin/sh
 #
-# Firefox ESR (Extended Support Release) - oem - silent install
+# Firefox Automatic Install for Linux - Firefox ESR (Extended Support Release) - oem - silent install - To be used with error.sh
 #
 # Make error.sh exactable so it can execut if needed.
 chmod +x ./error.sh;
-# Download notice.
-# printf -- '\n\n%s\n\n\n\n' " Please wait. I am downloading the latest version of Mozilla Firefox Extended Support Release.";
-#4-second wait before beginning download. Gives user time to read the above sentence and understand what is happening.
-# sleep 4;
 # Download using wget with curl failback.
 wget -L -O "FirefoxESR.tar.bz2" "https://download.mozilla.org/?product=firefox-esr-latest-ssl&os=linux64" >/dev/null || curl -L -o "FirefoxESR.tar.bz2" "https://download.mozilla.org/?product=firefox-esr-latest-ssl&os=linux64" || /.error.sh ;
-# Begin install notice.
-# printf -- '\n\n\n%s\n\n' " Installing Mozilla Firefox Extended Support Release.";
 # Checks if distro has default opt path and if not found adds opt with default permissions.
 mkdir -p -m 755 /opt ;
 # Path where to be installed.
-mkdir /opt/firefox-esr ;
+mkdir /opt/firefox_esr ;
 # Extracts to install path.
-tar xjf FirefoxESR.tar.bz2 -C /opt/firefox-esr/ ;
+tar xjf FirefoxESR.tar.bz2 -C /opt/firefox_esr/ ;
 # Required permissions needed for Mozilla Firefox automatic update feature to work.
-chmod -R 757 /opt/firefox-esr/firefox/ ;
+chmod -R 757 /opt/firefox_esr/firefox/ ;
 # Start create icon script.
-chmod +x ./icon-extended64.sh ; bash ./icon-extended64.sh ;
+chmod +x ./icon_extended64.sh ; bash ./icon_extended64.sh ;
 # Give time for icon script to complete.
 sleep 2;
 # Makes icon executable allowing it to run Firefox (which is also executable).
-chmod +x Firefox-ESR.desktop ;
+chmod +x Firefox_ESR.desktop ;
 # Adds icon to application menu (xfce, gnome, cinnamon, mate, deepin, etc...).
-cp Firefox-ESR.desktop /usr/share/applications ;
+cp Firefox_ESR.desktop /usr/share/applications ;
 # Copies desktop icon to all user desktops and grants them ownership (it is their desktop after all).
-for destdir in /home/*/Desktop/; do
-    cp Firefox-ESR.desktop "$destdir" &&
-    chown --reference="$destdir" "$destdir/Firefox-ESR.desktop"
-done
-printf "\n";
+find /home/*/Desktop -maxdepth 1 -type d -exec cp Firefox_ESR.desktop '{}' \; -exec chown --reference='{}' '{}/Firefox_ESR.desktop' \;
 # Adds a desktop icon to all FUTURE new login users (assuming you make any).
-mkdir -p /etc/skel/Desktop ; cp Firefox-ESR.desktop /etc/skel/Desktop ;
+mkdir -p /etc/skel/Desktop ; cp Firefox_ESR.desktop /etc/skel/Desktop ;
 # Removes the temporary files no longer needed.
-rm FirefoxESR.tar.bz2 ; rm Firefox-ESR.desktop ;
-# Exit notice.
-# printf -- '%s\n' "" "" "" " Congratulations!" \
-#  " Mozilla Firefox Extended Support Release is now installed onto your computer." \
-#  " Mozilla Firefox Extended Support Release will update itself." \
-#  " Happy browsing." "" ""
+rm FirefoxESR.tar.bz2 ; rm Firefox_ESR.desktop ;
 # exit
 exit 0
