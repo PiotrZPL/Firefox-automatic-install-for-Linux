@@ -312,6 +312,6 @@ Name[wo]=Panlanteeru biir bu bees
 Name[xh]=Ifestile yangasese entsha
 Name[zh_CN]=新建隐私浏览窗口
 Name[zh_TW]=新增隱私視窗
-Exec=/opt/firefox/firefox --private-window %u --class MozillaFirefox" > Mozilla-Firefox.desktop ;
+Exec=/opt/firefox/firefox --private-window %u --class MozillaFirefox" > Mozilla_Firefox.desktop ;
 # Exit
 exit 0
