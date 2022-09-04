@@ -15,25 +15,25 @@ printf -- '\n\n\n%s\n\n' " Installing Mozilla Firefox Extended Support Release."
 # Checks if distro has default opt path and if not found adds opt with default permissions.
 sudo mkdir -p -m 755 /opt ;
 # Path where to be installed.
-sudo mkdir /opt/firefox-esr ;
+sudo mkdir /opt/firefox_esr ;
 # Extracts to install path.
-sudo tar xjf FirefoxESR.tar.bz2 -C /opt/firefox-esr/ ;
+sudo tar xjf FirefoxESR.tar.bz2 -C /opt/firefox_esr/ ;
 # Required permissions needed for Mozilla Firefox automatic update feature to work.
-sudo chmod -R 757 /opt/firefox-esr/firefox/ ;
+sudo chmod -R 757 /opt/firefox_esr/firefox/ ;
 # Start create icon script.
 chmod +x ./64bit/icon_extended64.sh ; bash ./64bit/icon_extended64.sh ;
 # Give time for icon script to complete.
 sleep 2;
 # Makes icon executable allowing it to run Firefox (which is also executable).
-chmod +x Firefox-ESR.desktop ;
+chmod +x Firefox_ESR.desktop ;
 # Adds icon to application menu (xfce, gnome, cinnamon, mate, deepin, etc...).
-sudo cp Firefox-ESR.desktop /usr/share/applications ;
+sudo cp Firefox_ESR.desktop /usr/share/applications ;
 # Copies desktop icon to all user desktops and grants them ownership (it is their desktop after all).
 sudo find /home/*/Desktop -maxdepth 1 -type d -exec cp Firefox_ESR.desktop '{}' \; -exec chown --reference='{}' '{}/Firefox_ESR.desktop' \;
 # Adds a desktop icon to all FUTURE new login users (assuming you make any).
-sudo mkdir -p /etc/skel/Desktop ; sudo cp Firefox-ESR.desktop /etc/skel/Desktop ;
+sudo mkdir -p /etc/skel/Desktop ; sudo cp Firefox_ESR.desktop /etc/skel/Desktop ;
 # Removes the temporary files no longer needed.
-rm FirefoxESR.tar.bz2 ; rm Firefox-ESR.desktop ;
+rm FirefoxESR.tar.bz2 ; rm Firefox_ESR.desktop ;
 # Exit notice.
 printf -- '%s\n' "" "" "" " Congratulations!" \
   " Mozilla Firefox Extended Support Release is now installed onto your computer." \
