@@ -9,11 +9,15 @@ Next, extract the archive file.
 
 To properly install or uninstall Mozilla Firefox, go to your extracted folder and run the following command:
 
+```bash
 chmod +x Setup.sh
+```
 
 This will make the script executable (allowing it to run).  Next, execute the script by type the following.
 
+```bash
 bash Setup.sh
+```
    
    (Or your perfered shell followed by Setup.sh)
 
