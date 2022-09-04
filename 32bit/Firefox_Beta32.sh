@@ -29,11 +29,7 @@ chmod +x Firefox_Beta_32bit.desktop ;
 # Adds icon to application menu (xfce, gnome, cinnamon, mate, deepin, etc...).
 sudo cp Firefox_Beta_32bit.desktop /usr/share/applications ;
 # Copies desktop icon to all user desktops and grants them ownership (it is their desktop after all).
-for destdir in /home/*/Desktop/; do
-    cp Firefox_Beta_32bit.desktop "$destdir" &&
-    chown --reference="$destdir" "$destdir/Firefox_Beta_32bit.desktop"
-done
-printf "\n";
+sudo find /home/*/Desktop -maxdepth 1 -type d -exec cp Firefox_Beta_32bit.desktop '{}' \; -exec chown --reference='{}' '{}/Firefox_Beta_32bit.desktop' \;
 # Adds a desktop icon to all FUTURE new login users (assuming you make any).
 sudo mkdir -p /etc/skel/Desktop ; sudo cp Firefox_Beta_32bit.desktop /etc/skel/Desktop ;
 # Removes the temporary files no longer needed.
