@@ -3,7 +3,7 @@ Automated installation for Mozilla Firefox for The Linux Operating System.
 
 The objective is to provide a method to easily install Mozilla Firefox directly from Mozilla's website and enable Firefox's automatic update feature for the latest releases. Additionally, providing a pure stock Mozilla Firefox experience for everyone using your Linux computer at home. 
 
-First, download the latest archived release: https://github.com/Linux-Is-Best/Firefox-automatic-install-for-Linux/releases
+First, download the latest archived release: https://gitlab.com/Linux-Is-Best/Firefox-automatic-install-for-Linux/-/releases
 
 Next, extract the archive file.
 
