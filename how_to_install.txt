@@ -28,8 +28,7 @@ editions side by side. Simply follow the easy menu prompts.
 Congratulations, you have successfully setup your copy of Mozilla Firefox!
 
 Where did you get this?
-Master: https://gitlab.com/Linux-Is-Best/Firefox-automatic-install-for-Linux
-Mirror: https://github.com/Linux-Is-Best/Firefox-automatic-install-for-Linux
+https://gitlab.com/Linux-Is-Best/Firefox-automatic-install-for-Linux
 
 Linux is best (because it really is).
 
