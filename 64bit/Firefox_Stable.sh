@@ -23,15 +23,15 @@ chmod +x ./64bit/icon_firefox64.sh ; bash ./64bit/icon_firefox64.sh ;
 # Give time for icon script to complete
 sleep 2;
 # Makes icon executable allowing it to run Firefox (which is also executable).
-chmod +x Mozilla-Firefox.desktop ;
+chmod +x Mozilla_Firefox.desktop ;
 # Adds icon to application menu (xfce, gnome, cinnamon, mate, deepin, etc...).
-sudo cp Mozilla-Firefox.desktop /usr/share/applications ;
+sudo cp Mozilla_Firefox.desktop /usr/share/applications ;
 # Copies desktop icon to all user desktops and grants them ownership (it is their desktop after all).
 sudo find /home/*/Desktop -maxdepth 1 -type d -exec cp Mozilla_Firefox.desktop '{}' \; -exec chown --reference='{}' '{}/Mozilla_Firefox.desktop' \;
 # Adds a desktop icon to all FUTURE new login users (assuming you make any).
-sudo mkdir -p /etc/skel/Desktop ; sudo cp Mozilla-Firefox.desktop /etc/skel/Desktop ;
+sudo mkdir -p /etc/skel/Desktop ; sudo cp Mozilla_Firefox.desktop /etc/skel/Desktop ;
 # Removes the temporary files no longer needed.
-rm FirefoxStable.tar.bz2 ; rm Mozilla-Firefox.desktop ;
+rm FirefoxStable.tar.bz2 ; rm Mozilla_Firefox.desktop ;
 # Exit notice.
 printf -- '%s\n' "" "" "" " Congratulations!" \
   " Mozilla Firefox is now installed onto your computer." \
