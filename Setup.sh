@@ -6,7 +6,7 @@
  printf -- '%s\n' "   N O T I C E" \
  " " \
  " Sorry, Firefox Automatic Install for Linux" \
- " Can now longer be found on GitHub" \
+ " Can no longer be found on GitHub" \
  " GitHub is not stable so I moved to GitLab" \
  " You can find the download here: " \
  " " \
