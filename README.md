@@ -1,8 +1,7 @@
 # Firefox-automatic-install-for-Linux
 We have moved to GitLab because GitHub proved to be less reliable
 
-You can find us at our new home: https://gitlab.com/Linux-Is-Best/Firefox-automatic-install-for-Linux/-/releases
-
+You can find us at our new home: https://gitlab.com/Linux-Is-Best/Firefox-automatic-install-for-Linux
 
 For those who do not read documentation, they are weclome to still run the following command:
 
