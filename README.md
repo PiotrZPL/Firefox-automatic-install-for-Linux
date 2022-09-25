@@ -26,3 +26,13 @@ You will be prompt to select which edition of Firefox you wish to set up. You wi
 Extra:
 
 Alternatively, there are two additional (silent) install methods. First, the personal folder (directory) assumes you are NOT a SUDO (administrative user) and do not wish to install Firefox for everyone, but do wish to install your own personal copy exclusively for yourself within your user account, localized for only your use. While the OEM directory (folder) assumes you are already an advanced user with root or chroot privileges, installing Firefox system-wide for all users. Please see the enclosed documentation in their respected folders (directories).
+
+# About this repository
+This repository was created to improve READMEs of the Firefox-automatic-install-for-Linux.
+
+As the original author moved his repository to [GitLab](https://gitlab.com/Linux-Is-Best/Firefox-automatic-install-for-Linux), 
+this repository will stay without any updates on GitHub.
+
+&nbsp;
+
+## This repository is orophaned and may be deleted in the future! To access up-to-date code, go [here](https://gitlab.com/Linux-Is-Best/Firefox-automatic-install-for-Linux)
