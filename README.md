@@ -35,4 +35,4 @@ this repository will stay without any updates on GitHub.
 
 &nbsp;
 
-## This repository is orophaned and may be deleted in the future! To access up-to-date code, go [here](https://gitlab.com/Linux-Is-Best/Firefox-automatic-install-for-Linux)
+## This repository is orphaned and may be deleted in the future! To access up-to-date code, go [here](https://gitlab.com/Linux-Is-Best/Firefox-automatic-install-for-Linux)
