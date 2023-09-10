@@ -1,14 +1,14 @@
 #!/bin/sh
 #
-# Firefox automatic install for Linux
+# Firefox automatic install for Linux - 32-bit
 # v3.0.0
 #
 
 # Paths to sub-scripts
-install_personal_choice="./personal/install_personal_choice.sh"
-uninstall_personal_choice="./personal/personal_uninstall/uninstall_personal_choice.sh"
-install_system_choice="./64bit/install_system_choice.sh"
-uninstall_system_choice="./64bit/uninstallers/uninstall_system_choice.sh"
+install_personal_choice="./personal32/install_personal_choice.sh"
+uninstall_personal_choice="./personal32/uninstallers/uninstall_personal_choice.sh"
+install_system_choice="./32bit/install_system_choice.sh"
+uninstall_system_choice="./32bit/32bit_uninstallers/uninstall_system_choice.sh"
 
 # Function to set executable permission and execute sub-script
 execute_sub_script() {

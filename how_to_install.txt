@@ -1,3 +1,42 @@
-I left GitHub for GitLab because GitHub proved to be unstable. 
+Requirements:
 
-You can find the download there https://gitlab.com/Linux-Is-Best/Firefox-automatic-install-for-Linux/-/releases
+1) You will need to have access to SUDO if doing a system install (not required for personal install)
+2) You will also need CULR or WGET installed. = For the original Firefox download 
+3) Depending on your distro, you will also need TAR or UNTAR, or BZIP2 installed. = To decompress .tar.bz2 file
+
+All of which are usually pre-installed and configured in all major mainstream Linux distros.
+
+Run the following command:
+
+   chmod +x Setup.sh 
+
+   (Or for 32-bit:  chmod +x Setup32.sh)
+
+This will make the script executable (allowing it to run).  
+Next, execute the script by type the following:
+
+   bash Setup.sh
+  
+   (Or for 32-bith: bash Setup32.sh)
+
+You can also used your prefered shell, for example, dash, zsh, ksh (POSIX compatible).
+
+Please follow the easy menu prompts and complete the setup.
+You can install or uninstall any edition you wish, including multiple editions side by side.
+
+
+Congratulations, you have successfully setup your copy of Mozilla Firefox!
+
+Where did you get this?
+https://gitlab.com/Linux-Is-Best/Firefox-automatic-install-for-Linux
+
+Linux is best (because it really is).
+
+Want to learn more?
+
+All the script files can be opened with a basic text editor.
+There you can review the code and learn how they work.
+For basic text editors, I recommend either "nano" via the terminal 
+or via your desktop, "kate" or "leafpad" or "xed" or "gedit".
+
+As always, happy browsing! :-)
